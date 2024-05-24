@@ -1,0 +1,59 @@
+<ion-header currentBackgroundColor>
+  <ion-toolbar>
+    <ion-button slot="start" color="light" (click)="dismiss()">
+      Close
+    </ion-button>
+    <ion-col>
+      <ion-button color="light" *ngIf="multiMedia === true" (click)="backward()" >
+        <ion-icon  name="chevron-back-outline"></ion-icon>
+      </ion-button>  
+      <ion-button color="light" *ngIf="multiMedia === true" (click)="forward()">
+        <ion-icon  name="chevron-forward-outline" ></ion-icon>
+      </ion-button>
+    </ion-col>
+    <ion-title slot="end">{{shortId}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding" style="border: var(--ion-text-color) solid 2px;">
+  <ion-row style="height: 95%; text-align: center; width: 100%;  display: flex;
+  align-items: center;
+  justify-content: center;">
+      <ion-row >
+        <div *ngIf="assetData.type == allMediaTypes.Image">
+          <a [href]="fullMediaPath" target="_blank">
+            <img [src]="fullMediaPath" style="margin: 0 auto; display: block; float: none; ">
+          </a>
+        </div>
+        <div *ngIf="assetData.type == allMediaTypes.Video">
+          <video style="margin-right:auto; float:left; height:auto; width: auto;" loop playsinline preload controls
+            autoplay muted>
+            <source [src]="fullMediaPath" type="video/mp4">
+            <source [src]="alternativeMediaPath" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div *ngIf="assetData.type == allMediaTypes.FusionModel">
+          <div *ngIf="(acceptedCookie | async) === false" (click)="acceptCookie()" class="border-color">
+            <ion-item>
+              <div class="icon-holder">
+                <ion-icon src="assets/icon/custom-autodesk.svg" slot="start">
+                  <ion-icon></ion-icon>
+                </ion-icon>
+              </div>
+              <div class="accept-notice">Accept AutoDesk Cookies</div>
+            </ion-item>
+          </div>
+          <div *ngIf="(acceptedCookie | async) === true" class="border-color">
+            <div class="loading">
+              <iframe [src]="fullMediaPath | safe: 'resourceUrl'" title="Varius quam quisque model" frameborder="0"
+                class="frame-fade-out"
+                style="margin-top:26px;"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </ion-row>
+  </ion-row>
+</ion-content>

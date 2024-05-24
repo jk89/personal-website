@@ -1,0 +1,29 @@
+.media-container {
+    display: flex;
+}
+.cheveron {
+    position: absolute;
+    bottom: 50%;
+    left: 25px;
+}
+
+@keyframes pulse {
+    from {
+        color: var(--ion-background-color);
+    }
+
+    50% {
+        color: var(--ion-text-color);
+    }
+
+    to {
+        color: var(--ion-background-color);
+    }
+}
+
+ion-icon {
+    animation-duration: 3s;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    font-size: 30px;
+}

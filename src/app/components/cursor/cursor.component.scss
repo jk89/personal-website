@@ -1,0 +1,41 @@
+.cursor_outer {
+  width: 44px;
+  height: 44px;
+  border-width: 6px;
+  border-style: solid;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  z-index: 21;
+  position: fixed;
+  pointer-events: none;
+  transition: top 0.75s, left 0.75s, opacity 0.37s;
+}
+
+.cursor_middle {
+  width: 22px;
+  height: 22px;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  z-index: 21;
+  position: fixed;
+  pointer-events: none;
+  transition: top 0.5s, left 0.5s, opacity 0.2s;
+}
+
+.cursor_inner {
+  width: 4px;
+  height: 4px;
+  border: 4px solid var(--ion-text-color);
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  z-index: 21;
+  position: fixed;
+  pointer-events: none;
+  transition: top 0.25s, left 0.25s, opacity 0.12s;
+}
+
+.hidden {
+  opacity: 0 !important;
+}

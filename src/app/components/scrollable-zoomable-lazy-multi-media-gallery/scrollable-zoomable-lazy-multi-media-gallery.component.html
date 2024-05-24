@@ -1,0 +1,13 @@
+<div class="media-container">
+  <div #mediaChildData>
+    <ng-content></ng-content>
+  </div>
+  <div *ngFor="let idx of idsIdxs()">
+
+    <app-lazy-enlargeable-media [ids]="ids" [idx]="idx" height="400">
+    </app-lazy-enlargeable-media>
+
+    <ion-icon class="cheveron" name="chevron-forward-outline"></ion-icon>
+
+  </div>
+</div>

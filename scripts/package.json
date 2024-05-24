@@ -1,0 +1,23 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "color": "^4.2.3",
+    "fast-average-color": "^7.1.0",
+    "fast-average-color-node": "^2.2.0",
+    "ffmpeg": "0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "image-size": "^1.0.1",
+    "is-image": "^3.0.0",
+    "is-video": "^1.0.1",
+    "sharp": "^0.30.4"
+  }
+}

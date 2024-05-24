@@ -1,0 +1,32 @@
+:host {
+    background: var(--ion-background-color);
+    margin: 1.5em 10px !important;
+    padding: 0.3em 10px;
+    padding-left: 28px !important;
+    padding-top: 0.5em !important;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+  :host:before {
+    color: var(--ion-text-color);
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    //margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  
+  :host:after {
+    color: var(--ion-text-color);
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    display:inline-block;
+    margin-right: 0.25em;
+    vertical-align: -0.6em;
+  }
+  
+  :host p {
+    display: inline ;
+    background: var(--ion-background-color);
+    padding: 0.5em;
+  }

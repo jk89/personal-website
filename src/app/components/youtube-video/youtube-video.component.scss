@@ -1,0 +1,53 @@
+.loading {
+    background: url("../../../assets/animations/spinner-palette.svg") transparent no-repeat center center;
+}
+
+svg {
+    background: transparent;
+}
+
+.border-color {
+    border: solid var(--ion-color-step-850) 1px;
+}
+
+.frame-fade-out {
+    opacity: 0%;
+}
+
+.iframe-fade-in {
+    opacity: 100% !important;
+    transition: opacity 3s;
+}
+
+ion-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0px;
+    width: 110%;
+    cursor: pointer;
+    --ion-background-color: var(--ion-color-step-900) !important;
+    opacity: 0.9;
+}
+
+.force-black {
+    background-color: black;
+}
+
+.icon-holder {
+    height: 100%;
+    width: 100%;
+    background: none;
+}
+
+.icon-holder ion-icon {
+    font-size: 100px;
+    color: red;
+}
+
+.accept-notice {
+    width: 100%;
+    background-color: var(--ion-color-step-900);
+    color: var(--ion-color-step-150);
+}

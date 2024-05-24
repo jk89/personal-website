@@ -1,0 +1,21 @@
+<div style="transform: translateY(30px); -ms-transform: translateY(30px);">
+  <div *ngIf="slot === 'start'" class="margin-top"></div>
+  <div style="display:flex;" *ngIf="['middle','end'].includes(slot)">
+    <div>
+    </div>
+    <hr currentBackgroundColor>
+    <div>
+    </div>
+  </div>
+  <div style="text-align: center;">
+    <ng-content></ng-content>
+  </div>
+  <div style="display:flex;" *ngIf="['middle','start'].includes(slot)">
+    <div>
+    </div>
+    <hr currentBackgroundColor>
+    <div>
+    </div>
+  </div>
+  <div *ngIf="slot === 'end'" class="margin-bottom"></div>
+</div>

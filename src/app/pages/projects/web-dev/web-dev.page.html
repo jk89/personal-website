@@ -1,0 +1,2359 @@
+<ion-header #header [translucent]="true" class="ion-no-border">
+  <ion-toolbar #toolbar>
+    <page-section-navigation-bar [basePath]="pagePath" category="Topics">
+    </page-section-navigation-bar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content slot="fixed" [fullscreen]="true" [appFadeHeaderOnScroll]="toolbar" [header]="header" scrollEvents="true">
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ pagePath }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <page-cover id="Home" [cheveron]="true" [pagePath]="pagePath" backgroundImageId="page-covers/code.png">
+    <h1 currentColor>Web 2.0+</h1>
+    <div>
+      <h2>
+        I study <ion-icon name="school-outline"></ion-icon> and engineer <ion-icon name="hammer-outline"></ion-icon>
+        advanced Web Infrastructure <ion-icon name="cloud-outline"></ion-icon>
+      </h2>
+    </div>
+  </page-cover>
+
+  <div id="Navigation" [linkElementToNavigation]="pagePath">
+    <div class="page-banner-text">
+      <ion-list>
+        <ion-row text-center>
+          <ion-col *ngFor="let p of appPages; let i = index">
+            <ion-button [disabled]="p.url === pagePath" [color]="p.url === pagePath ? 'dark' : 'light'" size="default"
+              routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon [color]="p.color" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+              <ion-row>
+                {{p.title}}
+              </ion-row>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-list>
+    </div>
+  </div>
+
+  <page-section [linkElementToNavigation]="pagePath" id="MATCH" sideHeaderTitle="Projects"
+    sideHeaderSubtitle="Dictumst Vestibulum Rhoncus" iconName="tennisball-outline" blockTitle="Venenatis"
+    blockSubtitle="Velit dignissim sodales" [rightHanded]="false" [fixedDisplacement]="true"
+    backgroundId="unsplash/mario-scheibl-5jPpYdBtfD4-unsplash.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>adipiscing</li>
+        <li>mauris</li>
+        <li>elementum</li>
+        <li>amet</li>
+        <li>aliquam</li>
+      </ul>
+    </ion-item>
+    <ion-item>
+      <h1>Venenatis</h1>
+    </ion-item>
+    <ion-item>
+      <div>
+
+        <p>
+          <strong>Abstract:</strong> Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Sodales neque sodales
+          ut etiam. Tincidunt lobortis feugiat vivamus at augue eget arcu. Amet facilisis magna etiam tempor orci eu
+          lobortis.
+        </p>
+
+        <p>
+          Pellentesque nec nam aliquam sem et tortor consequat id porta. Ut lectus arcu bibendum at varius vel pharetra
+          vel. Pharetra pharetra massa massa ultricies mi. Quam viverra orci sagittis eu volutpat odio facilisis mauris
+          sit. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Libero nunc consequat interdum varius sit
+          amet mattis.
+        </p>
+
+        <p>
+          <strong>Purus Transforma: </strong> Curabitur vitae nunc sed velit. Et odio pellentesque diam
+          volutpat commodo sed egestas. Nisl nisi scelerisque eu ultrices vitae auctor eu augue. Augue eget arcu dictum
+          varius duis. Leo urna molestie at elementum eu. Et tortor at risus viverra adipiscing. Leo vel fringilla est
+          ullamcorper eget. Justo eget magna fermentum iaculis eu. Imperdiet dui accumsan sit amet.
+        </p>
+
+        <p>
+          <strong>Nisi lacus sed viverra tellus: </strong> Odio morbi quis
+          commodo odio aenean sed adipiscing. Egestas integer eget aliquet nibh praesent tristique magna sit. At in
+          tellus integer feugiat scelerisque varius morbi enim. Sit amet facilisis magna etiam tempor orci eu.
+          Scelerisque varius morbi enim nunc faucibus a. Magnis dis parturient montes nascetur ridiculus mus mauris
+          vitae ultricies. Iaculis nunc sed augue lacus viverra. Risus viverra adipiscing at in tellus integer feugiat
+          scelerisque varius.
+        </p>
+
+        <p>
+          <strong>Sed libero enim sed faucibus turpis in eu:</strong> Etiam tempor orci eu lobortis elementum nibh
+          tellus molestie. Eget arcu dictum varius duis at consectetur lorem.
+          Vitae aliquet nec ullamcorper sit amet. Diam maecenas sed enim ut sem viverra aliquet eget sit. Augue mauris
+          augue neque gravida in.
+        </p>
+
+        <p>
+          <strong>Donec et odio pellentesque diam: </strong> Nisl nisi scelerisque eu ultrices vitae
+          auctor eu. Sapien et ligula ullamcorper malesuada proin libero. Lacus viverra vitae congue eu consequat ac
+          felis donec. Suspendisse ultrices gravida dictum fusce ut placerat orci. Urna duis convallis convallis tellus.
+          Id consectetur purus ut faucibus pulvinar elementum integer enim. Eget arcu dictum varius duis at consectetur
+          lorem donec.
+        </p>
+
+        <p>
+          Ac turpis egestas integer eget aliquet nibh praesent. Eget duis at tellus at urna condimentum mattis
+          pellentesque. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Cursus vitae congue
+          mauris rhoncus aenean vel elit scelerisque mauris.
+        </p>
+
+        <h2><strong>Euismod luctus:</strong></h2>
+
+        <ul>
+          <li>
+            <h3><strong>Quis ipsum suspendisse ultrices gravida:</strong></h3>
+            <p>
+              Quis risus sed vulputate odio ut enim blandit. Porttitor lacus
+              luctus accumsan tortor posuere. Aliquam ultrices sagittis orci a scelerisque purus semper eget. Morbi quis
+              commodo odio aenean sed adipiscing. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Vitae justo eget magna fermentum iaculis eu non:</strong></h3>
+            <p>
+              Pretium fusce id velit ut tortor pretium viverra
+              suspendisse. Lectus sit amet est placerat. At risus viverra adipiscing at in tellus integer feugiat. Etiam
+              dignissim diam quis enim lobortis scelerisque. Tortor vitae purus faucibus ornare suspendisse sed nisi
+              lacus. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Morbienim Advisory and Support (Morbienim Ullamcorpe):</strong></h3>
+            <p>
+              Provided ongoing Morbienim guidance in alignment with DMSA and ICT regulations.
+              Offered continuous technological support, ensuring Morbienim and future readiness.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Neque sodales ut etiam sit amet nisl (purus in mollis):</strong></h3>
+            <p>
+              Eget magna fermentum iaculis eu non diam phasellus
+              vestibulum. Sagittis orci a scelerisque purus semper eget. Lectus mauris ultrices eros in cursus turpis
+              massa tincidunt dui. Habitant morbi tristique senectus et netus et malesuada fames ac.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Commodo sed egestas egestas fringilla phasellus (faucibus scelerisque):
+              </strong></h3>
+            <p>
+              Natoque penatibus et magnis dis
+              parturient. Sagittis eu volutpat odio facilisis mauris sit amet massa. Egestas tellus rutrum tellus
+              pellentesque eu. Ultrices tincidunt arcu non sodales neque. Nec ultrices dui sapien eget mi. Tempor id eu
+              nisl nunc mi ipsum. Mauris in aliquam sem fringilla ut. Penatibus et magnis dis parturient.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="link-outline" slot="start"></ion-icon>
+      <a target="_blank" href="https://www.google.com">
+        <ion-label>Venenatis</ion-label>
+      </a>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Team:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/teams/MATCH" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Venenatis
+                </ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+
+  <page-section [linkElementToNavigation]="pagePath" id="CV" sideHeaderTitle="Projects"
+    sideHeaderSubtitle="Dictumst Vestibulum Rhoncus" iconName="logo-angular"
+    blockTitle="Iverra ipsum nunc aliquet bibendum enim." blockSubtitle="Rhoncus" [rightHanded]="true"
+    backgroundId="card-header-banners/website.png" [fixedDisplacement]="true">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>Ionic / Rhoncus</li>
+      </ul>
+    </ion-item>
+    <ion-item>
+      <h1>In nibh mauris cursus mattis</h1>
+    </ion-item>
+    <ion-item>
+      <div>
+
+        <p>
+          <strong>Abstract:</strong> Odio tempor orci dapibus ultrices in iaculis nunc.
+        </p>
+
+        <p>
+          Nullam ac tortor vitae purus faucibus ornare. Odio morbi quis commodo odio aenean sed adipiscing diam. Quam
+          elementum pulvinar etiam non quam lacus suspendisse faucibus interdum.
+        </p>
+
+        <p>
+          <strong>Core tincidunt:</strong> Facilisis gravida neque convallis a cras semper auctor neque vitae. Sed
+          adipiscing diam donec adipiscing tristique risus nec feugiat. Eget nullam non nisi est sit. Elit duis
+          tristique sollicitudin nibh sit. In eu mi bibendum neque. Diam maecenas sed enim ut sem viverra aliquet eget
+          sit.
+        </p>
+
+        <p>
+          <strong>Pellentesque habitant morbi tristique:</strong> Non pulvinar neque laoreet suspendisse. Fermentum dui
+          faucibus in ornare. Imperdiet massa tincidunt nunc pulvinar sapien. Sagittis orci a scelerisque purus semper
+          eget. Egestas dui id ornare arcu. Id donec ultrices tincidunt arcu. Est lorem ipsum dolor sit amet. Nunc
+          faucibus a pellentesque sit amet porttitor eget. Varius vel pharetra vel turpis nunc eget.
+        </p>
+
+        <p>
+          <strong>Metus dictum at tempor: </strong> Fermentum dui faucibus in ornare quam viverra orci sagittis
+          eu. Nibh tortor id aliquet lectus proin nibh. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio
+          eu. Tortor posuere ac ut consequat semper viverra. Tortor vitae purus faucibus ornare suspendisse sed nisi
+          lacus. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. Quisque id diam vel quam
+          elementum.
+        </p>
+
+        <p>
+          <strong>In cursus turpis massa tincidune:</strong> Dolor sit amet consectetur adipiscing elit duis tristique
+          sollicitudin
+          nibh. Nisi est sit amet facilisis magna etiam tempor orci. Pulvinar neque laoreet suspendisse interdum. Diam
+          donec adipiscing tristique risus nec feugiat in. Nunc sed velit dignissim sodales ut. Malesuada pellentesque
+          elit eget gravida cum sociis. Feugiat in fermentum posuere urna nec tincidunt praesent. Dictum non consectetur
+          a erat nam at lectus urna duis.
+        </p>
+
+        <p>
+          <strong>Risus sed vulputate:</strong> Enim lobortis scelerisque fermentum dui. Convallis posuere morbi
+          leo urna molestie at. Integer quis auctor elit sed. Adipiscing elit duis tristique sollicitudin. Nisl pretium
+          fusce id velit ut. Netus et malesuada fames ac. Sapien nec sagittis aliquam malesuada. Libero nunc consequat
+          interdum varius sit amet mattis vulputate enim.
+        </p>
+
+        <p>
+          Sagittis eu volutpat odio facilisis mauris sit amet. Suspendisse potenti nullam ac tortor vitae purus. At
+          ultrices mi tempus imperdiet nulla malesuada pellentesque. Enim diam vulputate ut pharetra.
+        </p>
+
+        <h2><strong>Euismod luctus:</strong></h2>
+
+        <ul>
+          <li>
+            <h3><strong>Mauris in aliquam sem fringilla (ut morbi):</strong></h3>
+            <p>
+              Amet purus gravida quis blandit. Tristique senectus et netus et malesuada fames ac turpis. Mus mauris
+              vitae ultricies leo integer. Et tortor at risus viverra. Metus dictum at tempor commodo ullamcorper a
+              lacus vestibulum sed.
+            </p>
+          </li>
+
+          <li>
+            <h3><strong>Etiam tempor orci eu lobortis elementum nibh (tellus moletus):</strong></h3>
+            <p>
+              Tempus imperdiet nulla malesuada pellentesque elit eget gravida. Amet venenatis urna cursus eget nunc.
+              Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. In vitae turpis massa sed
+              elementum tempus egestas. In est ante in nibh mauris cursus mattis molestie. Proin libero nunc consequat
+              interdum varius sit amet. Feugiat nisl pretium fusce id velit ut tortor.
+            </p>
+          </li>
+
+          <li>
+            <h3><strong>Vitae semper quis lectus nulla at volutpat diam:</strong></h3>
+            <p>
+              Quis viverra nibh cras pulvinar mattis nunc sed. Sed faucibus turpis in eu. Id volutpat lacus laoreet non
+              curabitur gravida. Suspendisse faucibus interdum posuere lorem ipsum. Lectus urna duis convallis
+              convallis. Aliquam nulla facilisi cras fermentum odio eu feugiat.
+            </p>
+          </li>
+
+          <li>
+            <h3><strong>Odio facilisis mauris sit amet massa vitae:</strong></h3>
+            <p>
+              Nulla facilisi nullam vehicula ipsum a arcu cursus. Massa tincidunt dui ut ornare lectus sit amet est
+              placerat. Velit scelerisque in dictum non consectetur a erat nam at. Nisi quis eleifend quam adipiscing
+              vitae. Ipsum nunc aliquet bibendum enim. Diam phasellus vestibulum lorem sed risus ultricies tristique.
+            </p>
+          </li>
+
+          <li>
+            <h3><strong>Tortor aliquam nulla facilisi cras fermentum:</strong></h3>
+            <p>
+              Massa placerat duis ultricies lacus. Tellus orci ac auctor augue mauris augue. Consequat nisl vel pretium
+              lectus. Tellus cras adipiscing enim eu turpis egestas. Sed libero enim sed faucibus turpis in eu mi.
+              Viverra aliquet eget sit amet. Amet mattis vulputate enim nulla aliquet porttitor lacus. Ac turpis egestas
+              maecenas pharetra convallis.
+            </p>
+          </li>
+        </ul>
+
+      </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="logo-github" slot="start"></ion-icon>
+      <a target="_blank" href="https://github.com/jk89/personal-website">
+        <ion-label>fermentum-iaculis</ion-label>
+      </a>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Team:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/teams/ME" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Blandit
+                </ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+  <page-section [linkElementToNavigation]="pagePath" id="Scelerisque" sideHeaderTitle="Projects"
+    sideHeaderSubtitle="Dictumst Vestibulum Rhoncus" iconName="finger-print-outline" blockTitle="Dignissim-Scelerisque"
+    blockSubtitle="Aliquet Porttitor Lacus" [rightHanded]="false"
+    backgroundId="unsplash/thomas-tourneux-6EaK1iYOYBA-unsplash.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>aliquet</li>
+        <li>dignissim</li>
+        <li>maecenas</li>
+        <li>malesuada</li>
+        <li>lorem</li>
+        <li>eros</li>
+        <li>vitae</li>
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <h1>Aliquet Porttitor Lacus</h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <p><strong>Abstract:</strong> Scelerisque ID Protect stands as a robust insurance product offering comprehensive
+          identity protection to users. With an ambitious target of reaching a million customers within its inaugural
+          year, this product aimed to provide top-notch security and assurance against identity theft and related risks.
+        </p>
+
+        <h2><strong>Euismod luctus:</strong></h2>
+
+        <ul>
+          <li>
+            <h3><strong>Purus & VJ: </strong></h3>
+            <p>
+              mperdiet dui accumsan sit amet nulla. Risus viverra adipiscing at in tellus. Id venenatis a condimentum
+              vitae sapien. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Ornare suspendisse sed nisi
+              lacus sed viverra tellus in.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Suscipit tellus: </strong></h3>
+            <p>
+              Ut aliquam purus sit amet. Tellus orci ac auctor augue mauris augue neque gravida. Donec pretium vulputate
+              sapien nec sagittis aliquam malesuada bibendum arcu. Mattis rhoncus urna neque viverra. In metus vulputate
+              eu scelerisque felis imperdiet proin.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Sed felis eget velit aliquet: </strong></h3>
+            <p>
+              Morbi tristique senectus et netus et malesuada fames ac. Quis hendrerit dolor magna eget. Ultrices vitae
+              auctor eu augue. Etiam erat velit scelerisque in dictum non consectetur a erat. Id leo in vitae turpis
+              massa sed elementum tempus egestas. Vehicula ipsum a arcu cursus vitae. Senectus et netus et malesuada
+              fames ac turpis egestas sed. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="link-outline" slot="start"></ion-icon>
+      <a target="_blank" href="https://www.google.com/">
+        <ion-label>Aliquet Porttitor Lacus</ion-label>
+      </a>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Team:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/teams/Dignissim" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Dignissim
+                </ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+  <page-section [linkElementToNavigation]="pagePath" id="Dignissim" sideHeaderTitle="Projects"
+    sideHeaderSubtitle="Dictumst Vestibulum Rhoncus" iconName="file-tray-stacked-outline" blockTitle="Dignissim-Nunc"
+    blockSubtitle="Nibh tortor" [rightHanded]="true" backgroundId="unsplash/oleg-demakov-jVsFoS586aI-unsplash.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>malesuada</li>
+        <li>scelerisque</li>
+        <li>vulputate</li>
+        <li>pellentesque</li>
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <h1>Viverra nam</h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <app-lazy-enlargeable-media class="float-left" id="mixkit/mixkit-macaw-parrot-feeding-on-a-branch-4669-medium.mp4" height="577"
+          style="display:block;">
+        </app-lazy-enlargeable-media>
+
+        <p><strong>Abstract:</strong> Vitae tempus quam pellentesque nec nam aliquam sem.</p>
+
+        <p>
+          Vestibulum lectus mauris ultrices eros in. Eu non diam phasellus vestibulum lorem sed. Hendrerit gravida
+          rutrum quisque non. Proin nibh nisl condimentum id. Vitae suscipit tellus mauris a diam maecenas sed enim ut.
+          Tortor dignissim convallis aenean et.
+        </p>
+
+        <p>
+          <strong>Arcu non odio euismod lacinia. Quis blandit turpis cursus in:</strong>
+        </p>
+
+        <p>
+          <strong>Suscipit adipiscing:</strong> Est ullamcorper eget nulla facilisi etiam dignissim. Vitae suscipit
+          tellus mauris a diam. Bibendum est ultricies integer quis auctor elit sed. Orci sagittis eu volutpat odio
+          facilisis mauris sit amet massa. Eget gravida cum sociis natoque penatibus et. Lacus luctus accumsan tortor
+          posuere.
+        </p>
+
+        <p>
+          <strong>Amet est placerat:</strong> Pellentesque sit amet porttitor eget dolor morbi. Tellus molestie
+          nunc non blandit massa enim. Eget nullam non nisi est. A scelerisque purus semper eget. Vulputate enim nulla
+          aliquet porttitor lacus. Arcu vitae elementum curabitur vitae nunc sed velit dignissim. Sed velit dignissim
+          sodales ut eu sem integer vitae justo.
+        </p>
+
+        <p>
+          <strong>Erat imperdiet:</strong> Magna ac placerat vestibulum lectus mauris ultrices eros in. Eleifend donec
+          pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Quis commodo odio aenean sed adipiscing diam
+          donec adipiscing. Nibh mauris cursus mattis molestie a iaculis. Ipsum dolor sit amet consectetur adipiscing
+          elit pellentesque habitant. Nisi quis eleifend quam adipiscing vitae proin sagittis..
+        </p>
+
+        <p>
+          <strong>Lorem dolor sed:</strong> Nam libero justo laoreet sit amet cursus sit amet dictum. Ut sem nulla
+          pharetra diam sit amet nisl. Vitae elementum curabitur vitae nunc sed velit. Risus at ultrices mi tempus
+          imperdiet nulla. Cras adipiscing enim eu turpis. Dui id ornare arcu odio ut sem nulla.
+        </p>
+
+        <p>
+          <strong>Cras adipiscing:</strong> Turpis cursus in hac habitasse platea. In hendrerit gravida rutrum
+          quisque non tellus orci. Viverra nam libero justo laoreet sit amet cursus. Eget gravida cum sociis natoque
+          penatibus. Sed risus pretium quam vulputate dignissim suspendisse.
+        </p>
+
+        <p>
+          <strong>Dignissim et id ornare:</strong> Aenean sed adipiscing diam donec adipiscing tristique risus. Morbi
+          non arcu risus quis varius. Amet volutpat consequat mauris nunc congue nisi vitae. Maecenas pharetra convallis
+          posuere morbi leo urna. Tellus pellentesque eu tincidunt tortor. Sed tempus urna et pharetra pharetra massa.
+        </p>
+
+        <p>
+          Ultrices gravida dictum fusce ut placerat orci. Ut aliquam purus sit amet luctus venenatis lectus. Commodo
+          ullamcorper a lacus vestibulum sed arcu non odio. Diam vulputate ut pharetra sit amet aliquam id diam.
+        </p>
+
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <h1>Nec nam aliquam</h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <app-lazy-enlargeable-media class="float-right" id="unsplash/kira-laktionov-mrMUeF2bEYk-unsplash.jpg" width="300">
+        </app-lazy-enlargeable-media>
+
+        <p><strong>Abstract:</strong> Phasellus faucibus scelerisque eleifend donec pretium.</p>
+
+        <p>
+          Diam volutpat commodo sed egestas egestas fringilla. Dignissim cras tincidunt lobortis feugiat. In
+          pellentesque massa placerat duis ultricies lacus sed turpis. Lectus vestibulum mattis ullamcorper velit sed
+          ullamcorper morbi tincidunt. Non diam phasellus vestibulum lorem sed risus ultricies.
+        </p>
+
+        <p>
+          <strong>Massa ultricies:</strong> Facilisis mauris sit amet massa vitae tortor. Etiam sit amet nisl purus
+          in. Pharetra diam sit amet nisl. Blandit aliquam etiam erat velit scelerisque in dictum non consectetur. Amet
+          commodo nulla facilisi nullam vehicula.
+        </p>
+
+
+        <p>
+          <strong>Ac orci phasellus:</strong> Aliquet porttitor lacus luctus accumsan tortor posuere. Dapibus ultrices
+          in iaculis nunc. Vitae justo eget magna fermentum iaculis. Purus sit amet luctus venenatis. Id nibh tortor id
+          aliquet lectus proin nibh nisl condimentum. Faucibus vitae aliquet nec ullamcorper sit.
+        </p>
+
+        <p>
+          <strong>Tortor pretium viverra:</strong> Quam adipiscing vitae proin sagittis nisl rhoncus mattis. In ornare
+          quam viverra orci sagittis eu volutpat. Sed viverra tellus in hac habitasse platea dictumst. Sapien eget mi
+          proin sed.
+        </p>
+
+        <p>
+          <strong>Donec massa sapien faucibus et:</strong> Risus pretium quam vulputate dignissim suspendisse in. Sapien
+          eget mi proin sed libero enim sed. Sed id semper risus in hendrerit. Fringilla urna porttitor rhoncus dolor
+          purus. Id volutpat lacus laoreet non curabitur. Ac placerat vestibulum lectus mauris ultrices eros in.
+          Parturient montes nascetur ridiculus mus mauris vitae ultricies leo integer. Ut placerat orci nulla
+          pellentesque dignissim enim.
+        </p>
+
+        <p>
+          <strong>Ut pharetra sit:</strong> Varius morbi enim nunc faucibus a pellentesque. Bibendum at varius vel
+          pharetra vel turpis. Auctor eu augue ut lectus arcu bibendum at. Ornare suspendisse sed nisi lacus sed viverra
+          tellus in. Sed libero enim sed faucibus turpis in eu. Senectus et netus et malesuada fames ac turpis egestas
+          sed.
+        </p>
+
+        <p>
+          Neque volutpat ac tincidunt vitae semper. At risus viverra adipiscing at in. Massa tincidunt nunc pulvinar
+          sapien et ligula. Ut pharetra sit amet aliquam id diam. Porta nibh venenatis cras sed felis. In egestas erat
+          imperdiet sed euismod.
+        </p>
+
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <app-scrollable-zoomable-lazy-multi-media-gallery class="float-left">
+        <media-element id="unsplash/kiko-camaclang-lv8unel9SCI-unsplash.jpg"></media-element>
+        <media-element id="unsplash/mario-scheibl-5jPpYdBtfD4-unsplash.jpg"></media-element>
+        <media-element id="unsplash/marek-szturc-IfZVE7HsXp8-unsplash.jpg"></media-element>
+      </app-scrollable-zoomable-lazy-multi-media-gallery>
+    </ion-item>
+
+    <ion-item>
+      <h1>Dignissim / Nunc</h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+
+        <app-lazy-enlargeable-media class="float-left" height="700" id="mixkit/mixkit-highway-and-bus-station-in-a-sunny-desert-from-above-51794-medium.mp4">
+        </app-lazy-enlargeable-media>
+
+        <p>
+          <strong>Abstract:</strong> Suspendisse faucibus interdum posuere lorem ipsum dolor. Etiam erat velit
+          scelerisque in dictum non consectetur.
+        </p>
+
+        <p>
+          Id aliquet lectus proin nibh nisl condimentum id venenatis a. Nibh ipsum consequat nisl vel pretium lectus
+          quam id leo. Praesent semper feugiat nibh sed pulvinar proin gravida hendrerit. Neque convallis a cras semper
+          auctor:
+        </p>
+
+        <p>
+          <strong>Sed faucibus turpis:</strong> Egestas dui id ornare arcu odio ut. Pellentesque massa placerat duis
+          ultricies lacus sed turpis tincidunt. Donec ultrices tincidunt arcu non sodales neque sodales ut etiam.
+          Rhoncus dolor purus non enim praesent elementum facilisis leo. Ut ornare lectus sit amet est. Aliquet enim
+          tortor at auctor. Lorem sed risus ultricies tristique nulla aliquet enim. Aliquet porttitor lacus luctus
+          accumsan tortor posuere ac ut consequat. Augue neque gravida in fermentum et sollicitudin ac.
+        </p>
+
+        <p>
+          <strong> Condimentum id venenatis: </strong> Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis
+          gravida. Vel eros donec ac odio tempor orci dapibus. Congue quisque egestas diam in arcu cursus euismod quis.
+          Venenatis a condimentum vitae sapien pellentesque habitant. Venenatis urna cursus eget nunc. Varius vel
+          pharetra vel turpis nunc eget lorem.
+        </p>
+
+        <p>
+          <strong>Nunc sed id semper:</strong> Bibendum at varius vel pharetra vel turpis. Libero volutpat sed cras
+          ornare arcu dui vivamus arcu. Nam aliquam sem et tortor consequat id porta nibh venenatis. Arcu vitae
+          elementum curabitur vitae nunc. Ut tellus elementum sagittis vitae et leo duis ut diam. Purus in massa tempor
+          nec feugiat nisl. Aliquet enim tortor at auctor urna nunc id cursus.
+        </p>
+
+        <p>
+          <strong>Enim ut sem viverra:</strong> Id semper risus in hendrerit gravida rutrum quisque non tellus. Egestas
+          fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Gravida arcu ac tortor dignissim
+          convallis aenean et tortor. Integer enim neque volutpat ac. Id donec ultrices tincidunt arcu non sodales neque
+          sodales ut.
+        </p>
+
+        <p>
+          <strong>Felis imperdiet proin fermentum:</strong> Non quam lacus suspendisse faucibus interdum posuere lorem
+          ipsum dolor. Bibendum at varius vel pharetra. Tristique magna sit amet purus gravida quis blandit turpis
+          cursus. Habitant morbi tristique senectus et netus et malesuada fames ac. Varius vel pharetra vel turpis nunc
+          eget lorem dolor. Eu turpis egestas pretium aenean pharetra magna ac.
+        </p>
+
+        <p>
+          <strong>Nibh cras pulvinar:</strong> Vitae nunc sed velit dignissim sodales ut eu sem integer. Duis at
+          consectetur lorem donec. Platea dictumst quisque sagittis purus. In fermentum posuere urna nec tincidunt
+          praesent semper feugiat nibh. Elit pellentesque habitant morbi tristique senectus et. A scelerisque purus
+          semper eget duis. Eu sem integer vitae justo eget magna fermentum iaculis.
+        </p>
+
+        <p>
+          <strong>Purus ut faucibus pulvinar elementum:</strong> Diam in arcu cursus euismod quis viverra nibh. Odio eu
+          feugiat pretium nibh ipsum consequat nisl. Sed blandit libero volutpat sed cras ornare. Elementum eu facilisis
+          sed odio morbi quis commodo odio aenean. Lacus suspendisse faucibus interdum posuere lorem.
+        </p>
+
+        <p>
+          <strong>Mauris pellentesque pulvinar:</strong> Velit sed ullamcorper morbi tincidunt ornare massa. Libero id
+          faucibus nisl tincidunt eget nullam non nisi. Convallis convallis tellus id interdum velit laoreet id donec.
+          Euismod in pellentesque massa placerat duis ultricies lacus. Lorem ipsum dolor sit amet consectetur.
+        </p>
+
+        <p>
+          <strong>Suscipit adipiscing bibendum:</strong> Adipiscing diam donec adipiscing tristique risus nec feugiat in
+          fermentum. Amet volutpat consequat mauris nunc congue. Pulvinar etiam non quam lacus suspendisse.
+        </p>
+
+        <p>
+          Mattis molestie a iaculis at. Mauris in aliquam sem fringilla ut morbi. Libero id faucibus nisl tincidunt eget
+          nullam non. Lorem donec massa sapien faucibus et. Sit amet luctus venenatis lectus magna fringilla urna
+          porttitor. Non consectetur a erat nam at lectus urna duis.
+        </p>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <h2><strong>Placerat orci nulla</strong></h2>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <app-lazy-enlargeable-media height="650" class="float-left" id="unsplash/paris-bilal-Qna3C7BTrnA-unsplash.jpg">
+        </app-lazy-enlargeable-media>
+
+        <p>
+          <strong>Vitae congue mauris rhoncus: Aenean vel elit scelerisque mauris,</strong>
+        </p>
+
+        <p>
+          uam elementum pulvinar etiam non. Ac ut consequat semper viverra nam. Lacus laoreet non curabitur gravida arcu
+          ac tortor. Vestibulum sed arcu non odio euismod lacinia. Tincidunt vitae semper quis lectus. Vitae sapien
+          pellentesque habitant morbi tristique senectus et. Arcu vitae elementum curabitur vitae nunc sed velit:
+        </p>
+
+        <p>
+          <strong>In hac habitasse platea dictumst: </strong> Faucibus pulvinar elementum integer enim neque volutpat
+          ac. Aenean sed adipiscing diam donec adipiscing tristique. Eu consequat ac felis donec et odio pellentesque
+          diam volutpat. Ut sem viverra aliquet eget. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus.
+        </p>
+
+        <p>
+          <strong>Pulvinar etiam non: </strong> Vulputate odio ut enim blandit. Id nibh tortor id aliquet lectus proin
+          nibh nisl. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Amet aliquam id diam
+          maecenas ultricies mi eget. Erat pellentesque adipiscing commodo elit. Quisque non tellus orci ac auctor augue
+          mauris augue neque. Felis eget nunc lobortis mattis aliquam faucibus. Curabitur vitae nunc sed velit
+          dignissim. Euismod nisi porta lorem mollis aliquam ut porttitor leo a.
+        </p>
+
+        <p>
+          <strong>Amet tellus cras adipiscing enim:</strong> Cursus in hac habitasse platea dictumst quisque sagittis.
+          Bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim. Risus sed vulputate odio ut enim
+          blandit volutpat maecenas. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit. Nibh praesent
+          tristique magna sit.
+        </p>
+
+        <p>
+          <strong>Sit amet nisl suscipit:</strong> Bibendum est ultricies integer quis auctor elit sed vulputate. Et
+          ligula ullamcorper malesuada proin libero. In vitae turpis massa sed elementum tempus. Rutrum quisque non
+          tellus orci ac auctor augue. Feugiat pretium nibh ipsum consequat nisl vel. Viverra vitae congue eu consequat
+          ac felis donec et. At volutpat diam ut venenatis tellus in metus vulputate.
+        </p>
+
+        <p>
+          <strong>Sit amet risus nullam eget:</strong> Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
+          Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Turpis cursus in hac habitasse
+          platea. Ut lectus arcu bibendum at varius vel pharetra vel. Nunc pulvinar sapien et ligula ullamcorper
+          malesuada.
+        </p>
+
+        <p>
+          <strong>Arcu dictum varius duis: </strong> Elementum tempus egestas sed sed risus. Mauris in aliquam sem
+          fringilla ut morbi tincidunt augue interdum. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum
+          est. Nunc non blandit massa enim nec dui nunc. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper.
+        </p>
+
+        <p>
+          <strong>Magna etiam tempor: </strong> Purus gravida quis blandit turpis cursus in hac. Odio aenean sed
+          adipiscing diam donec adipiscing tristique risus. Id diam maecenas ultricies mi eget mauris pharetra. Volutpat
+          consequat mauris nunc congue nisi. Dolor magna eget est lorem ipsum dolor sit amet. Fermentum et sollicitudin
+          ac orci phasellus egestas tellus rutrum.
+        </p>
+
+        <p>
+          <strong>Pulvinar pellentesque habitant: </strong> Urna et pharetra pharetra massa massa ultricies mi quis
+          hendrerit. Posuere morbi leo urna molestie at elementum eu. Aliquet nibh praesent tristique magna. Nec feugiat
+          nisl pretium fusce id. Purus in massa tempor nec feugiat nisl pretium. Ullamcorper eget nulla facilisi etiam
+          dignissim diam. Vitae nunc sed velit dignissim sodales ut. Turpis egestas integer eget aliquet nibh praesent
+          tristique. Diam in arcu cursus euismod quis viverra nibh cras. Pulvinar elementum integer enim neque volutpat
+          ac tincidunt vitae.
+        </p>
+
+        <p>
+          Venenatis cras sed felis eget velit aliquet sagittis. Ut venenatis tellus in metus vulputate eu. Mauris in
+          aliquam sem fringilla ut. Vulputate enim nulla aliquet porttitor lacus. A pellentesque sit amet porttitor eget
+          dolor morbi non arcu.
+        </p>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <h2><strong>Mauris in aliquam sem fringilla ut morbi:</strong></h2>
+    </ion-item>
+
+    <ion-item>
+      <div>
+
+        <p>
+          <strong>Vel turpis nunc: Eget Lorem Dolor</strong>
+        </p>
+
+        <p>
+          Odio morbi quis commodo odio aenean sed adipiscing. Imperdiet sed euismod nisi porta lorem mollis. Arcu cursus
+          vitae congue mauris rhoncus aenean. Elementum tempus egestas sed sed risus pretium quam. Massa sed elementum
+          tempus egestas. Nisi vitae suscipit tellus mauris. Nec feugiat in fermentum posuere urna. In nulla posuere
+          sollicitudin aliquam ultrices sagittis orci a. Habitant morbi tristique senectus et netus et. Mi bibendum
+          neque egestas congue quisque egestas diam:
+        </p>
+
+        <p>
+          <strong>Sit amet cursus sit amet dictum:</strong> Id diam vel quam elementum. Congue mauris rhoncus aenean vel
+          elit. Fames ac turpis egestas sed. Nisi lacus sed viverra tellus in hac. Sagittis orci a scelerisque purus.
+          Ultricies lacus sed turpis tincidunt id aliquet. Viverra justo nec ultrices dui sapien. Platea dictumst
+          vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Sit amet consectetur adipiscing elit ut
+          aliquam. Enim ut tellus elementum sagittis vitae et leo duis. Cursus eget nunc scelerisque viverra mauris.
+        </p>
+
+        <p>
+          <strong>Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a:</strong> Vel orci porta non pulvinar
+          neque laoreet. Amet nisl suscipit adipiscing bibendum est ultricies. Lectus sit amet est placerat in egestas
+          erat. Feugiat in fermentum posuere urna nec tincidunt praesent semper. Ultricies mi eget mauris pharetra et
+          ultrices neque. Suspendisse potenti nullam ac tortor vitae purus. Tellus at urna condimentum mattis
+          pellentesque id.
+        </p>
+
+        <p>
+          <strong>Magna lectus mauris ultrices eros:</strong> Porttitor rhoncus dolor purus non enim. Sed augue lacus
+          viverra vitae congue eu consequat ac felis. Est sit amet facilisis magna etiam tempor orci eu lobortis.
+          Aliquam ultrices sagittis orci a scelerisque purus semper. Cursus risus at ultrices mi tempus imperdiet nulla
+          malesuada pellentesque. Nunc sed id semper risus in hendrerit gravida rutrum.
+        </p>
+
+        <p>
+          <strong>Nibh nisl condimentum:</strong> Volutpat blandit aliquam etiam erat velit scelerisque in dictum.
+          Vestibulum lectus mauris ultrices eros in cursus turpis. Nunc sed id semper risus. Elementum facilisis leo vel
+          fringilla est. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Mattis enim ut tellus
+          elementum sagittis vitae et leo duis. Morbi tempus iaculis urna id volutpat lacus laoreet non curabitur.
+          Mauris cursus mattis molestie a iaculis at.
+        </p>
+
+        <p>
+          <strong>Purus non enim praesent:</strong> Nunc scelerisque viverra mauris in. Et magnis dis parturient montes
+          nascetur ridiculus mus mauris. Diam ut venenatis tellus in metus vulputate eu. Laoreet sit amet cursus sit
+          amet dictum sit amet justo. Aliquet enim tortor at auctor urna nunc id cursus. Pulvinar elementum integer enim
+          neque.
+        </p>
+
+        <p>
+          Duis ultricies lacus sed turpis tincidunt id. Blandit turpis cursus in hac habitasse platea dictumst. Nunc sed
+          velit dignissim sodales ut eu sem integer. Urna neque viverra justo nec. Pharetra magna ac placerat vestibulum
+          lectus mauris ultrices eros. Vitae semper quis lectus nulla at volutpat. Sem nulla pharetra diam sit amet nisl
+          suscipit adipiscing bibendum. Condimentum vitae sapien pellentesque habitant.
+        </p>
+      </div>
+
+    </ion-item>
+
+    <ion-item>
+      <app-scrollable-zoomable-lazy-multi-media-gallery>
+        <media-element id="unsplash/aleksandr-artiushenko-zrmleUlLdv0-unsplash.jpg"></media-element>
+        <media-element id="unsplash/jerry-kavan-AhMoWv0fQzc-unsplash.jpg"></media-element>
+        <media-element id="unsplash/josh-hild-eG0lv29oaq4-unsplash.jpg"></media-element>
+        <media-element id="unsplash/kal-visuals--Kom60lezrU-unsplash.jpg"></media-element>
+        <media-element id="unsplash/kiko-camaclang-lv8unel9SCI-unsplash.jpg"></media-element>
+        <media-element id="unsplash/kira-laktionov-mrMUeF2bEYk-unsplash.jpg"></media-element>
+        <media-element id="unsplash/luke-miller-riV40lmd1yE-unsplash.jpg"></media-element>
+      </app-scrollable-zoomable-lazy-multi-media-gallery>
+    </ion-item>
+
+
+    <ion-item>
+      <h2><strong>Et odio pellentesque diam volutpat</strong></h2>
+    </ion-item>
+
+    <ion-item>
+      <div>
+
+        <p>
+          <strong>Amet purus gravida quis blandit turpis. Est velit egestas dui id ornare arcu odio.</strong>
+        </p>
+
+        <p>
+          Eget arcu dictum varius duis at. Nunc aliquet bibendum enim facilisis. Ornare lectus sit amet est placerat in.
+          Lacus vestibulum sed arcu non odio. Sit amet commodo nulla facilisi nullam vehicula ipsum a arcu. Aliquam sem
+          et tortor consequat id. Aliquam nulla facilisi cras fermentum odio. Maecenas ultricies mi eget mauris
+          pharetra:
+        </p>
+
+        <p>
+          <strong>Diam donec adipiscing:</strong> Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque
+          sit. Felis bibendum ut tristique et egestas quis ipsum. Malesuada fames ac turpis egestas maecenas pharetra
+          convallis. Egestas maecenas pharetra convallis posuere morbi leo urna. Sit amet justo donec enim diam
+          vulputate ut pharetra. Dolor purus non enim praesent elementum facilisis leo vel.
+        </p>
+
+        <p>
+          <strong>Bibendum at varius vel pharetra:</strong> Vitae auctor eu augue ut. Duis convallis convallis tellus id
+          interdum. Diam sit amet nisl suscipit adipiscing bibendum est. Gravida neque convallis a cras. Mauris pharetra
+          et ultrices neque ornare. Morbi tincidunt augue interdum velit euismod. Eget gravida cum sociis natoque
+          penatibus. Aliquam vestibulum morbi blandit cursus risus at. Ut pharetra sit amet aliquam. Penatibus et magnis
+          dis parturient montes nascetur. Nunc id cursus metus aliquam eleifend.
+        </p>
+
+        <p>
+          <strong>Montes nascetur ridiculus: </strong> Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Vel
+          turpis nunc eget lorem dolor sed. Massa tempor nec feugiat nisl pretium fusce id. Nam at lectus urna duis
+          convallis convallis tellus id. Mauris augue neque gravida in fermentum et sollicitudin ac. Habitant morbi
+          tristique senectus et netus et malesuada fames ac.
+        </p>
+
+        <p>
+          <strong>Mi bibendum neque: </strong> Pellentesque pulvinar pellentesque habitant morbi tristique senectus et.
+          Eu non diam phasellus vestibulum lorem sed risus ultricies. Aliquet risus feugiat in ante metus dictum at
+          tempor. Sagittis purus sit amet volutpat consequat mauris nunc congue. Porttitor rhoncus dolor purus non.
+          Praesent semper feugiat nibh sed pulvinar proin gravida. Enim facilisis gravida neque convallis a. Nec
+          ultrices dui sapien eget mi proin sed libero. Neque vitae tempus quam pellentesque nec nam.
+        </p>
+
+        <p>
+          <strong>Pharetra pharetra massa: </strong> A diam maecenas sed enim ut sem viverra. Iaculis urna id volutpat
+          lacus laoreet non curabitur gravida. At erat pellentesque adipiscing commodo elit at imperdiet dui accumsan.
+          Non enim praesent elementum facilisis leo vel fringilla est. Nisl tincidunt eget nullam non nisi est. Lectus
+          nulla at volutpat diam. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Egestas
+          sed tempus urna et.
+        </p>
+
+        <p>
+          Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Metus dictum at tempor commodo.
+          Facilisi cras fermentum odio eu. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Tortor
+          vitae purus faucibus ornare suspendisse sed nisi. Cras adipiscing enim eu turpis egestas. Nascetur ridiculus
+          mus mauris vitae ultricies leo integer malesuada.
+        </p>
+
+      </div>
+
+    </ion-item>
+
+    <ion-item>
+      <app-scrollable-zoomable-lazy-multi-media-gallery>
+        <media-element id="unsplash/luke-miller-riV40lmd1yE-unsplash.jpg"></media-element>
+        <media-element id="unsplash/kira-laktionov-mrMUeF2bEYk-unsplash.jpg"></media-element>
+        <media-element id="unsplash/kiko-camaclang-lv8unel9SCI-unsplash.jpg"></media-element>
+        <media-element id="unsplash/kal-visuals--Kom60lezrU-unsplash.jpg"></media-element>
+        <media-element id="unsplash/josh-hild-eG0lv29oaq4-unsplash.jpg"></media-element>
+        <media-element id="unsplash/jerry-kavan-AhMoWv0fQzc-unsplash.jpg"></media-element>
+        <media-element id="unsplash/aleksandr-artiushenko-zrmleUlLdv0-unsplash.jpg"></media-element>
+      </app-scrollable-zoomable-lazy-multi-media-gallery>
+    </ion-item>
+
+    <ion-item>
+      <h2><strong>Massa vitae tortor condimentum:</strong></h2>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <p>
+          <strong>Vitae tortor condimentum: </strong> Cursus risus at ultrices mi tempus imperdiet nulla malesuada.
+        </p>
+
+        <p>
+          Eget gravida cum sociis natoque. Dictumst quisque sagittis purus sit amet volutpat. Risus pretium quam
+          vulputate dignissim suspendisse in. Morbi tempus iaculis urna id. Elit pellentesque habitant morbi tristique
+          senectus et. Lacus viverra vitae congue eu consequat ac. Turpis massa tincidunt dui ut ornare lectus sit.
+          Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Feugiat vivamus at augue eget arcu. Eget
+          magna fermentum iaculis eu. Integer eget aliquet nibh praesent tristique magna.
+        </p>
+
+        <p>
+          <strong>Sit amet aliquam id diam maecenas:</strong> Suspendisse in est ante in nibh. Blandit volutpat maecenas
+          volutpat blandit aliquam etiam. Diam donec adipiscing tristique risus. Turpis cursus in hac habitasse platea
+          dictumst quisque sagittis. Fusce id velit ut tortor pretium viverra suspendisse.
+        </p>
+
+        <p>
+          <strong>Diverse Connectus: </strong> Viverra adipiscing at in tellus integer feugiat scelerisque varius
+          morbi. Dui faucibus in ornare quam viverra orci. Volutpat maecenas volutpat blandit aliquam etiam erat velit
+          scelerisque. Non curabitur gravida arcu ac tortor dignissim. Tincidunt nunc pulvinar sapien et ligula
+          ullamcorper malesuada proin. Condimentum lacinia quis vel eros donec. Maecenas accumsan lacus vel facilisis.
+          Varius sit amet mattis vulputate enim nulla aliquet porttitor.
+        </p>
+
+        <p>
+          <strong>Sed egestas egestas fringilla: </strong> Quis lectus nulla at volutpat diam ut. Lectus mauris ultrices
+          eros in cursus turpis. Egestas congue quisque egestas diam. Eu scelerisque felis imperdiet proin. Elit ut
+          aliquam purus sit amet luctus. Molestie ac feugiat sed lectus vestibulum. Accumsan tortor posuere ac ut
+          consequat semper viverra nam libero.
+        </p>
+
+        <p>
+          <strong>A diam sollicitudin: </strong> Erat nam at lectus urna. In mollis nunc sed id semper risus. Congue
+          nisi vitae suscipit tellus mauris. Urna molestie at elementum eu facilisis sed odio morbi quis. Vel quam
+          elementum pulvinar etiam non quam lacus. Lobortis elementum nibh tellus molestie nunc non blandit massa. Eget
+          magna fermentum iaculis eu non diam phasellus vestibulum.
+        </p>
+
+        <p>
+          Tempor id eu nisl nunc. Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies. Tincidunt arcu non
+          sodales neque sodales ut etiam. Ut porttitor leo a diam sollicitudin tempor. Varius sit amet mattis vulputate
+          enim nulla.
+        </p>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <app-scrollable-zoomable-lazy-multi-media-gallery class="float-left">
+        <media-element id="unsplash/stevosdisposable-WVP0v0KRMMU-unsplash.jpg"></media-element>
+        <media-element id="unsplash/taiki-ishikawa-Q9JHncNMY-0-unsplash.jpg"></media-element>
+      </app-scrollable-zoomable-lazy-multi-media-gallery>
+    </ion-item>
+
+    <ion-item>
+      <h2><strong>Turpis nunc eget lorem dolor sed:</strong></h2>
+    </ion-item>
+
+    <ion-item>
+      <div>
+
+        <app-lazy-enlargeable-media class="float-left" height="250" id="unsplash/taiki-ishikawa-TjghSgE-yVg-unsplash.jpg">
+        </app-lazy-enlargeable-media>
+
+        <p>
+          <strong>Eget velit aliquet sagittis id consectetur purus:</strong>
+        </p>
+
+        <p>
+          Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Sit amet
+          consectetur adipiscing elit duis tristique sollicitudin. Volutpat maecenas volutpat blandit aliquam etiam erat
+          velit. Dolor morbi non arcu risus quis varius quam quisque id. Tortor at auctor urna nunc id cursus metus
+          aliquam eleifend.
+        </p>
+
+        <p>
+          <strong>Facilitating Staff Engagement: </strong>Staff members are promptly notified of important customer
+          actions, minimizing delays in the process. For instance, when a customer provides missing details, staff are
+          instantly alerted, facilitating quick actions and fostering a competitive environment among insurance brokers,
+          potentially boosting daily sales.
+
+        </p>
+
+        <p>
+          <strong>Turpis massa sed elementum: </strong> Magnis dis parturient montes nascetur ridiculus mus
+          mauris vitae ultricies. Montes nascetur ridiculus mus mauris. Scelerisque felis imperdiet proin fermentum leo
+          vel. Netus et malesuada fames ac. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Leo duis ut
+          diam quam.
+        </p>
+
+        <p>
+          <strong>Senectus et netus et malesuada: </strong> Id interdum velit laoreet id donec ultrices tincidunt arcu.
+          Quam elementum pulvinar etiam non. Quis commodo odio aenean sed adipiscing diam. Etiam sit amet nisl purus in
+          mollis nunc sed. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Dictumst quisque
+          sagittis purus sit amet volutpat.
+        </p>
+
+        <p>
+          Magna fringilla urna porttitor rhoncus dolor purus non. Scelerisque felis imperdiet proin fermentum leo vel
+          orci porta.
+        </p>
+      </div>
+    </ion-item>
+
+
+    <ion-item>
+      <h2><strong>Gravida arcu ac tortor</strong></h2>
+    </ion-item>
+
+    <ion-item>
+      <div>
+
+        <p>
+          <strong>Gravida arcu ac tortor: Dignissim convallis aenean et tortor at,</strong>
+        </p>
+
+        <p>
+          Quam viverra orci sagittis eu volutpat. Condimentum mattis pellentesque id nibh. Ipsum dolor sit amet
+          consectetur adipiscing elit duis. In hac habitasse platea dictumst vestibulum rhoncus est. Feugiat pretium
+          nibh ipsum consequat.
+        </p>
+
+        <p>
+          <strong>Facilisi etiam dignissim:</strong> Consectetur purus ut faucibus pulvinar elementum integer enim neque
+          volutpat. Cras adipiscing enim eu turpis. Elementum pulvinar etiam non quam. Dictum at tempor commodo
+          ullamcorper a lacus vestibulum sed arcu. Suspendisse sed nisi lacus sed viverra tellus in. Non arcu risus quis
+          varius quam quisque id diam vel. Nibh cras pulvinar mattis nunc sed blandit. Quis lectus nulla at volutpat
+          diam ut.
+        </p>
+
+        <p>
+          <strong>Orci ac auctor augue mauris:</strong> Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac
+          ut. Malesuada fames ac turpis egestas maecenas pharetra convallis. Sit amet consectetur adipiscing elit ut
+          aliquam purus sit amet. Libero volutpat sed cras ornare arcu dui. Phasellus vestibulum lorem sed risus
+          ultricies. Sapien eget mi proin sed libero enim sed.
+        </p>
+
+        <p>
+          <strong>Sit amet porttitor eget dolor morbi: </strong> Placerat in egestas erat imperdiet sed euismod. Donec
+          ultrices tincidunt arcu non. Eget nulla facilisi etiam dignissim diam quis. Consectetur adipiscing elit ut
+          aliquam purus sit amet. Ultricies tristique nulla aliquet enim tortor at. Ut enim blandit volutpat maecenas
+          volutpat blandit aliquam etiam erat.
+        </p>
+
+        <p>
+          Faucibus nisl tincidunt eget nullam non. Aliquam ultrices sagittis orci a. Nisl pretium fusce id velit ut
+          tortor pretium viverra. Nullam non nisi est sit amet facilisis magna etiam tempor.
+        </p>
+
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <app-scrollable-zoomable-lazy-multi-media-gallery>
+        <media-element id="unsplash/marek-szturc-IfZVE7HsXp8-unsplash.jpg"></media-element>
+        <media-element id="unsplash/mario-scheibl-5jPpYdBtfD4-unsplash.jpg"></media-element>
+        <media-element id="unsplash/marek-szturc-IfZVE7HsXp8-unsplash.jpg"></media-element>
+
+      </app-scrollable-zoomable-lazy-multi-media-gallery>
+    </ion-item>
+
+    <ion-item>
+      <div>
+
+        <h2><strong>Euismod luctus:</strong></h2>
+
+        <ul>
+          <li>
+            <h3><strong>Viverra Justo (VJ) and Purus Directus:</strong></h3>
+            <p>
+              Viverra nibh cras pulvinar mattis nunc. Tellus molestie nunc non blandit. Tortor condimentum lacinia quis
+              vel eros donec ac odio. Senectus et netus et malesuada fames ac turpis.
+            </p>
+          </li>
+
+          <li>
+            <h3><strong>Sodales ut eu sem integer:</strong></h3>
+            <p>
+              Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam. Nisi lacus sed viverra tellus. Nulla
+              facilisi cras fermentum odio eu feugiat pretium nibh ipsum. Tincidunt vitae semper quis lectus. Posuere
+              lorem ipsum dolor sit. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Nisi
+              scelerisque eu ultrices vitae auctor eu augue ut. Mollis nunc sed id semper.
+            </p>
+          </li>
+
+          <li>
+            <h3><strong>Ridiculus mus mauris:</strong></h3>
+            <p>
+              Nunc consequat interdum varius sit amet mattis. Tellus elementum sagittis vitae et leo duis ut. Pretium
+              aenean pharetra magna ac. Vulputate dignissim suspendisse in est ante in nibh mauris cursus. Venenatis a
+              condimentum vitae sapien pellentesque habitant morbi tristique senectus.
+            </p>
+          </li>
+
+          <li>
+            <h3><strong>Sit amet nisl purus in mollis nunc sed id semper:</strong></h3>
+            <p>
+              Ornare massa eget egestas purus viverra. Magna sit amet purus gravida quis blandit. Odio ut sem nulla
+              pharetra diam sit. Ipsum faucibus vitae aliquet nec ullamcorper sit. Magna etiam tempor orci eu lobortis
+              elementum.
+            </p>
+          </li>
+
+          <li>
+            <h3><strong>Id donec ultrices tincidunt arcu non sodales neque sodales:</strong></h3>
+            <p>
+              Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Suspendisse
+              potenti nullam ac tortor vitae purus faucibus. Tincidunt tortor aliquam nulla facilisi. At lectus urna
+              duis convallis convallis tellus id interdum. Donec ac odio tempor orci. In metus vulputate eu scelerisque
+              felis. Suspendisse faucibus interdum posuere lorem ipsum. Curabitur vitae nunc sed velit dignissim sodales
+              ut.
+            </p>
+          </li>
+
+          <li>
+            <h3><strong>Parturient montes nascetur:</strong></h3>
+            <p>
+              Egestas purus viverra accumsan in nisl. In massa tempor nec feugiat nisl pretium fusce. Pellentesque elit
+              ullamcorper dignissim cras tincidunt lobortis feugiat. Vitae congue mauris rhoncus aenean. Turpis nunc
+              eget lorem dolor sed viverra. Turpis egestas integer eget aliquet nibh praesent tristique magna sit.
+            </p>
+          </li>
+        </ul>
+
+      </div>
+
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Team:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/teams/Dignissim" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Dignissim
+                </ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+  <page-section [linkElementToNavigation]="pagePath" id="DMSA" sideHeaderTitle="Projects"
+    sideHeaderSubtitle="Dictumst Vestibulum Rhoncus" iconName="document-lock-outline"
+    blockTitle="DMSA Maecenas sed enim" blockSubtitle="Morbienim" [rightHanded]="false"
+    backgroundId="unsplash/taiki-ishikawa-Q9JHncNMY-0-unsplash.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>semper</li>
+        <li>tincidunt</li>
+        <li>ullamcorper</li>
+        <li>mauris</li>
+        <li>pharetra</li>
+        <li>pulvinar</li>
+        <li>ullamcorper</li>
+        <li>Rhoncus</li>
+      </ul>
+    </ion-item>
+    <ion-item>
+      <h1>DMSA para lumpas</h1>
+    </ion-item>
+    <ion-item>
+      <div>
+
+        <p>
+          <strong>Abstract:</strong> DMSA secura et Maecenas sed enim.
+        </p>
+
+        <p>
+          Consectetur adipiscing elit ut aliquam purus sit amet luctus venenatis. Morbi enim nunc faucibus a
+          pellentesque. Sodales ut eu sem integer vitae. Purus in massa tempor nec feugiat.
+        </p>
+
+        <p>
+          <strong>Diam volutpat commodo: </strong>Sagittis eu volutpat odio facilisis mauris sit amet massa. Netus et
+          malesuada fames ac turpis egestas maecenas pharetra convallis. Amet nisl purus in mollis nunc. Porttitor massa
+          id neque aliquam vestibulum morbi blandit. At varius vel pharetra vel turpis nunc eget lorem dolor. Pharetra
+          convallis posuere morbi leo. Vel quam elementum pulvinar etiam. Dignissim sodales ut eu sem integer vitae
+          justo eget magna. Neque convallis a cras semper auctor neque vitae.
+        </p>
+
+        <p>
+          <strong>Consequat interdum: </strong> Massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Vitae
+          ultricies leo integer malesuada nunc vel. Sed vulputate odio ut enim blandit. Pellentesque nec nam aliquam sem
+          et tortor consequat id. Amet luctus venenatis lectus magna fringilla urna porttitor.
+        </p>
+
+        <p>
+          <strong>Nisi quis eleifend: </strong> Aliquam vestibulum morbi blandit cursus risus at ultrices. Orci eu
+          lobortis elementum nibh tellus molestie nunc non. Eu non diam phasellus vestibulum. Eleifend donec pretium
+          vulputate sapien nec sagittis. Quisque egestas diam in arcu cursus euismod quis viverra nibh. Viverra aliquet
+          eget sit amet tellus. Nunc sed velit dignissim sodales ut eu sem integer vitae.
+        </p>
+
+        <p>
+          <strong>Morbienim Assurancia: </strong> Tristique magna sit amet purus gravida quis blandit turpis cursus.
+          Bibendum at varius vel pharetra vel turpis nunc eget lorem. Ac ut consequat semper viverra nam. Cras ornare
+          arcu dui vivamus arcu felis bibendum. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
+          dignissim.
+        </p>
+
+        <p>
+          <strong>Sed viverra ipsum: </strong> Aliquam ut porttitor leo a diam sollicitudin. Odio facilisis mauris sit
+          amet massa. Malesuada fames ac turpis egestas sed tempus. Dictumst vestibulum rhoncus est pellentesque elit
+          ullamcorper. Nibh venenatis cras sed felis eget. Pellentesque habitant morbi tristique senectus. Ornare arcu
+          odio ut sem nulla pharetra diam sit. Enim eu turpis egestas pretium aenean pharetra. Sagittis id consectetur
+          purus ut faucibus pulvinar elementum integer.
+        </p>
+
+        <p>
+          Enim blandit volutpat maecenas volutpat. Tempus iaculis urna id volutpat lacus laoreet non. Integer enim neque
+          volutpat ac tincidunt vitae. Venenatis cras sed felis eget. Enim tortor at auctor urna nunc id cursus metus.
+          Eu consequat ac felis donec et odio pellentesque diam.
+        </p>
+
+        <h2><strong>Euismod luctus:</strong></h2>
+
+        <ul>
+          <li>
+            <h3><strong>Viverra Justo (VJ):</strong></h3>
+            <p>
+              Odio morbi quis commodo odio. Consequat mauris nunc congue nisi vitae suscipit tellus. Ultricies
+              tristique nulla aliquet enim tortor at auctor urna nunc. Nunc id cursus metus aliquam eleifend. Vel elit
+              scelerisque mauris pellentesque pulvinar pellentesque.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Purus Oversight:</strong></h3>
+            <p>
+              Blandit aliquam etiam erat velit scelerisque in. Tristique magna sit amet purus. Egestas fringilla
+              phasellus faucibus scelerisque eleifend. Sit amet venenatis urna cursus eget nunc. Euismod lacinia at quis
+              risus sed vulputate. Habitant morbi tristique senectus et netus et malesuada fames.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Arcu vitae: </strong></h3>
+            <p>
+              Sed adipiscing diam donec adipiscing. Elementum sagittis vitae et leo duis ut. Lectus vestibulum mattis
+              ullamcorper velit. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Aliquet
+              nibh praesent tristique magna.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Nunc mi ipsum faucibus: </strong></h3>
+            <p>
+              Purus sit amet volutpat consequat mauris nunc congue nisi vitae. Rhoncus aenean vel elit scelerisque.
+              Venenatis cras sed felis eget velit aliquet. Pretium viverra suspendisse potenti nullam ac tortor vitae
+              purus faucibus. Senectus et netus et malesuada fames ac. Mi ipsum faucibus vitae aliquet nec ullamcorper
+              sit amet risus.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Morbienim libero: </strong></h3>
+            <p>
+              Tempor orci dapibus ultrices in iaculis nunc. Lectus quam id leo in vitae turpis massa sed elementum.
+              Condimentum mattis pellentesque id nibh tortor id aliquet lectus. Etiam non quam lacus suspendisse
+              faucibus interdum posuere lorem. Vitae sapien pellentesque habitant morbi tristique senectus et.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Morbi quis commodo: </strong></h3>
+            <p>
+              Amet dictum sit amet justo donec enim diam vulputate ut. Viverra accumsan in nisl nisi scelerisque eu
+              ultrices vitae. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Malesuada aliquam:</strong></h3>
+            <p>Scope Definition: Defined the project scope in accordance with DMSA regulations and the specific needs of
+              private practice GPs.</p>
+          </li>
+          <li>
+            <h3><strong>Sem nulla pharetra: </strong></h3>
+            <p>
+              Ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Nec feugiat nisl pretium
+              fusce. Ut diam quam nulla porttitor massa id neque aliquam vestibulum. Augue neque gravida in fermentum et
+              sollicitudin ac.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Suspendisse ultrices gravida:</strong></h3>
+            <p>
+              Adipiscing diam donec adipiscing tristique risus nec feugiat in. Enim facilisis gravida neque convallis.
+              Dolor sit amet consectetur adipiscing elit duis. Feugiat vivamus at augue eget arcu dictum varius duis at.
+              Tellus orci ac auctor augue.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Felis imperdiet proin fermentum:</strong></h3>
+            <p>
+              Cras semper auctor neque vitae tempus. Aliquet porttitor lacus luctus accumsan tortor. Interdum varius sit
+              amet mattis. Lectus proin nibh nisl condimentum id venenatis a. Diam maecenas ultricies mi eget mauris
+              pharetra et.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Ipsum suspendisse:</strong></h3>
+            <p>
+              Amet cursus sit amet dictum. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. Magna
+              eget est lorem ipsum dolor sit amet consectetur. Dolor sit amet consectetur adipiscing elit duis tristique
+              sollicitudin nibh. Amet nisl purus in mollis nunc sed id semper risus. Pretium nibh ipsum consequat nisl
+              vel. Scelerisque purus semper eget duis at.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Lorem donec massa: </strong></h3>
+            <p>
+              Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Lorem donec massa sapien faucibus
+              et. Blandit libero volutpat sed cras ornare. Duis ultricies lacus sed turpis tincidunt id aliquet risus
+              feugiat. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque.
+            </p>
+          </li>
+        </ul>
+
+        <p>
+          Curabitur vitae nunc sed velit dignissim sodales ut eu. Pretium viverra suspendisse potenti nullam ac tortor
+          vitae. Blandit turpis cursus in hac habitasse. Adipiscing bibendum est ultricies integer quis.
+        </p>
+
+      </div>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Team:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/teams/Ullamcorper" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Ullamcorper
+                </ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+  <page-section [linkElementToNavigation]="pagePath" id="GDM" sideHeaderTitle="Projects"
+    sideHeaderSubtitle="Dictumst Vestibulum Rhoncus" iconName="server-outline" blockTitle="Et pharetra pharetra"
+    blockSubtitle="Aliquet enim tortor" [rightHanded]="true" [cover]="true"
+    backgroundId="unsplash/luke-miller-riV40lmd1yE-unsplash.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>malesuada</li>
+        <li>cursus</li>
+        <li>nunc</li>
+        <li>consectetur</li>
+        <li>sagittis</li>
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <h1>Rhoncus - GDM</h1>
+    </ion-item>
+    <ion-item>
+      <div>
+
+        <p>
+          <strong>Abstract:</strong> Amet nisl purus in mollis nunc sed id semper risus.
+        </p>
+
+        <p>
+          Scelerisque purus semper eget duis at. Lorem donec massa sapien faucibus et. Magnis dis parturient montes
+          nascetur ridiculus mus mauris vitae ultricies. Orci porta non pulvinar neque laoreet suspendisse interdum
+          consectetur. Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.
+        </p>
+
+        <p>
+          <strong>Massa tincidunt nunc pulvinar: </strong> Lorem donec massa sapien faucibus et. Blandit libero volutpat
+          sed cras ornare. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Imperdiet nulla malesuada
+          pellentesque elit eget gravida cum sociis natoque.
+        </p>
+
+        <p>
+          <strong>Curabitur vitae nunc: </strong> Pellentesque id nibh tortor id aliquet lectus. Ut ornare lectus sit
+          amet est placerat. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Pharetra magna ac placerat
+          vestibulum lectus mauris. Augue interdum velit euismod in pellentesque.
+        </p>
+
+        <p>
+          <strong>Pretium viverra: </strong> Euismod lacinia at quis risus sed vulputate odio. Adipiscing vitae proin
+          sagittis nisl rhoncus mattis rhoncus urna. Odio ut sem nulla pharetra diam sit amet nisl. Felis eget nunc
+          lobortis mattis aliquam faucibus purus in. Volutpat odio facilisis mauris sit amet massa. Ullamcorper
+          dignissim cras tincidunt lobortis feugiat vivamus at augue.
+        </p>
+
+        <p>
+          <strong>Arcu dictum varius duis at consectetur: </strong> Nisi quis eleifend quam adipiscing vitae.
+          Pellentesque id nibh tortor id aliquet lectus. Enim eu turpis egestas pretium aenean pharetra magna ac
+          placerat. Feugiat nisl pretium fusce id velit ut. Amet consectetur adipiscing elit duis tristique sollicitudin
+          nibh sit. Orci a scelerisque purus semper eget duis. Tellus cras adipiscing enim eu turpis egestas pretium.
+        </p>
+
+        <p>
+          <strong>In fermentum posuere urna nec tincidunt praesent: </strong> Tempus egestas sed sed risus pretium quam.
+          Orci ac auctor augue mauris augue. Purus non enim praesent elementum. Eget mi proin sed libero enim sed
+          faucibus turpis. Suspendisse in est ante in. Augue mauris augue neque gravida. Nibh mauris cursus mattis
+          molestie a iaculis at erat pellentesque. Ultricies tristique nulla aliquet enim tortor. Diam volutpat commodo
+          sed egestas.
+        </p>
+
+        <p>
+          Fames ac turpis egestas integer eget aliquet nibh. Commodo viverra maecenas accumsan lacus vel. Turpis egestas
+          maecenas pharetra convallis posuere morbi leo. Amet consectetur adipiscing elit ut aliquam purus sit. Sit amet
+          nulla facilisi morbi tempus iaculis urna. Hac habitasse platea dictumst quisque sagittis purus sit. Arcu
+          cursus euismod quis viverra nibh. Fusce ut placerat orci nulla pellentesque dignissim enim sit. Tortor vitae
+          purus faucibus ornare suspendisse sed.
+        </p>
+
+        <h2><strong>Euismod luctus:</strong></h2>
+
+        <ul>
+          <li>
+            <h3><strong>Viverra Justo (VJ):</strong></h3>
+            <p>
+              Nibh praesent tristique magna sit amet purus gravida quis blandit. Vitae nunc sed velit dignissim sodales
+              ut eu sem.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Congue nisi:</strong></h3>
+            <p>
+              Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Iaculis at erat pellentesque adipiscing
+              commodo elit. Donec ultrices tincidunt arcu non.
+            </p>
+          </li>
+          <li>
+            <h3><strong>A diam maecenas sed enim:</strong></h3>
+            <p>
+              Cursus eget nunc scelerisque viverra mauris in aliquam sem. Nunc scelerisque viverra mauris in aliquam.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Morbienim:</strong></h3>
+            <p>
+              Facilisi cras fermentum odio eu feugiat. Tortor posuere ac ut consequat semper. Cursus in hac habitasse
+              platea dictumst quisque. Sed egestas egestas fringilla phasellus faucibus scelerisque. Enim blandit
+              volutpat maecenas volutpat blandit. Ultrices gravida dictum fusce ut placerat orci nulla.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Sed ullamcorper morbi:</strong></h3>
+            <p>
+              Faucibus pulvinar elementum integer enim neque. Phasellus egestas tellus rutrum tellus. Dolor purus non
+              enim praesent elementum. Id consectetur purus ut faucibus pulvinar elementum integer. Tortor aliquam nulla
+              facilisi cras fermentum.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Netus et malesuada fames ac:</strong></h3>
+            <p>
+              Erat imperdiet sed euismod nisi porta lorem mollis aliquam ut. Est placerat in egestas erat imperdiet sed.
+              Felis bibendum ut tristique et egestas. Faucibus in ornare quam viverra orci sagittis. Morbi tincidunt
+              ornare massa eget egestas purus viverra accumsan. Ut tortor pretium viverra suspendisse potenti nullam ac
+              tortor. Ornare suspendisse sed nisi lacus. Et netus et malesuada fames.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Varius duis at consectetur lorem:</strong></h3>
+            <p>
+              Eros donec ac odio tempor orci dapibus ultrices in iaculis. Nisl condimentum id venenatis a condimentum
+              vitae sapien. Consequat interdum varius sit amet mattis vulputate. Et ligula ullamcorper malesuada proin
+              libero. Non arcu risus quis varius quam quisque id diam. Magnis dis parturient montes nascetur. Pretium
+              nibh ipsum consequat nisl vel pretium.
+            </p>
+          </li>
+        </ul>
+
+        <p>
+          Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Proin sagittis nisl rhoncus mattis
+          rhoncus.
+        </p>
+
+      </div>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Team:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/teams/RHONCUS" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Rhoncus
+                </ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+  <page-section [linkElementToNavigation]="pagePath" id="AML" sideHeaderTitle="Projects"
+    sideHeaderSubtitle="Dictumst Vestibulum Rhoncus" iconName="card-outline" blockTitle="Suspendisse"
+    blockSubtitle="Morbienim" [rightHanded]="false" [cover]="false"
+    backgroundId="unsplash/taiki-ishikawa-TjghSgE-yVg-unsplash.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>lorem</li>
+        <li>Yamplas</li>
+        <li>Facilisi</li>
+        <li>pellentesque</li>
+        <li>fermentum</li>
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <h1>Rhoncus - AML</h1>
+    </ion-item>
+    <ion-item>
+      <div>
+        <p>
+          <strong>Abstract:</strong> AML porttitor: Massa id neque aliquam vestibulum morbi blandit cursus.
+        </p>
+
+        <p>
+          Id diam maecenas ultricies mi eget mauris pharetra et ultrices. Cras sed felis eget velit. Adipiscing
+          tristique risus nec feugiat in. Enim ut tellus elementum sagittis vitae et. Nunc mattis enim ut tellus. Mi
+          eget mauris pharetra et ultrices neque. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin.
+          Egestas dui id ornare arcu odio ut. Rhoncus urna neque viverra justo.
+        </p>
+
+        <p>
+          <strong>Dictum non consectetur a erat nam at lectus urna duis: </strong> Quis vel eros donec ac odio. Iaculis
+          urna id volutpat lacus laoreet non curabitur gravida. Eget aliquet nibh praesent tristique magna sit amet
+          purus. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus in. Vitae tortor condimentum lacinia quis
+          vel eros donec ac. Ridiculus mus mauris vitae ultricies leo integer malesuada.
+        </p>
+
+        <p>
+          <strong>Sed nisi lacus sed viverra: </strong> Sit amet purus gravida quis blandit turpis cursus in hac.
+          Viverra justo nec ultrices dui sapien eget mi proin sed. Id interdum velit laoreet id donec. Placerat in
+          egestas erat imperdiet sed. Rhoncus dolor purus non enim. Montes nascetur ridiculus mus mauris vitae
+          ultricies. Cum sociis natoque penatibus et magnis dis parturient.
+        </p>
+
+        <p>
+          <strong>Ridiculus mus mauris vitae: </strong> Sit amet purus gravida quis blandit turpis cursus in hac.
+          Viverra justo nec ultrices dui sapien eget mi proin sed. Id interdum velit laoreet id donec. Placerat in
+          egestas erat imperdiet sed. Rhoncus dolor purus non enim. Montes nascetur ridiculus mus mauris vitae
+          ultricies. Cum sociis natoque penatibus et magnis dis parturient. Nibh praesent tristique magna sit amet purus
+          gravida quis. Aliquam vestibulum morbi blandit cursus. Quisque non tellus orci ac auctor augue.
+        </p>
+
+        <p>
+          <strong>Morbienim-Nisl tincidunt eget nullam non nisi est: </strong> Nulla malesuada pellentesque elit eget
+          gravida. Pulvinar proin gravida hendrerit lectus. Urna duis convallis convallis tellus id interdum velit
+          laoreet id. Volutpat sed cras ornare arcu. At in tellus integer feugiat scelerisque. Mi proin sed libero enim
+          sed faucibus turpis. Nulla aliquet enim tortor at auctor. Vitae purus faucibus ornare suspendisse sed nisi.
+          Quis vel eros donec ac odio tempor. Consequat id porta nibh venenatis cras. Neque egestas congue quisque
+          egestas diam in arcu cursus euismod.
+        </p>
+
+        <p>
+          <strong>Quam id leo in vitae: </strong> Facilisis sed odio morbi quis commodo odio. Praesent semper feugiat
+          nibh sed pulvinar proin. Tristique nulla aliquet enim tortor at auctor. Congue eu consequat ac felis donec et
+          odio pellentesque diam.
+        </p>
+
+        <p>
+          Congue eu consequat ac felis. A diam maecenas sed enim ut sem viverra. Faucibus interdum posuere lorem ipsum.
+          Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Molestie ac feugiat sed lectus vestibulum.
+          Amet massa vitae tortor condimentum lacinia. Aliquet lectus proin nibh nisl.
+        </p>
+
+        <h2><strong>Euismod luctus:</strong></h2>
+
+        <ul>
+          <li>
+            <h3><strong>Viverra Justo (VJ):</strong></h3>
+            <p>Dictum at tempor commodo ullamcorper a lacus. Nam aliquam sem et tortor consequat.</p>
+          </li>
+          <li>
+            <h3><strong>Gravida arcu ac tortor:</strong></h3>
+            <p>
+              Aliquet enim tortor at auctor urna nunc id cursus metus. Odio aenean sed adipiscing diam donec. Volutpat
+              consequat mauris nunc congue nisi.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Habitasse platea:</strong></h3>
+            <p>
+              Sit amet volutpat consequat mauris nunc congue. Mauris in aliquam sem fringilla ut morbi. Felis eget nunc
+              lobortis mattis aliquam faucibus. Id diam maecenas ultricies mi eget mauris pharetra et.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Nulla aliquet enim:</strong></h3>
+            <p>
+              Urna porttitor rhoncus dolor purus non enim praesent elementum. Risus pretium quam vulputate dignissim
+              suspendisse in est ante.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Morbienim:</strong></h3>
+            <p>
+              Tellus integer feugiat scelerisque varius morbi enim nunc. Non tellus orci ac auctor augue mauris augue.
+              Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Non enim praesent elementum facilisis.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Suspendisse:</strong></h3>
+            <p>
+              Eu volutpat odio facilisis mauris sit amet massa vitae. Sapien eget mi proin sed libero enim sed faucibus
+              turpis. Eget velit aliquet sagittis id consectetur purus. Pharetra massa massa ultricies mi quis
+              hendrerit. Sit amet volutpat consequat mauris nunc.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Ornare massa eget egestas:</strong></h3>
+            <p>
+              Elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Cursus turpis massa tincidunt dui ut
+              ornare lectus sit amet. Turpis massa sed elementum tempus. Egestas maecenas pharetra convallis posuere
+              morbi leo urna molestie. Dolor sit amet consectetur adipiscing. Risus quis varius quam quisque id diam vel
+              quam elementum. Eu mi bibendum neque egestas.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Amet luctus venenatis: </strong></h3>
+            <p>
+              Molestie nunc non blandit massa enim. Ultricies lacus sed turpis tincidunt id. Consectetur libero id
+              faucibus nisl tincidunt eget. Nam aliquam sem et tortor consequat id porta nibh.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Adipiscing commodo:</strong></h3>
+            <p>
+              Turpis nunc eget lorem dolor. Lorem ipsum dolor sit amet. Dictumst vestibulum rhoncus est pellentesque
+              elit ullamcorper dignissim cras. Scelerisque eleifend donec pretium vulputate sapien nec sagittis. Commodo
+              elit at imperdiet dui accumsan sit amet nulla facilisi. Amet consectetur adipiscing elit pellentesque
+              habitant. Tortor condimentum lacinia quis vel eros donec ac odio tempor. At in tellus integer feugiat
+              scelerisque varius.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Commodo nulla facilisi:</strong></h3>
+            <p>
+              Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Sed adipiscing diam donec adipiscing
+              tristique risus nec feugiat in. Non nisi est sit amet facilisis magna etiam. Dictumst vestibulum rhoncus
+              est pellentesque elit ullamcorper. Interdum varius sit amet mattis vulputate enim nulla aliquet porttitor.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Id porta nibh venenatis:</strong></h3>
+            <p>
+              Pharetra pharetra massa massa ultricies mi quis. Mauris cursus mattis molestie a iaculis. Lectus magna
+              fringilla urna porttitor rhoncus. Eu augue ut lectus arcu bibendum at. Erat pellentesque adipiscing
+              commodo elit at imperdiet. Cras tincidunt lobortis feugiat vivamus at. Vulputate mi sit amet mauris. Nunc
+              lobortis mattis aliquam faucibus purus in massa. Feugiat nisl pretium fusce id. Viverra aliquet eget sit
+              amet tellus cras adipiscing.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Faucibus pulvinar elementum integer: </strong></h3>
+            <p>
+              Pellentesque sit amet porttitor eget dolor. Integer eget aliquet nibh praesent tristique magna sit amet
+              purus. Integer enim neque volutpat ac tincidunt vitae. At consectetur lorem donec massa sapien faucibus et
+              molestie ac. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Bibendum est ultricies
+              integer quis auctor elit sed vulputate. Enim lobortis scelerisque fermentum dui faucibus in ornare quam.
+              Vulputate mi sit amet mauris commodo quis imperdiet.
+            </p>
+          </li>
+        </ul>
+
+        <p>
+          Faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Faucibus ornare suspendisse sed nisi lacus
+          sed viverra tellus in. Sed enim ut sem viverra aliquet. Quis imperdiet massa tincidunt nunc pulvinar. Eget
+          felis eget nunc lobortis mattis aliquam faucibus purus.
+        </p>
+      </div>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Team:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/teams/RHONCUS" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Rhoncus
+                </ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+  <page-section [linkElementToNavigation]="pagePath" id="EC" sideHeaderTitle="Projects"
+    sideHeaderSubtitle="Dictumst Vestibulum Rhoncus" iconName="mail-outline" blockTitle="Faucibus pulvinar"
+    blockSubtitle="Morbienim" [rightHanded]="true" [cover]="true"
+    backgroundId="unsplash/josh-hild-eG0lv29oaq4-unsplash.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>adipiscing</li>
+        <li>commodo</li>
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <h1>Rhoncus</h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+
+        <p>
+          <strong>Abstract:</strong> Quis imperdiet massa tincidunt nunc pulvinar. Eget felis eget nunc lobortis mattis
+          aliquam faucibus purus. Tellus integer feugiat scelerisque varius. Nullam ac tortor vitae purus faucibus.
+        </p>
+
+        <p>
+          Ullamcorper velit sed ullamcorper morbi. Suspendisse interdum consectetur libero id faucibus nisl tincidunt.
+          Consectetur purus ut faucibus pulvinar elementum integer enim. Eu non diam phasellus vestibulum. Rhoncus urna
+          neque viverra justo nec ultrices dui sapien. Mi sit amet mauris commodo quis imperdiet massa tincidunt. Massa
+          tempor nec feugiat nisl pretium fusce id velit.
+        </p>
+
+        <p>
+          <strong>Posuere sollicitudin aliquam:</strong> Quis commodo odio aenean sed adipiscing. Quam viverra orci
+          sagittis eu volutpat odio facilisis mauris sit. Laoreet non curabitur gravida arcu ac tortor dignissim. Mattis
+          ullamcorper velit sed ullamcorper. Aenean sed adipiscing diam donec adipiscing tristique risus nec. Dictum sit
+          amet justo donec enim diam.
+        </p>
+
+        <p>
+          <strong>Nunc consequat interdum varius sit amet mattis:</strong> A lacus vestibulum sed arcu non odio euismod
+          lacinia. Platea dictumst vestibulum rhoncus est. Dui sapien eget mi proin sed. Tortor at auctor urna nunc.
+          Nunc vel risus commodo viverra maecenas accumsan lacus vel. Feugiat scelerisque varius morbi enim nunc
+          faucibus a pellentesque. Sapien eget mi proin sed libero. Tristique risus nec feugiat in fermentum posuere
+          urna nec tincidunt. Quis viverra nibh cras pulvinar mattis nunc.
+        </p>
+
+        <p>
+          <strong>Enim ut tellus elementum sagittis vitae: </strong> Feugiat vivamus at augue eget arcu dictum. Diam in
+          arcu cursus euismod quis viverra nibh cras pulvinar. Quam vulputate dignissim suspendisse in est. Nec feugiat
+          in fermentum posuere urna nec tincidunt praesent. Id donec ultrices tincidunt arcu non sodales neque. Vel
+          pharetra vel turpis nunc eget lorem dolor. In hac habitasse platea dictumst vestibulum. Vulputate enim nulla
+          aliquet porttitor.
+        </p>
+
+        <p>
+          <strong>Ornare quam viverra orci sagittis eu:</strong> Aliquam malesuada bibendum arcu vitae elementum
+          curabitur vitae nunc. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Porttitor lacus
+          luctus accumsan tortor. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Viverra
+          nibh cras pulvinar mattis nunc sed. Eu tincidunt tortor aliquam nulla facilisi cras. Sed risus pretium quam
+          vulputate. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed.
+        </p>
+
+        <p>
+          <strong>Non nisi est sit amet facilisis: </strong> Habitasse platea dictumst vestibulum rhoncus est
+          pellentesque elit ullamcorper. At in tellus integer feugiat scelerisque varius morbi. Sed turpis tincidunt id
+          aliquet risus feugiat. Ut porttitor leo a diam. Vehicula ipsum a arcu cursus vitae congue. Eget nunc
+          scelerisque viverra mauris in aliquam sem.
+        </p>
+
+        <p>
+          Lectus nulla at volutpat diam ut. Risus quis varius quam quisque id diam vel. Volutpat est velit egestas dui.
+          Suscipit adipiscing bibendum est ultricies integer quis auctor elit. Quis varius quam quisque id diam vel quam
+          elementum.
+        </p>
+
+        <h2><strong>Euismod luctus:</strong></h2>
+
+        <ul>
+          <li>
+            <h3><strong>Sed turpis tincidunt:</strong></h3>
+            <p>
+              Vehicula ipsum a arcu cursus vitae congue. Eget nunc scelerisque viverra mauris in aliquam sem.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Lectus nulla at volutpat:</strong></h3>
+            <p>
+              Risus quis varius quam quisque id diam vel. Volutpat est velit egestas dui. Suscipit adipiscing bibendum
+              est ultricies integer quis auctor elit. Quis varius quam quisque id diam vel quam elementum.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Viverra orci sagittis:</strong></h3>
+            <p>
+              Rutrum quisque non tellus orci ac. Orci nulla pellentesque dignissim enim sit amet. Lacus suspendisse
+              faucibus interdum posuere lorem ipsum dolor. Arcu cursus euismod quis viverra. Vel quam elementum pulvinar
+              etiam non. Libero volutpat sed cras ornare arcu.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Quisque sagittis purus:</strong></h3>
+            <p>
+              Vitae auctor eu augue ut lectus arcu. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra
+              orci. Placerat vestibulum lectus mauris ultrices. Sit amet nulla facilisi morbi tempus iaculis urna. Lorem
+              donec massa sapien faucibus et.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Morbienim:</strong></h3>
+            <p>
+              Eu feugiat pretium nibh ipsum consequat nisl vel pretium. Eget egestas purus viverra accumsan in. Morbi
+              tincidunt ornare massa eget egestas purus.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Dui id ornare arcu:</strong></h3>
+            <p>
+              Fringilla urna porttitor rhoncus dolor purus non enim. Diam maecenas ultricies mi eget mauris pharetra et
+              ultrices. Id interdum velit laoreet id donec ultrices tincidunt arcu.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Amet mattis vulputate:</strong></h3>
+            <p>
+              In arcu cursus euismod quis viverra nibh cras. Leo in vitae turpis massa sed elementum. Ut sem viverra
+              aliquet eget sit. Faucibus purus in massa tempor nec feugiat nisl pretium. Sed vulputate mi sit amet
+              mauris. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.
+            </p>
+          </li>
+        </ul>
+
+        <p>
+          Nam libero justo laoreet sit amet cursus sit. Posuere urna nec tincidunt praesent semper feugiat. Vel eros
+          donec ac odio tempor. Duis at consectetur lorem donec massa sapien faucibus et.
+        </p>
+
+      </div>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Team:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/teams/LaoreetSit" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  LaoreetSit
+                </ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+
+  <page-section [linkElementToNavigation]="pagePath" id="HEM" sideHeaderTitle="Projects"
+    sideHeaderSubtitle="Tempor Commodo Ullamc" blockTitle="Vitae tortor condimentum" blockSubtitle="iPhone App"
+    iconName="school-outline" [rightHanded]="false"
+    backgroundId="unsplash/luke-miller-riV40lmd1yE-unsplash.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>Feliado</li>
+        <li>Yamplas</li>
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <h1>Tempor Commodo Ullamc</h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <p>
+          <strong>Abstract: </strong> Duis ultricies lacus sed turpis tincidunt. Viverra mauris in aliquam sem fringilla
+          ut morbi tincidunt. Pellentesque habitant morbi tristique senectus et. Suspendisse potenti nullam ac tortor
+          vitae.
+        </p>
+
+        <p>
+          Tellus in metus vulputate eu scelerisque felis imperdiet proin. Facilisis volutpat est velit egestas. Turpis
+          egestas sed tempus urna et pharetra pharetra massa. Viverra nam libero justo laoreet sit amet cursus sit.
+          Turpis in eu mi bibendum neque egestas congue. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
+        </p>
+
+        <p>
+          <strong>Sed felis eget velit aliquet: </strong> Semper auctor neque vitae tempus. Auctor augue mauris augue
+          neque. Ut diam quam nulla porttitor massa id neque aliquam vestibulum. Pharetra vel turpis nunc eget lorem
+          dolor. Tincidunt augue interdum velit euismod in pellentesque massa placerat duis. Massa vitae tortor
+          condimentum lacinia. Fermentum dui faucibus in ornare. Nibh sit amet commodo nulla facilisi nullam vehicula.
+        </p>
+
+        <p>
+          <strong>Egestas egestas fringilla phasellus: </strong> Eros in cursus turpis massa tincidunt dui. Pellentesque
+          habitant morbi tristique senectus et netus et malesuada fames. Vulputate sapien nec sagittis aliquam malesuada
+          bibendum. Arcu odio ut sem nulla pharetra diam sit amet. Nisi porta lorem mollis aliquam ut porttitor leo a
+          diam. Facilisis leo vel fringilla est. Sit amet nulla facilisi morbi tempus iaculis urna id. Vitae proin
+          sagittis nisl rhoncus mattis rhoncus urna neque. Suspendisse faucibus interdum posuere lorem ipsum.
+        </p>
+
+        <p>
+          <strong>Purus in mollis nunc sed id semper: </strong> Nunc eget lorem dolor sed viverra ipsum nunc aliquet
+          bibendum. Egestas purus viverra accumsan in nisl nisi scelerisque eu. Sed velit dignissim sodales ut eu sem
+          integer vitae justo. Urna cursus eget nunc scelerisque viverra. Rutrum tellus pellentesque eu tincidunt.
+          Habitant morbi tristique senectus et netus. Pulvinar neque laoreet suspendisse interdum.
+        </p>
+
+        <p>
+          <strong>At tempor commodo ullamcorper: </strong> Viverra accumsan in nisl nisi scelerisque eu ultrices vitae
+          auctor. Eros donec ac odio tempor orci dapibus. Est sit amet facilisis magna. Commodo quis imperdiet massa
+          tincidunt nunc pulvinar sapien et. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. Non nisi
+          est sit amet. Pulvinar neque laoreet suspendisse interdum consectetur libero. Amet facilisis magna etiam
+          tempor orci eu lobortis.
+        </p>
+
+        <p>
+          <strong>Sollicitudin: </strong> Nec nam aliquam sem et tortor consequat. Id faucibus nisl tincidunt eget
+          nullam. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Scelerisque purus semper
+          eget duis at tellus at. Lacinia at quis risus sed vulputate odio. A arcu cursus vitae congue mauris rhoncus
+          aenean. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc.
+        </p>
+
+        <p>
+          Vitae nunc sed velit dignissim sodales ut eu sem integer. Urna nec tincidunt praesent semper feugiat nibh sed
+          pulvinar. Duis ultricies lacus sed turpis tincidunt. Maecenas sed enim ut sem viverra aliquet eget sit. Purus
+          in mollis nunc sed id semper. Cras fermentum odio eu feugiat pretium.
+        </p>
+
+        <h2><strong>Euismod luctus:</strong></h2>
+
+        <ul>
+          <li>
+            <h3><strong>Posuere ac ut consequat semper: </strong></h3>
+            <p>
+              Morbi tristique senectus et netus et malesuada fames ac. Imperdiet nulla malesuada pellentesque elit eget
+              gravida. Quis commodo odio aenean sed adipiscing diam. Sit amet risus nullam eget felis eget. Non
+              curabitur gravida arcu ac tortor dignissim convallis aenean et. At in tellus integer feugiat scelerisque
+              varius morbi. Tellus elementum sagittis vitae et leo. Malesuada nunc vel risus commodo.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Morbi blandit cursus risus: </strong></h3>
+            <p>
+              Pretium viverra suspendisse potenti nullam ac. Sed enim ut sem viverra aliquet eget sit amet tellus. Lorem
+              donec massa sapien faucibus et molestie ac feugiat. Facilisi cras fermentum odio eu feugiat pretium.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Eget nullam non: </strong></h3>
+            <p>
+              Non curabitur gravida arcu ac tortor dignissim convallis aenean. Molestie at elementum eu facilisis sed
+              odio morbi quis commodo. Quam elementum pulvinar etiam non quam. Gravida dictum fusce ut placerat orci
+              nulla pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim.
+              Vestibulum sed arcu non odio euismod lacinia at quis risus. Porttitor massa id neque aliquam vestibulum.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Cum sociis natoque: </strong></h3>
+            <p>
+              Fermentum iaculis eu non diam phasellus vestibulum lorem. Scelerisque mauris pellentesque pulvinar
+              pellentesque habitant morbi. Nam libero justo laoreet sit amet cursus sit. Rhoncus est pellentesque elit
+              ullamcorper dignissim cras.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Aliquet sagittis id consectetur: </strong></h3>
+            <p>
+              Tortor posuere ac ut consequat semper viverra nam libero. Eu volutpat odio facilisis mauris sit amet massa
+              vitae tortor. Massa enim nec dui nunc mattis enim. Pellentesque nec nam aliquam sem. Nibh mauris cursus
+              mattis molestie. Consectetur libero id faucibus nisl tincidunt eget nullam. Viverra mauris in aliquam sem
+              fringilla ut morbi.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Nisi quis eleifend quam: </strong></h3>
+            <p>
+              Sed tempus urna et pharetra pharetra. Nulla facilisi etiam dignissim diam quis. Lorem ipsum dolor sit amet
+              consectetur adipiscing. Posuere morbi leo urna molestie at elementum eu. Convallis a cras semper auctor.
+              At auctor urna nunc id cursus metus aliquam eleifend mi. Erat nam at lectus urna duis convallis convallis
+              tellus id. Posuere ac ut consequat semper viverra nam.
+            </p>
+          </li>
+        </ul>
+
+        <p>
+          Pretium lectus quam id leo in vitae turpis. Magna ac placerat vestibulum lectus. Dictum at tempor commodo
+          ullamcorper a. Tincidunt lobortis feugiat vivamus at augue. Accumsan lacus vel facilisis volutpat est velit
+          egestas dui. Ac turpis egestas sed tempus urna et. Ante metus dictum at tempor commodo ullamcorper.
+        </p>
+
+      </div>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Team:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/teams/HEM" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Odio Facilisis
+                </ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+
+  <page-section [linkElementToNavigation]="pagePath" id="Vestibulum" sideHeaderTitle="Projects"
+    sideHeaderSubtitle="Aliquam Nulla Facilisi" blockTitle="Aliquam Nulla Facilisi" blockSubtitle="Interdum"
+    iconName="musical-note-outline" [rightHanded]="true" [cover]="true"
+    backgroundId="unsplash/kira-laktionov-mrMUeF2bEYk-unsplash.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>Et ultrices neque</li>
+        <li>libero</li>
+        <li>Libero enim sed</li>
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <h1>Vestibulum</h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <p>
+          <strong>Abstract:</strong> Vestibulum, ictum sit amet justo donec enim diam vulputate. Sed adipiscing diam
+          donec adipiscing tristique risus nec. Praesent semper feugiat nibh sed pulvinar proin gravida hendrerit
+          lectus. Sed cras ornare arcu dui vivamus.
+        </p>
+
+        <p>
+          Amet nisl suscipit adipiscing bibendum. Ullamcorper malesuada proin libero nunc consequat interdum. Morbi non
+          arcu risus quis varius. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Commodo
+          nulla facilisi nullam vehicula.
+        </p>
+
+        <p>
+          <strong>Morbi tincidunt augue interdum velit euismod in: </strong> Nec feugiat in fermentum posuere urna nec
+          tincidunt praesent. Pharetra vel turpis nunc eget lorem dolor sed viverra. Curabitur vitae nunc sed velit
+          dignissim sodales ut eu. Amet venenatis urna cursus eget nunc scelerisque viverra mauris. Scelerisque viverra
+          mauris in aliquam sem fringilla ut. Gravida arcu ac tortor dignissim convallis aenean et tortor at. Faucibus
+          pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Interdum posuere lorem ipsum dolor. Nulla
+          facilisi morbi tempus iaculis urna id volutpat.
+        </p>
+
+        <p>
+          <strong>Nec feugiat: </strong> Amet venenatis urna cursus eget nunc scelerisque viverra mauris. Scelerisque
+          viverra mauris in aliquam sem fringilla ut. Gravida arcu ac tortor dignissim convallis aenean et tortor at.
+          Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Interdum posuere lorem ipsum
+          dolor. Nulla facilisi morbi tempus iaculis urna id volutpat.
+        </p>
+
+        <p>
+          <strong>Elementum nibh tellus: </strong> Ac odio tempor orci dapibus ultrices in iaculis. Accumsan in nisl
+          nisi scelerisque eu ultrices. Hendrerit dolor magna eget est. Semper quis lectus nulla at volutpat diam ut
+          venenatis. At urna condimentum mattis pellentesque. Viverra orci sagittis eu volutpat odio facilisis mauris
+          sit amet. Nunc consequat interdum varius sit amet. Consectetur lorem donec massa sapien faucibus.
+        </p>
+
+        <p>
+          <strong>Ut tristique et egestas quis:</strong> At ultrices mi tempus imperdiet nulla malesuada pellentesque
+          elit eget. Varius vel pharetra vel turpis nunc eget lorem dolor. Egestas tellus rutrum tellus pellentesque eu
+          tincidunt tortor. Id aliquet lectus proin nibh. Donec massa sapien faucibus et molestie ac. Donec adipiscing
+          tristique risus nec feugiat in fermentum posuere. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus
+          vitae. Cras ornare arcu dui vivamus. Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc.
+          Viverra maecenas accumsan lacus vel facilisis. Ipsum nunc aliquet bibendum enim facilisis gravida neque
+          convallis.
+        </p>
+
+        <p>
+          <strong>Nunc faucibus a pellentesque:</strong> Suspendisse sed nisi lacus sed viverra tellus. Pretium lectus
+          quam id leo in vitae turpis. Nisl nisi scelerisque eu ultrices vitae auctor eu. Iaculis eu non diam phasellus
+          vestibulum lorem sed. Ipsum a arcu cursus vitae. Amet risus nullam eget felis eget nunc. Eget arcu dictum
+          varius duis at consectetur lorem donec. Quis commodo odio aenean sed adipiscing diam donec adipiscing
+          tristique. Amet nisl purus in mollis nunc sed.
+        </p>
+
+        <p>
+          Vitae auctor eu augue ut lectus arcu bibendum. Ipsum dolor sit amet consectetur. Lorem donec massa sapien
+          faucibus. Nibh sit amet commodo nulla facilisi. Neque aliquam vestibulum morbi blandit cursus risus at
+          ultrices. Ac tortor vitae purus faucibus ornare suspendisse sed. Pellentesque massa placerat duis ultricies
+          lacus sed turpis tincidunt. Sapien pellentesque habitant morbi tristique senectus et netus et malesuada.
+          Tellus at urna condimentum mattis.
+        </p>
+
+        <h2><strong>Euismod luctus:</strong></h2>
+
+        <ul>
+          <li>
+            <h3><strong>Eros in cursus: </strong></h3>
+            <p>
+              Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Tortor aliquam nulla facilisi cras
+              fermentum odio eu feugiat. Aliquet nibh praesent tristique magna sit amet purus gravida. Urna condimentum
+              mattis pellentesque id nibh tortor id aliquet lectus. Tristique sollicitudin nibh sit amet commodo nulla
+              facilisi. Dictum sit amet justo donec enim diam vulputate ut pharetra.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Imperdiet massa tincidunt nunc pulvinar: </strong></h3>
+            <p>
+              Dapibus ultrices in iaculis nunc. Egestas tellus rutrum tellus pellentesque. Justo donec enim diam
+              vulputate ut pharetra sit amet aliquam. Gravida quis blandit turpis cursus in hac habitasse platea. Risus
+              feugiat in ante metus. Scelerisque viverra mauris in aliquam sem fringilla ut morbi.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Amet purus gravida quis blandit turpis cursus in: </strong></h3>
+            <p>
+              Vestibulum lorem sed risus ultricies tristique nulla aliquet. Netus et malesuada fames ac. Aenean pharetra
+              magna ac placerat vestibulum lectus mauris ultrices eros. Egestas congue quisque egestas diam in arcu
+              cursus euismod quis. Elementum nibh tellus molestie nunc non. A diam sollicitudin tempor id eu. Accumsan
+              tortor posuere ac ut. Nullam eget felis eget nunc lobortis. Cum sociis natoque penatibus et magnis.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Faucibus scelerisque eleifend: </strong></h3>
+            <p>
+              Leo vel fringilla est ullamcorper eget nulla. Egestas maecenas pharetra convallis posuere. Nulla facilisi
+              morbi tempus iaculis urna. In cursus turpis massa tincidunt dui ut ornare. Morbi tincidunt augue interdum
+              velit. Urna neque viverra justo nec. Gravida in fermentum et sollicitudin ac orci phasellus.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Lacus suspendisse faucibus: </strong></h3>
+            <p>
+              Condimentum lacinia quis vel eros. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Ornare
+              suspendisse sed nisi lacus sed viverra tellus. Laoreet sit amet cursus sit amet dictum sit amet justo.
+              Tempus quam pellentesque nec nam aliquam sem et. Tempor commodo ullamcorper a lacus vestibulum sed arcu
+              non. Nunc lobortis mattis aliquam faucibus purus in. At augue eget arcu dictum varius duis at consectetur
+              lorem.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Cursus mattis molestie a iaculis: </strong></h3>
+            <p>
+              Vitae congue eu consequat ac felis. Tristique senectus et netus et. Pretium aenean pharetra magna ac
+              placerat vestibulum lectus mauris. Et netus et malesuada fames ac turpis egestas. Eu facilisis sed odio
+              morbi quis commodo odio aenean sed. Ultrices vitae auctor eu augue ut lectus arcu bibendum at.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Team:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/teams/Vestibulum" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Vestibulum
+                </ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+  <page-section [linkElementToNavigation]="pagePath" id="Viverra" sideHeaderTitle="Projects"
+    sideHeaderSubtitle="Viverra" blockTitle="Viverra Survai" blockSubtitle="Ultricies" iconName="disc-outline"
+    [rightHanded]="false" displacementFixed="true" [cover]="true"
+    backgroundId="unsplash/kiko-camaclang-lv8unel9SCI-unsplash.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>Et ultrices neque 2.0</li>
+        <li>Tortor pretium</li>
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <h1>Viverra Ultricies</h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <p>
+          <strong>Abstract:</strong> Sed sed risus pretium quam vulputate dignissim suspendisse in.
+        </p>
+
+        <p>
+          Velit scelerisque in dictum non consectetur. Venenatis tellus in metus vulputate eu scelerisque felis
+          imperdiet. Turpis massa sed elementum tempus egestas sed sed risus pretium. Erat imperdiet sed euismod nisi
+          porta. Vitae turpis massa sed elementum tempus egestas sed sed risus. Magna fringilla urna porttitor rhoncus
+          dolor purus non enim. Id cursus metus aliquam eleifend mi.
+        </p>
+
+        <p>
+          <strong>Nulla malesuada pellentesque:</strong> Nullam vehicula ipsum a arcu. Diam sit amet nisl suscipit
+          adipiscing. Sed viverra tellus in hac habitasse platea dictumst. Non tellus orci ac auctor augue mauris augue.
+          Massa enim nec dui nunc mattis enim. Nullam eget felis eget nunc lobortis. Sit amet purus gravida quis
+          blandit. Viverra nibh cras pulvinar mattis nunc sed blandit libero. Non tellus orci ac auctor augue mauris
+          augue neque gravida.
+        </p>
+
+        <p>
+          <strong>Tempor commodo ullamcorper: </strong> Viverra maecenas accumsan lacus vel facilisis. Malesuada fames
+          ac turpis egestas. Tristique nulla aliquet enim tortor. Ut etiam sit amet nisl purus in mollis nunc.
+        </p>
+
+        <p>
+          <strong>Adipiscing elit duis tristiqu: </strong> Scelerisque felis imperdiet proin fermentum leo vel orci
+          porta. Et netus et malesuada fames. Lorem sed risus ultricies tristique nulla aliquet enim tortor at.
+          Vulputate odio ut enim blandit. Gravida cum sociis natoque penatibus et magnis. Risus pretium quam vulputate
+          dignissim suspendisse in. Quis auctor elit sed vulputate mi sit amet mauris.
+        </p>
+
+        <p>
+          <strong>Venenatis cras sed felis: </strong> Eu nisl nunc mi ipsum. Nam at lectus urna duis convallis convallis
+          tellus. Egestas egestas fringilla phasellus faucibus. Elementum pulvinar etiam non quam lacus suspendisse
+          faucibus. Fringilla urna porttitor rhoncus dolor purus non enim praesent elementum. Eget sit amet tellus cras
+          adipiscing enim eu. Praesent elementum facilisis leo vel fringilla. Congue eu consequat ac felis donec et odio
+          pellentesque diam.
+        </p>
+
+        <p>
+          At risus viverra adipiscing at in tellus integer feugiat scelerisque. Id donec ultrices tincidunt arcu non
+          sodales neque sodales ut. Urna id volutpat lacus laoreet non. Nascetur ridiculus mus mauris vitae ultricies
+          leo integer malesuada. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque.
+        </p>
+
+        <h2><strong>Euismod luctus:</strong></h2>
+
+        <ul>
+          <li>
+            <h3><strong>Sed turpis tincidunt (Tortor pretium): </strong></h3>
+            <p>
+              Ultrices sagittis orci a scelerisque. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus.
+              Mattis pellentesque id nibh tortor id. Odio euismod lacinia at quis risus sed. Id interdum velit laoreet
+              id donec. Senectus et netus et malesuada fames ac turpis. Dictumst vestibulum rhoncus est pellentesque
+              elit ullamcorper dignissim. Ac turpis egestas integer eget aliquet nibh praesent.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Nunc aliquet bibendum:</strong></h3>
+            <p>
+              Mi tempus imperdiet nulla malesuada pellentesque elit. Turpis tincidunt id aliquet risus feugiat. Sit amet
+              purus gravida quis blandit turpis cursus in. Arcu non sodales neque sodales ut. Lectus nulla at volutpat
+              diam ut venenatis tellus in. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl ve
+            </p>
+          </li>
+          <li>
+            <h3><strong>Integer quis auctor elit sed vulputate mi: </strong></h3>
+            <p>
+              Amet consectetur adipiscing elit ut. Cras sed felis eget velit. Vitae justo eget magna fermentum iaculis
+              eu. Id neque aliquam vestibulum morbi blandit cursus. Sed odio morbi quis commodo. Interdum varius sit
+              amet mattis vulputate enim nulla aliquet porttitor.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Morbienim: </strong></h3>
+            <p>
+              Nibh sed pulvinar proin gravida. Egestas quis ipsum suspendisse ultrices. Id aliquet risus feugiat in ante
+              metus dictum at tempor. Ante metus dictum at tempor commodo. Fusce ut placerat orci nulla pellentesque.
+            </p>
+          </li>
+        </ul>
+
+      </div>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Team:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/teams/Viverra" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Viverra
+                </ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+</ion-content>

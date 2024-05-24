@@ -1,0 +1,143 @@
+.header-template {
+    position: absolute; left:0; top:0; width: 100%;  height: 100%;
+}
+
+.page-section {
+    display: flex;
+    padding-top: 60px;
+}
+
+.page-section .content2 {
+    width: 100%;
+    text-align: left;
+    overflow: auto;
+}
+
+.page-section .header {
+    min-width: 80px;
+
+}
+
+.page-section .header .rotated {
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    width: 100%;
+    padding-bottom: 8px;
+    text-align: right;
+    margin-left: 14px;
+}
+
+.rotate90 {
+    transform: rotate(90deg);
+    padding-top: 22px;
+}
+
+.page-section .header .rotatedcc {
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
+    padding-top: 16px;
+    padding-right: 14px;
+}
+
+.page-section .header h1 {
+    margin: 0 0 0 0;
+    padding: 0 0 10px 0;
+    background-color: var(--ion-background-color);
+    color: var(--ion-text-color);
+    font-family: "JetBrainsMono-Bold";
+}
+
+.page-section .header h2 {
+    margin: 0 0 0 0;
+    padding: 0 0 10px 0;
+    color: var(--ion-color-secondary);
+    background-color: var(--ion-background-color);
+    font-family: "JetBrainsMono-ExtraLightItalic";
+    word-spacing: -6px;
+}
+
+.ion-card-header-container-general {
+    min-height: 320px;
+}
+
+.right {
+    margin-left: 18px;
+}
+
+.left {
+    margin-right: 18px;
+}
+
+ion-card p {
+    margin: 6px;
+}
+
+ion-card-title {
+    font-weight: 900;
+    font-size: 34px;
+    font-family: "JetBrainsMonoNL-ExtraBold";
+    color: black;
+}
+
+.skills {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+
+    li {
+        // background-color: var(--ion-color-secondary);
+        color: var(--ion-text-color);
+        display: inline-block;
+        margin-right: 14px;
+        margin-bottom: 14px;
+        padding: 10px;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+
+    display: block;
+}
+
+ion-card-title {
+    ion-icon {
+        transform: translate(5px, 5px);
+    }
+}
+
+ion-card-subtitle {
+    font-weight: 900;
+    font-size: 22px;
+    font-family: "JetBrainsMonoNL-ExtraBoldItalic";
+    color: var(--ion-color-secondary);
+}
+
+ion-card-header {
+    text-align: left;
+    mix-blend-mode: difference;
+    backdrop-filter: blur(6px);
+    --background: white;
+}
+
+ion-card-content {
+    padding-inline-start: unset;
+    padding-inline-end: unset;
+    padding-bottom: unset;
+    color: var(--ion-text-color);
+
+
+
+    /*div {
+        text-align: left;
+        color: var(--ion-text-color);
+        p {
+            text-align: left;
+            color: var(--ion-text-color);
+            --padding-start:16px;
+        }
+    }*/
+}

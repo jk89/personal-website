@@ -1,0 +1,24 @@
+<ion-toolbar #toolbar>
+  <ion-buttons slot="start">
+    <ion-menu-button currentColor></ion-menu-button>
+  </ion-buttons>
+  <div class="titlebar-container">
+    <ion-title *ngIf="hoverTitle == null" slot="start">
+      {{sectionNameOrPathSuffix}}
+    </ion-title>
+    <ion-title currentColor *ngIf="hoverTitle != null" slot="start">
+      {{hoverTitle}}
+    </ion-title>
+    <ion-item slot="start" class="nav-fade grow" style="overflow: auto;">
+      <div currentBorderTopColor class="intra-nav-container"> <!-- intra-nav-dynamic-color -->
+        <div style="display: flex;" *ngFor="let link of links$ | async; let i = index">
+          <a [class]="i === activeIndex ? 'active intra-nav-link':'intra-nav-link'"
+            (click)="activeIndex = i; changePageSection(link);" (mouseover)="mouseOver(i, link)"
+            (mouseout)="mouseOut()" currentBackgroundColorHover>
+          </a>
+        </div>
+      </div>
+    </ion-item>
+    <ion-icon class="hide-when-little-width" [name]="iconName()" slot="end"></ion-icon>
+  </div>
+</ion-toolbar>

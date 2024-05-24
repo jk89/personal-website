@@ -1,0 +1,1555 @@
+{
+    "animations/spinner-palette.svg": {
+        "type": "Image",
+        "color": "#a49fb2",
+        "height": 200,
+        "width": 200,
+        "aspectRatio": 1,
+        "webPPath": "animations/_spinner-palette.svg.webp",
+        "extension": ".svg"
+    },
+    "card-header-banners/bike-mount-1.png": {
+        "type": "Image",
+        "color": "#515151",
+        "height": 1248,
+        "width": 1947,
+        "aspectRatio": 1.5600961538461537,
+        "webPPath": "card-header-banners/_bike-mount-1.png.webp",
+        "extension": ".png"
+    },
+    "card-header-banners/cad-cup.png": {
+        "type": "Image",
+        "color": "#bbbebe",
+        "height": 668,
+        "width": 580,
+        "aspectRatio": 0.8682634730538922,
+        "webPPath": "card-header-banners/_cad-cup.png.webp",
+        "extension": ".png"
+    },
+    "card-header-banners/circuit.jpg": {
+        "type": "Image",
+        "color": "#7a7d7d",
+        "height": 1168,
+        "width": 2592,
+        "aspectRatio": 2.219178082191781,
+        "webPPath": "card-header-banners/_circuit.jpg.webp",
+        "extension": ".jpg"
+    },
+    "card-header-banners/crystal.png": {
+        "type": "Image",
+        "color": "#0a71ea",
+        "height": 1024,
+        "width": 1280,
+        "aspectRatio": 1.25,
+        "webPPath": "card-header-banners/_crystal.png.webp",
+        "extension": ".png"
+    },
+    "card-header-banners/cv.png": {
+        "type": "Image",
+        "color": "#f5f1f3",
+        "height": 235,
+        "width": 352,
+        "aspectRatio": 1.4978723404255319,
+        "webPPath": "card-header-banners/_cv.png.webp",
+        "extension": ".png"
+    },
+    "card-header-banners/game.png": {
+        "type": "Image",
+        "color": "#386c63",
+        "height": 595,
+        "width": 997,
+        "aspectRatio": 1.6756302521008404,
+        "webPPath": "card-header-banners/_game.png.webp",
+        "extension": ".png"
+    },
+    "card-header-banners/math.jpg": {
+        "type": "Image",
+        "color": "#191919",
+        "height": 2010,
+        "width": 1079,
+        "aspectRatio": 0.53681592039801,
+        "webPPath": "card-header-banners/_math.jpg.webp",
+        "extension": ".jpg"
+    },
+    "card-header-banners/penrose.png": {
+        "type": "Image",
+        "color": "#dfeddf",
+        "height": 926,
+        "width": 1067,
+        "aspectRatio": 1.152267818574514,
+        "webPPath": "card-header-banners/_penrose.png.webp",
+        "extension": ".png"
+    },
+    "card-header-banners/scene.png": {
+        "type": "Image",
+        "color": "#848484",
+        "height": 1314,
+        "width": 2541,
+        "aspectRatio": 1.9337899543378996,
+        "webPPath": "card-header-banners/_scene.png.webp",
+        "extension": ".png"
+    },
+    "card-header-banners/webgpu-banner.png": {
+        "type": "Image",
+        "color": "#bec0be",
+        "height": 1428,
+        "width": 2278,
+        "aspectRatio": 1.5952380952380953,
+        "webPPath": "card-header-banners/_webgpu-banner.png.webp",
+        "extension": ".png"
+    },
+    "card-header-banners/website.png": {
+        "type": "Image",
+        "color": "#212322",
+        "height": 1800,
+        "width": 3200,
+        "aspectRatio": 1.7777777777777777,
+        "webPPath": "card-header-banners/_website.png.webp",
+        "extension": ".png"
+    },
+    "default/asset-not-found.png": {
+        "type": "Image",
+        "color": "#ff0000",
+        "height": 400,
+        "width": 2000,
+        "aspectRatio": 5,
+        "webPPath": "default/_asset-not-found.png.webp",
+        "extension": ".png"
+    },
+    "icon/accessibility-blue.png": {
+        "type": "Image",
+        "color": "#5497fc",
+        "height": 512,
+        "width": 512,
+        "aspectRatio": 1,
+        "webPPath": "icon/_accessibility-blue.png.webp",
+        "extension": ".png"
+    },
+    "icon/autodesk-grey.png": {
+        "type": "Image",
+        "color": "#7f7f7f",
+        "height": 512,
+        "width": 512,
+        "aspectRatio": 1,
+        "webPPath": "icon/_autodesk-grey.png.webp",
+        "extension": ".png"
+    },
+    "icon/custom-autodesk.svg": {
+        "type": "Image",
+        "color": "#7f7f7f",
+        "height": 683,
+        "width": 683,
+        "aspectRatio": 1,
+        "webPPath": "icon/_custom-autodesk.svg.webp",
+        "extension": ".svg"
+    },
+    "mixkit/mixkit-countryside-meadow-4075-medium.mp4": {
+        "type": "Video",
+        "color": "#586e4a",
+        "height": 720,
+        "width": 1280,
+        "aspectRatio": 1.7777777777777777,
+        "webMPath": "mixkit/_mixkit-countryside-meadow-4075-medium.mp4.webm",
+        "movPath": "mixkit/_mixkit-countryside-meadow-4075-medium.mp4.mov",
+        "extension": ".mp4"
+    },
+    "mixkit/mixkit-highway-and-bus-station-in-a-sunny-desert-from-above-51794-medium.mp4": {
+        "type": "Video",
+        "color": "#78767c",
+        "height": 1280,
+        "width": 720,
+        "aspectRatio": 0.5625,
+        "webMPath": "mixkit/_mixkit-highway-and-bus-station-in-a-sunny-desert-from-above-51794-medium.mp4.webm",
+        "movPath": "mixkit/_mixkit-highway-and-bus-station-in-a-sunny-desert-from-above-51794-medium.mp4.mov",
+        "extension": ".mp4"
+    },
+    "mixkit/mixkit-highway-in-the-middle-of-a-mountain-range-4633-medium.mp4": {
+        "type": "Video",
+        "color": "#60655f",
+        "height": 720,
+        "width": 1280,
+        "aspectRatio": 1.7777777777777777,
+        "webMPath": "mixkit/_mixkit-highway-in-the-middle-of-a-mountain-range-4633-medium.mp4.webm",
+        "movPath": "mixkit/_mixkit-highway-in-the-middle-of-a-mountain-range-4633-medium.mp4.mov",
+        "extension": ".mp4"
+    },
+    "mixkit/mixkit-macaw-parrot-feeding-on-a-branch-4669-medium.mp4": {
+        "type": "Video",
+        "color": "#6c6b51",
+        "height": 720,
+        "width": 1280,
+        "aspectRatio": 1.7777777777777777,
+        "webMPath": "mixkit/_mixkit-macaw-parrot-feeding-on-a-branch-4669-medium.mp4.webm",
+        "movPath": "mixkit/_mixkit-macaw-parrot-feeding-on-a-branch-4669-medium.mp4.mov",
+        "extension": ".mp4"
+    },
+    "mixkit/mixkit-rain-falling-on-the-water-of-a-lake-seen-up-18312-medium.mp4": {
+        "type": "Video",
+        "color": "#000000",
+        "height": 720,
+        "width": 1280,
+        "aspectRatio": 1.7777777777777777,
+        "webMPath": "mixkit/_mixkit-rain-falling-on-the-water-of-a-lake-seen-up-18312-medium.mp4.webm",
+        "movPath": "mixkit/_mixkit-rain-falling-on-the-water-of-a-lake-seen-up-18312-medium.mp4.mov",
+        "extension": ".mp4"
+    },
+    "other/bike/Screenshot-2023-11-14-152701.png": {
+        "type": "Image",
+        "color": "#474748",
+        "height": 1300,
+        "width": 1958,
+        "aspectRatio": 1.5061538461538462,
+        "webPPath": "other/bike/_Screenshot-2023-11-14-152701.png.webp",
+        "extension": ".png"
+    },
+    "other/bike/bike-mount-1.png": {
+        "type": "Image",
+        "color": "#515151",
+        "height": 1248,
+        "width": 1947,
+        "aspectRatio": 1.5600961538461537,
+        "webPPath": "other/bike/_bike-mount-1.png.webp",
+        "extension": ".png"
+    },
+    "other/bldc/calibration/IMG_20221024_143952.jpg": {
+        "type": "Image",
+        "color": "#837e77",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/calibration/_IMG_20221024_143952.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/IMG_20230425_205953.jpg": {
+        "type": "Image",
+        "color": "#7f6d5c",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/calibration/_IMG_20230425_205953.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/PCB_PCB_JK-BLDC-Encoder-Calibrator-Tester4_2023-05-02.png": {
+        "type": "Image",
+        "color": "#49303b",
+        "height": 532,
+        "width": 921,
+        "aspectRatio": 1.731203007518797,
+        "webPPath": "other/bldc/calibration/_PCB_PCB_JK-BLDC-Encoder-Calibrator-Tester4_2023-05-02.png.webp",
+        "extension": ".png"
+    },
+    "other/bldc/calibration/Schematic_JK-BLDC-Encoder-Calibrator-Tester4_2023-05-02.png": {
+        "type": "Image",
+        "color": "#f3f2f9",
+        "height": 2866,
+        "width": 4049,
+        "aspectRatio": 1.4127704117236566,
+        "webPPath": "other/bldc/calibration/_Schematic_JK-BLDC-Encoder-Calibrator-Tester4_2023-05-02.png.webp",
+        "extension": ".png"
+    },
+    "other/bldc/calibration/analysis/IMG_20220922_114250.jpg": {
+        "type": "Image",
+        "color": "#f8f9f8",
+        "height": 824,
+        "width": 2156,
+        "aspectRatio": 2.616504854368932,
+        "webPPath": "other/bldc/calibration/analysis/_IMG_20220922_114250.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/analysis/IMG_20220922_115227.jpg": {
+        "type": "Image",
+        "color": "#eff4f8",
+        "height": 805,
+        "width": 2133,
+        "aspectRatio": 2.649689440993789,
+        "webPPath": "other/bldc/calibration/analysis/_IMG_20220922_115227.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/analysis/IMG_20220922_120551.jpg": {
+        "type": "Image",
+        "color": "#f4f6f8",
+        "height": 1987,
+        "width": 1080,
+        "aspectRatio": 0.5435329642677403,
+        "webPPath": "other/bldc/calibration/analysis/_IMG_20220922_120551.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/analysis/IMG_20220926_174619.jpg": {
+        "type": "Image",
+        "color": "#f9fafb",
+        "height": 795,
+        "width": 2133,
+        "aspectRatio": 2.6830188679245284,
+        "webPPath": "other/bldc/calibration/analysis/_IMG_20220926_174619.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/analysis/IMG_20221003_200534.jpg": {
+        "type": "Image",
+        "color": "#f8f8f8",
+        "height": 1990,
+        "width": 1080,
+        "aspectRatio": 0.542713567839196,
+        "webPPath": "other/bldc/calibration/analysis/_IMG_20221003_200534.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/analysis/IMG_20221003_200602.jpg": {
+        "type": "Image",
+        "color": "#f1f3f5",
+        "height": 2162,
+        "width": 1080,
+        "aspectRatio": 0.49953746530989823,
+        "webPPath": "other/bldc/calibration/analysis/_IMG_20221003_200602.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/analysis/raw_reconstruction_direct_comp2_ynitlldoqesyyvgyuwyg.png": {
+        "type": "Image",
+        "color": "#ead9d2",
+        "height": 458,
+        "width": 4697,
+        "aspectRatio": 10.255458515283843,
+        "webPPath": "other/bldc/calibration/analysis/_raw_reconstruction_direct_comp2_ynitlldoqesyyvgyuwyg.png.webp",
+        "extension": ".png"
+    },
+    "other/bldc/calibration/analysis/raw_reconstruction_ynitlldoqesyyvgyuwyg.png": {
+        "type": "Image",
+        "color": "#ead9d2",
+        "height": 458,
+        "width": 4697,
+        "aspectRatio": 10.255458515283843,
+        "webPPath": "other/bldc/calibration/analysis/_raw_reconstruction_ynitlldoqesyyvgyuwyg.png.webp",
+        "extension": ".png"
+    },
+    "other/bldc/calibration/calibration_encoder_wiring.png": {
+        "type": "Image",
+        "color": "#b9b8b7",
+        "height": 1872,
+        "width": 1404,
+        "aspectRatio": 0.75,
+        "webPPath": "other/bldc/calibration/_calibration_encoder_wiring.png.webp",
+        "extension": ".png"
+    },
+    "other/bldc/calibration/sensor-mount/IMG_20220831_150250.jpg": {
+        "type": "Image",
+        "color": "#bab8b2",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/calibration/sensor-mount/_IMG_20220831_150250.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/sensor-mount/IMG_20220831_150346.jpg": {
+        "type": "Image",
+        "color": "#a19f9b",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/calibration/sensor-mount/_IMG_20220831_150346.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/sensor-mount/IMG_20220831_150434.jpg": {
+        "type": "Image",
+        "color": "#9e9e9c",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/calibration/sensor-mount/_IMG_20220831_150434.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/sensor-mount/IMG_20220831_150453.jpg": {
+        "type": "Image",
+        "color": "#a2a7a7",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/calibration/sensor-mount/_IMG_20220831_150453.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/sensor-mount/IMG_20220831_150527.jpg": {
+        "type": "Image",
+        "color": "#95928e",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/calibration/sensor-mount/_IMG_20220831_150527.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/sensor-mount/IMG_20220831_150615.jpg": {
+        "type": "Image",
+        "color": "#9d9995",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/calibration/sensor-mount/_IMG_20220831_150615.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/sensor-mount/IMG_20220831_150729.jpg": {
+        "type": "Image",
+        "color": "#bbbcb8",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/calibration/sensor-mount/_IMG_20220831_150729.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/sensor-mount/IMG_20220831_150832.jpg": {
+        "type": "Image",
+        "color": "#bbb9b3",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/calibration/sensor-mount/_IMG_20220831_150832.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/sensor-mount/IMG_20220831_150853.jpg": {
+        "type": "Image",
+        "color": "#bfbdb6",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/calibration/sensor-mount/_IMG_20220831_150853.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/sensor-mount/IMG_20220831_151120.jpg": {
+        "type": "Image",
+        "color": "#bbbcba",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/calibration/sensor-mount/_IMG_20220831_151120.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/sensor-mount/IMG_20220831_175838.jpg": {
+        "type": "Image",
+        "color": "#94a3ad",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/calibration/sensor-mount/_IMG_20220831_175838.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/sensor-mount/IMG_20220831_182614.jpg": {
+        "type": "Image",
+        "color": "#9da5a5",
+        "height": 4000,
+        "width": 1800,
+        "aspectRatio": 0.45,
+        "webPPath": "other/bldc/calibration/sensor-mount/_IMG_20220831_182614.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/calibration/sensor-mount/IMG_20220901_120244.jpg": {
+        "type": "Image",
+        "color": "#a39e98",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/calibration/sensor-mount/_IMG_20220901_120244.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/20210227_134657.mp4": {
+        "type": "Video",
+        "color": "#968a89",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "webMPath": "other/bldc/high-power-sensorless-bldc/_20210227_134657.mp4.webm",
+        "movPath": "other/bldc/high-power-sensorless-bldc/_20210227_134657.mp4.mov",
+        "extension": ".mp4"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210918_145239.jpg": {
+        "type": "Image",
+        "color": "#908881",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210918_145239.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_103137.jpg": {
+        "type": "Image",
+        "color": "#938380",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_103137.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_103149.jpg": {
+        "type": "Image",
+        "color": "#70777f",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_103149.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_131903.jpg": {
+        "type": "Image",
+        "color": "#ab7f72",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_131903.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_133546.jpg": {
+        "type": "Image",
+        "color": "#91877c",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_133546.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_134350.jpg": {
+        "type": "Image",
+        "color": "#978482",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_134350.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_135037.jpg": {
+        "type": "Image",
+        "color": "#92887f",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_135037.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_140112.jpg": {
+        "type": "Image",
+        "color": "#a9a8a4",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_140112.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_141426.jpg": {
+        "type": "Image",
+        "color": "#a3a098",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_141426.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_143545.jpg": {
+        "type": "Image",
+        "color": "#a09b91",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_143545.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_150328.jpg": {
+        "type": "Image",
+        "color": "#9b9894",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_150328.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_151001.jpg": {
+        "type": "Image",
+        "color": "#878685",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_151001.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_151020.jpg": {
+        "type": "Image",
+        "color": "#8f8b87",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_151020.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_151023.jpg": {
+        "type": "Image",
+        "color": "#918c89",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_151023.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_153227.jpg": {
+        "type": "Image",
+        "color": "#9c9288",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_153227.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_153403.jpg": {
+        "type": "Image",
+        "color": "#837f7d",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_153403.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_153404.jpg": {
+        "type": "Image",
+        "color": "#837e7b",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_153404.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_153427.jpg": {
+        "type": "Image",
+        "color": "#928d88",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_153427.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_153517.jpg": {
+        "type": "Image",
+        "color": "#918d87",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_153517.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_154318.jpg": {
+        "type": "Image",
+        "color": "#91857f",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_154318.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_154323.jpg": {
+        "type": "Image",
+        "color": "#94867f",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_154323.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_154327.jpg": {
+        "type": "Image",
+        "color": "#a19982",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_154327.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_154332.jpg": {
+        "type": "Image",
+        "color": "#8d8785",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_154332.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_154336.jpg": {
+        "type": "Image",
+        "color": "#968e86",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_154336.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_164039.jpg": {
+        "type": "Image",
+        "color": "#7f7d79",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_164039.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_165013.jpg": {
+        "type": "Image",
+        "color": "#7a7d7d",
+        "height": 1168,
+        "width": 2592,
+        "aspectRatio": 2.219178082191781,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_165013.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_165103.jpg": {
+        "type": "Image",
+        "color": "#7c7670",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_165103.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_165432.jpg": {
+        "type": "Image",
+        "color": "#958b80",
+        "height": 1476,
+        "width": 3280,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_165432.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/IMG_20210920_165445.jpg": {
+        "type": "Image",
+        "color": "#8d8178",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/high-power-sensorless-bldc/_IMG_20210920_165445.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/high-power-sensorless-bldc/VID_20210920_150602.mp4": {
+        "type": "Video",
+        "color": "#817b72",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "webMPath": "other/bldc/high-power-sensorless-bldc/_VID_20210920_150602.mp4.webm",
+        "movPath": "other/bldc/high-power-sensorless-bldc/_VID_20210920_150602.mp4.mov",
+        "extension": ".mp4"
+    },
+    "other/bldc/high-power-sensorless-bldc/VID_20210920_153635.mp4": {
+        "type": "Video",
+        "color": "#979185",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "webMPath": "other/bldc/high-power-sensorless-bldc/_VID_20210920_153635.mp4.webm",
+        "movPath": "other/bldc/high-power-sensorless-bldc/_VID_20210920_153635.mp4.mov",
+        "extension": ".mp4"
+    },
+    "other/bldc/smooth-sensored-bldc/IMG_20221212_192305.jpg": {
+        "type": "Image",
+        "color": "#907a5e",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/bldc/smooth-sensored-bldc/_IMG_20221212_192305.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/bldc/smooth-sensored-bldc/PCB_PCB_SPWM-L6234_2023-11-13.svg": {
+        "type": "Image",
+        "color": "#662e4b",
+        "height": 750,
+        "width": 245,
+        "aspectRatio": 0.32666666666666666,
+        "webPPath": "other/bldc/smooth-sensored-bldc/_PCB_PCB_SPWM-L6234_2023-11-13.svg.webp",
+        "extension": ".svg"
+    },
+    "other/bldc/smooth-sensored-bldc/Schematic_SPWM-L6234_2023-11-13.svg": {
+        "type": "Image",
+        "color": "#f7f5f9",
+        "height": 2069,
+        "width": 2923,
+        "aspectRatio": 1.4127597873368778,
+        "webPPath": "other/bldc/smooth-sensored-bldc/_Schematic_SPWM-L6234_2023-11-13.svg.webp",
+        "extension": ".svg"
+    },
+    "other/bldc/smooth-sensored-bldc/VID_20231018_113103.mp4": {
+        "type": "Video",
+        "color": "#797a74",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "webMPath": "other/bldc/smooth-sensored-bldc/_VID_20231018_113103.mp4.webm",
+        "movPath": "other/bldc/smooth-sensored-bldc/_VID_20231018_113103.mp4.mov",
+        "extension": ".mp4"
+    },
+    "other/bldc/smooth-sensored-bldc/VID_20231027_140804.mp4": {
+        "type": "Video",
+        "color": "#747877",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "webMPath": "other/bldc/smooth-sensored-bldc/_VID_20231027_140804.mp4.webm",
+        "movPath": "other/bldc/smooth-sensored-bldc/_VID_20231027_140804.mp4.mov",
+        "extension": ".mp4"
+    },
+    "other/bldc/smooth-sensored-bldc/anti-cogging-output.png": {
+        "type": "Image",
+        "color": "#f7f1f7",
+        "height": 1425,
+        "width": 2410,
+        "aspectRatio": 1.6912280701754385,
+        "webPPath": "other/bldc/smooth-sensored-bldc/_anti-cogging-output.png.webp",
+        "extension": ".png"
+    },
+    "other/bldc/smooth-sensored-bldc/spwm-3d-pcb.png": {
+        "type": "Image",
+        "color": "#676766",
+        "height": 1248,
+        "width": 490,
+        "aspectRatio": 0.3926282051282051,
+        "webPPath": "other/bldc/smooth-sensored-bldc/_spwm-3d-pcb.png.webp",
+        "extension": ".png"
+    },
+    "other/bldc/smooth-sensored-bldc/step-change-output.png": {
+        "type": "Image",
+        "color": "#efefef",
+        "height": 724,
+        "width": 2375,
+        "aspectRatio": 3.2803867403314917,
+        "webPPath": "other/bldc/smooth-sensored-bldc/_step-change-output.png.webp",
+        "extension": ".png"
+    },
+    "other/bldc/smooth-sensored-bldc/step-change-regression.png": {
+        "type": "Image",
+        "color": "#fcfcfc",
+        "height": 722,
+        "width": 2343,
+        "aspectRatio": 3.2451523545706373,
+        "webPPath": "other/bldc/smooth-sensored-bldc/_step-change-regression.png.webp",
+        "extension": ".png"
+    },
+    "other/cad/IMG_20220601_134248.jpg": {
+        "type": "Image",
+        "color": "#877e73",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/cad/_IMG_20220601_134248.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/cad/axis.png": {
+        "type": "Image",
+        "color": "#929293",
+        "height": 655,
+        "width": 944,
+        "aspectRatio": 1.4412213740458015,
+        "webPPath": "other/cad/_axis.png.webp",
+        "extension": ".png"
+    },
+    "other/cad/cup.png": {
+        "type": "Image",
+        "color": "#bbbebe",
+        "height": 668,
+        "width": 580,
+        "aspectRatio": 0.8682634730538922,
+        "webPPath": "other/cad/_cup.png.webp",
+        "extension": ".png"
+    },
+    "other/cad/motor.png": {
+        "type": "Image",
+        "color": "#bfbcba",
+        "height": 613,
+        "width": 749,
+        "aspectRatio": 1.2218597063621532,
+        "webPPath": "other/cad/_motor.png.webp",
+        "extension": ".png"
+    },
+    "other/cad/website-asset.png": {
+        "type": "Image",
+        "color": "#3a3a3a",
+        "height": 728,
+        "width": 364,
+        "aspectRatio": 0.5,
+        "webPPath": "other/cad/_website-asset.png.webp",
+        "extension": ".png"
+    },
+    "other/cup/IMG_20211111_155147.jpg": {
+        "type": "Image",
+        "color": "#7d736b",
+        "height": 4000,
+        "width": 1800,
+        "aspectRatio": 0.45,
+        "webPPath": "other/cup/_IMG_20211111_155147.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/cup/Screenshot-2023-11-14-153023.png": {
+        "type": "Image",
+        "color": "#434343",
+        "height": 1300,
+        "width": 1955,
+        "aspectRatio": 1.5038461538461538,
+        "webPPath": "other/cup/_Screenshot-2023-11-14-153023.png.webp",
+        "extension": ".png"
+    },
+    "other/cup/cup.png": {
+        "type": "Image",
+        "color": "#bbbebe",
+        "height": 668,
+        "width": 580,
+        "aspectRatio": 0.8682634730538922,
+        "webPPath": "other/cup/_cup.png.webp",
+        "extension": ".png"
+    },
+    "other/cv/Resume1.png": {
+        "type": "Image",
+        "color": "#f9f9f9",
+        "height": 1457,
+        "width": 1124,
+        "aspectRatio": 0.7714481811942348,
+        "webPPath": "other/cv/_Resume1.png.webp",
+        "extension": ".png"
+    },
+    "other/cv/Resume2.png": {
+        "type": "Image",
+        "color": "#f9f9f9",
+        "height": 1241,
+        "width": 881,
+        "aspectRatio": 0.7099113618049959,
+        "webPPath": "other/cv/_Resume2.png.webp",
+        "extension": ".png"
+    },
+    "other/drone/20210227_134657.mp4": {
+        "type": "Video",
+        "color": "#968a89",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "webMPath": "other/drone/_20210227_134657.mp4.webm",
+        "movPath": "other/drone/_20210227_134657.mp4.mov",
+        "extension": ".mp4"
+    },
+    "other/drone/Centre Core_2-bw.png": {
+        "type": "Image",
+        "color": "#404040",
+        "height": 1152,
+        "width": 1277,
+        "aspectRatio": 1.1085069444444444,
+        "webPPath": "other/drone/_Centre Core_2-bw.png.webp",
+        "extension": ".png"
+    },
+    "other/drone/Motor_1-bw.png": {
+        "type": "Image",
+        "color": "#2e2e2e",
+        "height": 1872,
+        "width": 645,
+        "aspectRatio": 0.34455128205128205,
+        "webPPath": "other/drone/_Motor_1-bw.png.webp",
+        "extension": ".png"
+    },
+    "other/drone/PCB_pcb_2022-06-08.png": {
+        "type": "Image",
+        "color": "#751e32",
+        "height": 473,
+        "width": 1143,
+        "aspectRatio": 2.416490486257928,
+        "webPPath": "other/drone/_PCB_pcb_2022-06-08.png.webp",
+        "extension": ".png"
+    },
+    "other/drone/Schematic_drone-smt-3-high-power_2022-06-06.png": {
+        "type": "Image",
+        "color": "#f7f7f6",
+        "height": 827,
+        "width": 1169,
+        "aspectRatio": 1.4135429262394197,
+        "webPPath": "other/drone/_Schematic_drone-smt-3-high-power_2022-06-06.png.webp",
+        "extension": ".png"
+    },
+    "other/drone/Swashplate_1.png": {
+        "type": "Image",
+        "color": "#363636",
+        "height": 1372,
+        "width": 1311,
+        "aspectRatio": 0.9555393586005831,
+        "webPPath": "other/drone/_Swashplate_1.png.webp",
+        "extension": ".png"
+    },
+    "other/drone/math-underactuated-formula.png": {
+        "type": "Image",
+        "color": "#808080",
+        "height": 28,
+        "width": 876,
+        "aspectRatio": 31.285714285714285,
+        "webPPath": "other/drone/_math-underactuated-formula.png.webp",
+        "extension": ".png"
+    },
+    "other/drone/math-underactuated-legend.png": {
+        "type": "Image",
+        "color": "#808080",
+        "height": 179,
+        "width": 899,
+        "aspectRatio": 5.022346368715084,
+        "webPPath": "other/drone/_math-underactuated-legend.png.webp",
+        "extension": ".png"
+    },
+    "other/drone/thrust-modulation.mp4": {
+        "type": "Video",
+        "color": "#fdfdfc",
+        "height": 1478,
+        "width": 2176,
+        "aspectRatio": 1.4722598105548037,
+        "webMPath": "other/drone/_thrust-modulation.mp4.webm",
+        "movPath": "other/drone/_thrust-modulation.mp4.mov",
+        "extension": ".mp4"
+    },
+    "other/machine-learning/cv-extra.jpg": {
+        "type": "Image",
+        "color": "#716f6b",
+        "height": 1800,
+        "width": 4000,
+        "aspectRatio": 2.2222222222222223,
+        "webPPath": "other/machine-learning/_cv-extra.jpg.webp",
+        "extension": ".jpg"
+    },
+    "other/research-placement/110815160857.png": {
+        "type": "Image",
+        "color": "#474fba",
+        "height": 1024,
+        "width": 1280,
+        "aspectRatio": 1.25,
+        "webPPath": "other/research-placement/_110815160857.png.webp",
+        "extension": ".png"
+    },
+    "other/research-placement/110818134211.png": {
+        "type": "Image",
+        "color": "#2b4047",
+        "height": 1024,
+        "width": 1280,
+        "aspectRatio": 1.25,
+        "webPPath": "other/research-placement/_110818134211.png.webp",
+        "extension": ".png"
+    },
+    "other/research-placement/110818134541.png": {
+        "type": "Image",
+        "color": "#999e96",
+        "height": 1024,
+        "width": 1280,
+        "aspectRatio": 1.25,
+        "webPPath": "other/research-placement/_110818134541.png.webp",
+        "extension": ".png"
+    },
+    "other/research-placement/110819124757.png": {
+        "type": "Image",
+        "color": "#aaaea7",
+        "height": 1024,
+        "width": 1280,
+        "aspectRatio": 1.25,
+        "webPPath": "other/research-placement/_110819124757.png.webp",
+        "extension": ".png"
+    },
+    "other/research-placement/110819124857.png": {
+        "type": "Image",
+        "color": "#0a71ea",
+        "height": 1024,
+        "width": 1280,
+        "aspectRatio": 1.25,
+        "webPPath": "other/research-placement/_110819124857.png.webp",
+        "extension": ".png"
+    },
+    "other/research-placement/110822160130.png": {
+        "type": "Image",
+        "color": "#74a0bf",
+        "height": 1024,
+        "width": 1280,
+        "aspectRatio": 1.25,
+        "webPPath": "other/research-placement/_110822160130.png.webp",
+        "extension": ".png"
+    },
+    "other/research-placement/110908144954.png": {
+        "type": "Image",
+        "color": "#a8826a",
+        "height": 1024,
+        "width": 1280,
+        "aspectRatio": 1.25,
+        "webPPath": "other/research-placement/_110908144954.png.webp",
+        "extension": ".png"
+    },
+    "other/research-placement/110908144956.png": {
+        "type": "Image",
+        "color": "#7f3a3d",
+        "height": 1024,
+        "width": 1280,
+        "aspectRatio": 1.25,
+        "webPPath": "other/research-placement/_110908144956.png.webp",
+        "extension": ".png"
+    },
+    "other/research-placement/crystals.avi": {
+        "type": "Video",
+        "color": "#b7bdbb",
+        "height": 1024,
+        "width": 1280,
+        "aspectRatio": 1.25,
+        "webMPath": "other/research-placement/_crystals.avi.webm",
+        "movPath": "other/research-placement/_crystals.avi.mov",
+        "extension": ".avi"
+    },
+    "other/scene/0af860ef-a6ad-4ef5-980e-a43d3bd3f0b1-trim.png": {
+        "type": "Image",
+        "color": "#464a3d",
+        "height": 1933,
+        "width": 3300,
+        "aspectRatio": 1.7071908949818935,
+        "webPPath": "other/scene/_0af860ef-a6ad-4ef5-980e-a43d3bd3f0b1-trim.png.webp",
+        "extension": ".png"
+    },
+    "other/scene/9f203c47-6b57-41bd-9d75-47a3a29782fe-trim.png": {
+        "type": "Image",
+        "color": "#a9a9a9",
+        "height": 2367,
+        "width": 3300,
+        "aspectRatio": 1.394169835234474,
+        "webPPath": "other/scene/_9f203c47-6b57-41bd-9d75-47a3a29782fe-trim.png.webp",
+        "extension": ".png"
+    },
+    "other/scene/Screenshot-2023-11-14-152915.png": {
+        "type": "Image",
+        "color": "#848484",
+        "height": 1314,
+        "width": 2541,
+        "aspectRatio": 1.9337899543378996,
+        "webPPath": "other/scene/_Screenshot-2023-11-14-152915.png.webp",
+        "extension": ".png"
+    },
+    "other/thesis/monte-simulation-software.png": {
+        "type": "Image",
+        "color": "#d2d0d3",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "webPPath": "other/thesis/_monte-simulation-software.png.webp",
+        "extension": ".png"
+    },
+    "other/thesis/penrose-vertex-population-data.png": {
+        "type": "Image",
+        "color": "#eceded",
+        "height": 634,
+        "width": 1316,
+        "aspectRatio": 2.0757097791798107,
+        "webPPath": "other/thesis/_penrose-vertex-population-data.png.webp",
+        "extension": ".png"
+    },
+    "other/thesis/penrose.png": {
+        "type": "Image",
+        "color": "#dfeddf",
+        "height": 926,
+        "width": 1067,
+        "aspectRatio": 1.152267818574514,
+        "webPPath": "other/thesis/_penrose.png.webp",
+        "extension": ".png"
+    },
+    "other/webgpu/sierpinski-gasket-penta.png": {
+        "type": "Image",
+        "color": "#1c1c1c",
+        "height": 935,
+        "width": 926,
+        "aspectRatio": 0.9903743315508021,
+        "webPPath": "other/webgpu/_sierpinski-gasket-penta.png.webp",
+        "extension": ".png"
+    },
+    "other/webgpu/sierpinski-gasket.png": {
+        "type": "Image",
+        "color": "#474747",
+        "height": 939,
+        "width": 937,
+        "aspectRatio": 0.9978700745473909,
+        "webPPath": "other/webgpu/_sierpinski-gasket.png.webp",
+        "extension": ".png"
+    },
+    "page-covers/0af860ef-a6ad-4ef5-980e-a43d3bd3f0b1-trim.png": {
+        "type": "Image",
+        "color": "#464a3d",
+        "height": 1933,
+        "width": 3300,
+        "aspectRatio": 1.7071908949818935,
+        "webPPath": "page-covers/_0af860ef-a6ad-4ef5-980e-a43d3bd3f0b1-trim.png.webp",
+        "extension": ".png"
+    },
+    "page-covers/9f203c47-6b57-41bd-9d75-47a3a29782fe-trim.png": {
+        "type": "Image",
+        "color": "#a9a9a9",
+        "height": 2367,
+        "width": 3300,
+        "aspectRatio": 1.394169835234474,
+        "webPPath": "page-covers/_9f203c47-6b57-41bd-9d75-47a3a29782fe-trim.png.webp",
+        "extension": ".png"
+    },
+    "page-covers/IMG_20210920_165013.jpg": {
+        "type": "Image",
+        "color": "#7a7d7d",
+        "height": 1168,
+        "width": 2592,
+        "aspectRatio": 2.219178082191781,
+        "webPPath": "page-covers/_IMG_20210920_165013.jpg.webp",
+        "extension": ".jpg"
+    },
+    "page-covers/code.png": {
+        "type": "Image",
+        "color": "#32353a",
+        "height": 1600,
+        "width": 2560,
+        "aspectRatio": 1.6,
+        "webPPath": "page-covers/_code.png.webp",
+        "extension": ".png"
+    },
+    "page-covers/library.png": {
+        "type": "Image",
+        "color": "#745449",
+        "height": 1280,
+        "width": 2048,
+        "aspectRatio": 1.6,
+        "webPPath": "page-covers/_library.png.webp",
+        "extension": ".png"
+    },
+    "page-covers/team6.png": {
+        "type": "Image",
+        "color": "#b59f86",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "webPPath": "page-covers/_team6.png.webp",
+        "extension": ".png"
+    },
+    "unsplash/aleksandr-artiushenko-zrmleUlLdv0-unsplash.jpg": {
+        "type": "Image",
+        "color": "#84898b",
+        "height": 3024,
+        "width": 2005,
+        "aspectRatio": 0.6630291005291006,
+        "webPPath": "unsplash/_aleksandr-artiushenko-zrmleUlLdv0-unsplash.jpg.webp",
+        "extension": ".jpg"
+    },
+    "unsplash/jerry-kavan-AhMoWv0fQzc-unsplash.jpg": {
+        "type": "Image",
+        "color": "#503227",
+        "height": 9239,
+        "width": 6149,
+        "aspectRatio": 0.6655482195042753,
+        "webPPath": "unsplash/_jerry-kavan-AhMoWv0fQzc-unsplash.jpg.webp",
+        "extension": ".jpg"
+    },
+    "unsplash/josh-hild-eG0lv29oaq4-unsplash.jpg": {
+        "type": "Image",
+        "color": "#556b70",
+        "height": 2793,
+        "width": 4181,
+        "aspectRatio": 1.4969566774078051,
+        "webPPath": "unsplash/_josh-hild-eG0lv29oaq4-unsplash.jpg.webp",
+        "extension": ".jpg"
+    },
+    "unsplash/kal-visuals--Kom60lezrU-unsplash.jpg": {
+        "type": "Image",
+        "color": "#737871",
+        "height": 4608,
+        "width": 3072,
+        "aspectRatio": 0.6666666666666666,
+        "webPPath": "unsplash/_kal-visuals--Kom60lezrU-unsplash.jpg.webp",
+        "extension": ".jpg"
+    },
+    "unsplash/kiko-camaclang-lv8unel9SCI-unsplash.jpg": {
+        "type": "Image",
+        "color": "#bfc5c1",
+        "height": 4380,
+        "width": 3289,
+        "aspectRatio": 0.7509132420091325,
+        "webPPath": "unsplash/_kiko-camaclang-lv8unel9SCI-unsplash.jpg.webp",
+        "extension": ".jpg"
+    },
+    "unsplash/kira-laktionov-mrMUeF2bEYk-unsplash.jpg": {
+        "type": "Image",
+        "color": "#d5d2cf",
+        "height": 5272,
+        "width": 3501,
+        "aspectRatio": 0.6640743550834598,
+        "webPPath": "unsplash/_kira-laktionov-mrMUeF2bEYk-unsplash.jpg.webp",
+        "extension": ".jpg"
+    },
+    "unsplash/luke-miller-riV40lmd1yE-unsplash.jpg": {
+        "type": "Image",
+        "color": "#543231",
+        "height": 6950,
+        "width": 4633,
+        "aspectRatio": 0.6666187050359712,
+        "webPPath": "unsplash/_luke-miller-riV40lmd1yE-unsplash.jpg.webp",
+        "extension": ".jpg"
+    },
+    "unsplash/marek-szturc-IfZVE7HsXp8-unsplash.jpg": {
+        "type": "Image",
+        "color": "#888787",
+        "height": 5440,
+        "width": 3742,
+        "aspectRatio": 0.6878676470588235,
+        "webPPath": "unsplash/_marek-szturc-IfZVE7HsXp8-unsplash.jpg.webp",
+        "extension": ".jpg"
+    },
+    "unsplash/mario-scheibl-5jPpYdBtfD4-unsplash.jpg": {
+        "type": "Image",
+        "color": "#38393c",
+        "height": 2891,
+        "width": 4000,
+        "aspectRatio": 1.3836042891732965,
+        "webPPath": "unsplash/_mario-scheibl-5jPpYdBtfD4-unsplash.jpg.webp",
+        "extension": ".jpg"
+    },
+    "unsplash/oleg-demakov-jVsFoS586aI-unsplash.jpg": {
+        "type": "Image",
+        "color": "#7777ac",
+        "height": 2012,
+        "width": 3024,
+        "aspectRatio": 1.502982107355865,
+        "webPPath": "unsplash/_oleg-demakov-jVsFoS586aI-unsplash.jpg.webp",
+        "extension": ".jpg"
+    },
+    "unsplash/paris-bilal-Qna3C7BTrnA-unsplash.jpg": {
+        "type": "Image",
+        "color": "#4a4c52",
+        "height": 6000,
+        "width": 4000,
+        "aspectRatio": 0.6666666666666666,
+        "webPPath": "unsplash/_paris-bilal-Qna3C7BTrnA-unsplash.jpg.webp",
+        "extension": ".jpg"
+    },
+    "unsplash/stevosdisposable-WVP0v0KRMMU-unsplash.jpg": {
+        "type": "Image",
+        "color": "#5b5851",
+        "height": 5000,
+        "width": 4000,
+        "aspectRatio": 0.8,
+        "webPPath": "unsplash/_stevosdisposable-WVP0v0KRMMU-unsplash.jpg.webp",
+        "extension": ".jpg"
+    },
+    "unsplash/taiki-ishikawa-Q9JHncNMY-0-unsplash.jpg": {
+        "type": "Image",
+        "color": "#525456",
+        "height": 6000,
+        "width": 4000,
+        "aspectRatio": 0.6666666666666666,
+        "webPPath": "unsplash/_taiki-ishikawa-Q9JHncNMY-0-unsplash.jpg.webp",
+        "extension": ".jpg"
+    },
+    "unsplash/taiki-ishikawa-TjghSgE-yVg-unsplash.jpg": {
+        "type": "Image",
+        "color": "#6a5238",
+        "height": 6000,
+        "width": 4000,
+        "aspectRatio": 0.6666666666666666,
+        "webPPath": "unsplash/_taiki-ishikawa-TjghSgE-yVg-unsplash.jpg.webp",
+        "extension": ".jpg"
+    },
+    "unsplash/thomas-tourneux-6EaK1iYOYBA-unsplash.jpg": {
+        "type": "Image",
+        "color": "#996533",
+        "height": 4948,
+        "width": 3958,
+        "aspectRatio": 0.7999191592562651,
+        "webPPath": "unsplash/_thomas-tourneux-6EaK1iYOYBA-unsplash.jpg.webp",
+        "extension": ".jpg"
+    },
+    "mixkit/_mixkit-highway-and-bus-station-in-a-sunny-desert-from-above-51794-medium.mp4.mov": {
+        "type": "Video",
+        "color": "#78767c",
+        "height": 1280,
+        "width": 720,
+        "aspectRatio": 0.5625,
+        "extension": ".mov"
+    },
+    "mixkit/_mixkit-rain-falling-on-the-water-of-a-lake-seen-up-18312-medium.mp4.mov": {
+        "type": "Video",
+        "color": "#000000",
+        "height": 720,
+        "width": 1280,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".mov"
+    },
+    "mixkit/_mixkit-macaw-parrot-feeding-on-a-branch-4669-medium.mp4.mov": {
+        "type": "Video",
+        "color": "#6c6b51",
+        "height": 720,
+        "width": 1280,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".mov"
+    },
+    "other/bldc/high-power-sensorless-bldc/_VID_20210920_150602.mp4.mov": {
+        "type": "Video",
+        "color": "#817b72",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".mov"
+    },
+    "mixkit/_mixkit-highway-in-the-middle-of-a-mountain-range-4633-medium.mp4.mov": {
+        "type": "Video",
+        "color": "#60655f",
+        "height": 720,
+        "width": 1280,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".mov"
+    },
+    "mixkit/_mixkit-countryside-meadow-4075-medium.mp4.mov": {
+        "type": "Video",
+        "color": "#586e4a",
+        "height": 720,
+        "width": 1280,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".mov"
+    },
+    "other/bldc/smooth-sensored-bldc/_VID_20231018_113103.mp4.mov": {
+        "type": "Video",
+        "color": "#797a74",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".mov"
+    },
+    "other/bldc/high-power-sensorless-bldc/_20210227_134657.mp4.mov": {
+        "type": "Video",
+        "color": "#968a89",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".mov"
+    },
+    "other/drone/_20210227_134657.mp4.mov": {
+        "type": "Video",
+        "color": "#968a89",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".mov"
+    },
+    "other/research-placement/_crystals.avi.mov": {
+        "type": "Video",
+        "color": "#b7bdbb",
+        "height": 1024,
+        "width": 1280,
+        "aspectRatio": 1.25,
+        "extension": ".mov"
+    },
+    "other/bldc/high-power-sensorless-bldc/_VID_20210920_153635.mp4.mov": {
+        "type": "Video",
+        "color": "#979185",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".mov"
+    },
+    "other/bldc/smooth-sensored-bldc/_VID_20231027_140804.mp4.mov": {
+        "type": "Video",
+        "color": "#747877",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".mov"
+    },
+    "mixkit/_mixkit-macaw-parrot-feeding-on-a-branch-4669-medium.mp4.webm": {
+        "type": "Video",
+        "color": "#6c6b51",
+        "height": 720,
+        "width": 1280,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".webm"
+    },
+    "other/bldc/high-power-sensorless-bldc/_VID_20210920_150602.mp4.webm": {
+        "type": "Video",
+        "color": "#817b72",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".webm"
+    },
+    "mixkit/_mixkit-rain-falling-on-the-water-of-a-lake-seen-up-18312-medium.mp4.webm": {
+        "type": "Video",
+        "color": "#000000",
+        "height": 720,
+        "width": 1280,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".webm"
+    },
+    "mixkit/_mixkit-highway-and-bus-station-in-a-sunny-desert-from-above-51794-medium.mp4.webm": {
+        "type": "Video",
+        "color": "#78767c",
+        "height": 1280,
+        "width": 720,
+        "aspectRatio": 0.5625,
+        "extension": ".webm"
+    },
+    "mixkit/_mixkit-highway-in-the-middle-of-a-mountain-range-4633-medium.mp4.webm": {
+        "type": "Video",
+        "color": "#60655f",
+        "height": 720,
+        "width": 1280,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".webm"
+    },
+    "other/drone/_thrust-modulation.mp4.mov": {
+        "type": "Video",
+        "color": "#fdfdfc",
+        "height": 1478,
+        "width": 2176,
+        "aspectRatio": 1.4722598105548037,
+        "extension": ".mov"
+    },
+    "mixkit/_mixkit-countryside-meadow-4075-medium.mp4.webm": {
+        "type": "Video",
+        "color": "#586e4a",
+        "height": 720,
+        "width": 1280,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".webm"
+    },
+    "other/bldc/high-power-sensorless-bldc/_20210227_134657.mp4.webm": {
+        "type": "Video",
+        "color": "#968a89",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".webm"
+    },
+    "other/drone/_20210227_134657.mp4.webm": {
+        "type": "Video",
+        "color": "#968a89",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".webm"
+    },
+    "other/bldc/smooth-sensored-bldc/_VID_20231018_113103.mp4.webm": {
+        "type": "Video",
+        "color": "#797a74",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".webm"
+    },
+    "other/bldc/high-power-sensorless-bldc/_VID_20210920_153635.mp4.webm": {
+        "type": "Video",
+        "color": "#979185",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".webm"
+    },
+    "other/research-placement/_crystals.avi.webm": {
+        "type": "Video",
+        "color": "#b7bdbb",
+        "height": 1024,
+        "width": 1280,
+        "aspectRatio": 1.25,
+        "extension": ".webm"
+    },
+    "other/drone/_thrust-modulation.mp4.webm": {
+        "type": "Video",
+        "color": "#fdfdfc",
+        "height": 1478,
+        "width": 2176,
+        "aspectRatio": 1.4722598105548037,
+        "extension": ".webm"
+    },
+    "other/bldc/smooth-sensored-bldc/_VID_20231027_140804.mp4.webm": {
+        "type": "Video",
+        "color": "#747877",
+        "height": 1080,
+        "width": 1920,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".webm"
+    }
+}

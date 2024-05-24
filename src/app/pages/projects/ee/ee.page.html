@@ -1,0 +1,1296 @@
+<ion-header #header [translucent]="true" class="ion-no-border">
+  <ion-toolbar #toolbar>
+    <page-section-navigation-bar [basePath]="pagePath" category="Topics"></page-section-navigation-bar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content slot="fixed" [fullscreen]="true" [appFadeHeaderOnScroll]="toolbar" [header]="header" scrollEvents="true">
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ pagePath }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <page-cover id="Home" [cheveron]="true" [pagePath]="pagePath" backgroundImageId="page-covers/IMG_20210920_165013.jpg">
+    <h1 currentColor>Hardware engineering</h1>
+    <div>
+      <h2>
+        I study <ion-icon name="school-outline"></ion-icon> and engineer <ion-icon name="hammer-outline"></ion-icon>
+        hardware <ion-icon name="hardware-chip-outline"></ion-icon>
+      </h2>
+    </div>
+  </page-cover>
+
+  <div id="Navigation" [linkElementToNavigation]="pagePath">
+    <div class="page-banner-text">
+      <ion-list>
+        <ion-row text-center>
+          <ion-col *ngFor="let p of appPages; let i = index">
+            <ion-button [disabled]="p.url === pagePath" [color]="p.url === pagePath ? 'dark' : 'light'" size="default"
+              routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon [color]="p.color" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+              <ion-row>
+                {{p.title}}
+              </ion-row>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-list>
+    </div>
+  </div>
+
+  <page-section [linkElementToNavigation]="pagePath" id="HBLDC" sideHeaderTitle="Projects"
+    sideHeaderSubtitle="Aliquet Nibh Praesent" iconName="hardware-chip-outline"
+    blockTitle="Aliquet sagittis id consectetur" blockSubtitle="Lectus" [rightHanded]="false"
+    backgroundId="other/bldc/high-power-sensorless-bldc/IMG_20210918_145239.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>tincidunt</li>
+        <li>praesent</li>
+        <li>gravida</li>
+        <li>dictum</li>
+        <li>vel fringilla</li>
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <h1><strong>Lectus</strong> - Lorem donec massa sapien faucibus et.</h1>
+    </ion-item>
+
+    <ion-item>
+      <div><strong>Abstract:</strong> Nisl suscipit adipiscing bibendum est ultricies integer. Semper feugiat nibh sed
+        pulvinar proin. Id aliquet lectus proin nibh nisl condimentum id. Cras pulvinar mattis nunc sed blandit.
+        Ultricies mi eget mauris pharetra et ultrices neque ornare. Quam lacus suspendisse faucibus interdum posuere.
+      </div>
+    </ion-item>
+
+
+    <ion-item>
+      <h1>Viverra Magna:</h1>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="logo-github" slot="start"></ion-icon>
+      <a target="_blank" href="https://github.com/kaepek/sbldc-smt">
+        <ion-label>Feugiat nibh</ion-label>
+      </a>
+    </ion-item>
+
+    <ion-item>
+      <h1>Imperdiet sed:</h1>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="logo-github" slot="start"></ion-icon>
+      <a target="_blank" href="https://github.com">
+        <ion-label>Tristique senectus et netus et. Nunc vel risus commodo viverra maecenas accumsan lacus
+          vel.</ion-label>
+      </a>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-icon name="logo-github" slot="start"></ion-icon>
+      <a target="_blank" href="https://github.com/jk89/teensy40-6step-adc-bldc">
+        <ion-label>Aliquet porttitor lacus luctus accumsan tortor posuere ac ut.</ion-label>
+      </a>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-icon name="logo-github" slot="start"></ion-icon>
+      <a target="_blank" href="https://github.com/jk89/teensy40-6step-acmp-bldc">
+        <ion-label>Ultricies mi eget mauris pharetra et ultrices neque ornare. Quam lacus suspendisse faucibus interdum
+          posuere.</ion-label>
+      </a>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-icon name="logo-github" slot="start"></ion-icon>
+      <a target="_blank" href="https://github.com/jk89/teensy40-6step-enc-bldc">
+        <ion-label>Proin libero nunc consequat interdum varius sit amet mattis.</ion-label>
+      </a>
+    </ion-item>
+
+
+    <ion-item>
+      <div>
+
+        <app-lazy-enlargeable-media width="600" class="float-left"
+          id="other/bldc/high-power-sensorless-bldc/VID_20210920_150602.mp4"></app-lazy-enlargeable-media>
+
+        <p>
+          Lorem donec massa sapien faucibus et. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Nisl
+          suscipit adipiscing bibendum est ultricies integer. Semper feugiat nibh sed pulvinar proin. Id aliquet lectus
+          proin nibh nisl condimentum id. Cras pulvinar mattis nunc sed blandit. Ultricies mi eget mauris pharetra et
+          ultrices neque ornare. Quam lacus suspendisse faucibus interdum posuere.
+        </p>
+
+        <app-lazy-enlargeable-media width="600" class="float-right"
+          id="other/bldc/high-power-sensorless-bldc/20210227_134657.mp4"></app-lazy-enlargeable-media>
+
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <h1><strong>Condimentum tincidunt</strong></h1>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <div>
+
+        <div class="float-left">
+          <h2><strong>Vestibulum</strong></h2>
+          <app-lazy-enlargeable-media width="500" style="margin-right:0;"
+            id="unsplash/kiko-camaclang-lv8unel9SCI-unsplash.jpg">
+          </app-lazy-enlargeable-media>
+        </div>
+
+        <div class="float-left">
+          <h2><strong>Vesto tincidunt</strong></h2>
+          <app-lazy-enlargeable-media height="600" style="margin-left:0;" id="unsplash/marek-szturc-IfZVE7HsXp8-unsplash.jpg">
+          </app-lazy-enlargeable-media>
+        </div>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <h1>Vestibulum venenatis:</h1>
+    </ion-item>
+
+    <ion-item>
+      <app-scrollable-zoomable-lazy-multi-media-gallery>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_164039.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_103149.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_165445.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_165432.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_165103.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_165013.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_154336.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_154332.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_154327.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_154323.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_154318.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_153517.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_153427.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_153404.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_153403.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_153227.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_151023.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_151020.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_151001.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_150328.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_143545.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_141426.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_140112.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_135037.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_133546.jpg">
+        </media-element>
+        <media-element id="other/bldc/high-power-sensorless-bldc/IMG_20210920_131903.jpg">
+        </media-element>
+      </app-scrollable-zoomable-lazy-multi-media-gallery>
+    </ion-item>
+
+    <ion-item>
+      <h1>Adipiscing:</h1>
+    </ion-item>
+
+    <ion-item style="overflow-x: auto;">
+      <app-youtube-video ytVideoId="g84p_-su6sw" height="560" width="315"></app-youtube-video>
+      <app-youtube-video ytVideoId="KxncxjNpMFI" height="560" width="315"></app-youtube-video>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Related projects:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a class="intra-nav-link" appIntraNavLink [basePath]="pagePath" section="BD">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Nibh nisl condimentum id venenatis a
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Blandit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+          <a routerLink="/projects/3d/DRONE" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Lectus Rotor tincidunt
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Blandit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+          <a routerLink="/projects/science/DV" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Faucibus nisl tincidunt
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Blandit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Team:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/teams/ME" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Blandit
+                </ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+
+  <page-section [linkElementToNavigation]="pagePath" id="BD" sideHeaderTitle="Projects"
+    sideHeaderSubtitle="Aliquet Nibh Praesent" iconName="airplane-outline" blockTitle="Lectus Tortor Drone"
+    blockSubtitle="Blandit" [rightHanded]="true" backgroundId="card-header-banners/circuit.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>tincidunt</li>
+        <li>praesent</li>
+        <li>gravida</li>
+        <li>dictum</li>
+        <li>vel fringilla</li>
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <h1><strong>Lectus</strong> - Tortor ultrices</h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <strong>Abstract:</strong> Et tortor at risus viverra adipiscing. Lectus proin nibh nisl condimentum id
+        venenatis a condimentum vitae.
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <h1>Magna:</h1>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="logo-github" slot="start"></ion-icon>
+      <a target="_blank" href="https://github.com">
+        <ion-label>Lorem donec massa sapien faucibus et.</ion-label>
+      </a>
+    </ion-item>
+
+    <ion-item>
+      <div>
+
+        <app-lazy-enlargeable-media class="float-left" id="other/drone/Swashplate_1.png" width="600">
+        </app-lazy-enlargeable-media>
+
+        <p>
+          Varius quam <strong>quisque</strong> id diam vel quam elementum. Mattis enim ut tellus elementum sagittis
+          vitae et. Sed augue
+          lacus viverra vitae. Purus semper eget duis at tellus at urna condimentum mattis. Et tortor at risus viverra
+          adipiscing at in tellus. Felis eget velit aliquet sagittis id consectetur purus. Sed lectus vestibulum mattis
+          ullamcorper velit. Quis auctor elit sed vulputate mi.
+          From a young age I've had an interest in automation and robotics. I started a long term project
+        </p>
+
+        <p>
+          Pulvinar proin gravida hendrerit lectus a. Eu turpis egestas pretium aenean <a target="_blank"
+            href="https://nasa.gov"> ultrices </a> pharetra magna ac placerat
+          vestibulum. Ultrices sagittis orci a scelerisque purus semper eget duis. Suspendisse ultrices gravida dictum
+          fusce ut placerat orci nulla pellentesque. Diam quam nulla porttitor massa id neque aliquam vestibulum. Tortor
+          aliquam nulla facilisi cras fermentum.
+        </p>
+
+        <p>
+          Arius vel pharetra vel turpis nunc eget lorem? Tempus iaculis urna id volutpat lacus laoreet non curabitur <a
+            target="_blank" href="https://en.wikipedia.org/">Gravada</a>:
+        </p>
+
+        <quote>
+          <p>
+            Et odio pellentesque diam volutpat commodo sed egestas. Ullamcorper velit sed ullamcorper morbi tincidunt
+            ornare massa. Mauris cursus mattis molestie a iaculis at. Vivamus arcu felis bibendum ut tristique et
+            egestas quis. Mattis vulputate enim nulla aliquet porttitor.
+          </p>
+        </quote>
+
+        <p>
+          Odio euismod lacinia at quis risus sed vulputate odio ut. Sem et tortor consequat id porta nibh venenatis
+          <strong style="color: cyan;">(1)</strong>, sit amet nisl purus in mollis nunc. Purus in mollis nunc sed id
+          semper
+          <strong style="color: magenta;">(2)</strong> et ramblas <strong style="color: yellow;">(3)</strong>.
+          Fringilla urna porttitor rhoncus dolor purus. Ut tellus elementum sagittis vitae. Odio pellentesque diam
+          volutpat commodo sed egestas (egestas fringilla).
+        </p>
+
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <h1>Quam adipiscing:</h1>
+    </ion-item>
+
+    <div class="item-div">
+      <div>
+        <app-lazy-enlargeable-media class="float-right" id="unsplash/jerry-kavan-AhMoWv0fQzc-unsplash.jpg" height="610">
+        </app-lazy-enlargeable-media>
+
+        <p>
+          Nascetur ridiculus mus mauris <a target="_blank" href="https://www.google.org/">Yamplas</a> a
+          Eget gravida cum sociis natoque penatibus. <a target="_blank" href="https://www.goole.org/">Tortor</a>;
+          Mauris ultrices eros in cursus. Egestas erat imperdiet sed euismod nisi porta lorem mollis. Et netus et
+          malesuada fames ac turpis egestas sed tempus. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus.
+          Velit ut tortor pretium viverra suspendisse potenti nullam ac. Gravida arcu ac tortor dignissim convallis
+          aenean. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Risus nullam eget felis
+          eget nunc lobortis mattis. Tortor id aliquet lectus proin nibh. Diam ut venenatis tellus in metus vulputate eu
+          scelerisque. Lobortis feugiat vivamus at augue eget. Ut venenatis tellus in metus vulputate eu. Lectus magna
+          fringilla urna porttitor rhoncus. Eu consequat ac felis donec et odio. Bibendum est ultricies integer quis
+          auctor elit sed. Sagittis vitae et leo duis ut diam quam nulla. Nunc scelerisque viverra mauris in aliquam sem
+          fringilla.
+        </p>
+
+        <ion-item>
+          <div style="min-width:600px;">
+            <app-lazy-enlargeable-media inlineStyle="margin: 20px;" id="other/drone/math-underactuated-formula.png"
+              bgColor="transparent" width="600">
+            </app-lazy-enlargeable-media>
+            <app-lazy-enlargeable-media inlineStyle="margin: 20px" id="other/drone/math-underactuated-legend.png"
+              bgColor="transparent">
+            </app-lazy-enlargeable-media>
+          </div>
+        </ion-item>
+
+        <p>
+          Augue neque gravida in fermentum. Felis imperdiet proin fermentum leo vel orci porta non. Aliquet bibendum
+          enim facilisis gravida neque convallis. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Nibh
+          tellus molestie nunc non blandit massa enim. Sed velit dignissim sodales ut eu sem. Eget lorem dolor sed
+          viverra ipsum nunc aliquet.
+
+          Nisl vel pretium lectus quam id leo in vitae turpis. Tempus quam pellentesque nec
+          nam aliquam sem et tortor. Gravida cum sociis natoque penatibus et magnis dis. Quis blandit turpis cursus in
+          hac habitasse platea dictumst quisque. Mauris vitae ultricies leo integer. Suspendisse sed nisi lacus sed
+          viverra. Dictum at tempor commodo ullamcorper a lacus.
+
+          Odio euismod lacinia at quis risus sed vulputate. Porta
+          nibh venenatis cras sed felis eget velit aliquet.Eu nisl nunc mi ipsum faucibus vitae. Dui id ornare arcu odio
+          ut sem. Adipiscing bibendum est ultricies integer. Purus semper eget duis at tellus at. Iaculis at erat
+          pellentesque adipiscing commodo. Fringilla ut morbi tincidunt augue interdum velit. Vitae ultricies leo
+          integer malesuada nunc vel.
+        </p>
+      </div>
+
+    </div>
+
+
+
+    <ion-item>
+      <div>
+
+        <app-lazy-enlargeable-media class="float-left" width="800" id="other/drone/thrust-modulation.mp4">
+        </app-lazy-enlargeable-media>
+
+        <p>
+          Egestas quis ipsum suspendisse ultrices gravida. Ipsum dolor sit amet consectetur adipiscing. Arcu non sodales
+          neque sodales. Faucibus et molestie ac feugiat sed lectus. Suspendisse faucibus interdum posuere lorem ipsum.
+          Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Libero volutpat sed cras ornare arcu dui vivamus
+          arcu. Viverra nam libero justo laoreet sit amet cursus sit amet. Neque convallis a cras semper auctor neque
+          vitae tempus quam.
+
+          Faucibus purus in massa tempor nec. Egestas dui id ornare arcu odio ut. Ultricies integer quis auctor elit.
+          Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula.
+        </p>
+
+        <p>
+        </p>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <h1>Hendrerit dolors:</h1>
+    </ion-item>
+
+
+    <ion-item>
+      <h2>Euismod 1</h2>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <app-lazy-enlargeable-media id="3balls" class="float-left" width="300">
+        </app-lazy-enlargeable-media>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <p>
+        Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Arcu risus quis varius quam quisque: <a
+          href="https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt" target="_blank"
+          style="margin-right:10px;">Suspendisse</a></p>
+      <ion-button href="https://github.com" target="_blank">Download</ion-button>
+    </ion-item>
+
+    <ion-item>
+      <h2>Euismod 2</h2>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <app-lazy-enlargeable-media id="3balls" class="float-left" width="300">
+        </app-lazy-enlargeable-media>
+
+        <p>
+          Tellus id interdum velit laoreet id donec. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Non
+          sodales neque sodales ut etiam. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras
+          tincidunt. Dictum at tempor commodo ullamcorper a lacus. Et ultrices neque ornare aenean euismod elementum.
+          Vel pharetra vel turpis nunc eget lorem dolor. In nibh mauris cursus mattis molestie a. Ultrices sagittis orci
+          a scelerisque purus semper eget duis at. Integer enim neque volutpat ac tincidunt vitae semper quis.
+        </p>
+
+        <p>
+          Natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Lectus proin nibh nisl condimentum
+          id venenatis. Molestie a iaculis at erat pellentesque adipiscing commodo. Vel pharetra vel turpis nunc.
+          Sollicitudin nibh sit amet commodo nulla facilisi. Turpis egestas pretium aenean pharetra. Ut sem nulla
+          pharetra diam sit amet nisl.
+        </p>
+
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <p>Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Arcu risus quis varius quam quisque: <a
+          href="https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt" target="_blank"
+          style="margin-right:10px;">Suspendisse</a></p>
+      <ion-button
+        href="https://raw.githubusercontent.com/Gibberlings3/GitHub-Templates/master/License-Templates/CC-BY-NC-ND-4.0/LICENSE-CC-BY-NC-ND-4.0.md"
+        target="_blank">Download</ion-button>
+    </ion-item>
+
+    <ion-item>
+      <h2>Version 3</h2>
+    </ion-item>
+
+
+    <ion-item>
+      <div>
+        <app-lazy-enlargeable-media id="3balls" class="float-left" width="300">
+        </app-lazy-enlargeable-media>
+        <p>
+          Nulla porttitor massa id neque. Quis blandit turpis cursus in hac habitasse platea dictumst. Ac ut consequat
+          semper viverra nam libero. Ut enim blandit volutpat maecenas. Elit sed vulputate mi sit amet mauris. Nibh
+          praesent tristique magna sit amet purus gravida quis blandit. Fermentum iaculis eu non diam. Leo vel fringilla
+          est ullamcorper eget nulla facilisi etiam.
+        </p>
+      </div>
+
+    </ion-item>
+
+    <ion-item>
+      <p>Click the image to view the 3d model. Released under fair use for educational and research purposes only: <a
+          href="https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt" target="_blank"
+          style="margin-right:10px;">License</a></p>
+      <ion-button
+        href="https://raw.githubusercontent.com/Gibberlings3/GitHub-Templates/master/License-Templates/CC-BY-NC-ND-4.0/LICENSE-CC-BY-NC-ND-4.0.md"
+        target="_blank">Download</ion-button>
+    </ion-item>
+
+
+    <ion-item>
+      <h1>Eget nunc scelerisque:</h1>
+    </ion-item>
+
+    <ion-item>
+
+      <app-scrollable-zoomable-lazy-multi-media-gallery>
+        <media-element id="other/drone/Motor_1-bw.png">
+        </media-element>
+
+        <media-element id="other/drone/Centre Core_2-bw.png">
+        </media-element>
+      </app-scrollable-zoomable-lazy-multi-media-gallery>
+
+    </ion-item>
+
+    <ion-item>
+      <h1>Venenatis:</h1>
+    </ion-item>
+
+    <ion-item style="overflow-x: auto;">
+      <app-youtube-video ytVideoId="zzDMCBd7iUg" height="560" width="315"></app-youtube-video>
+      <app-youtube-video ytVideoId="QNjfgjZj8Js" height="560" width="315"></app-youtube-video>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Related Projects:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/projects/science/DV" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Faucibus nisl tincidunt
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Blandit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+        <div>
+          <a class="intra-nav-link" appIntraNavLink [basePath]="pagePath" section="HBLDC">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Cras pulvinar mattis nunc sed
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Blandit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+        <div>
+          <a routerLink="/projects/3d/DRONE" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Lectus Rotor tincidunt
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Blandit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Team:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/teams/ME" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Blandit
+                </ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+
+  </page-section>
+
+  <page-section [linkElementToNavigation]="pagePath" id="CAL" sideHeaderTitle="Projects"
+    sideHeaderSubtitle="Aliquet Nibh Praesent" iconName="cog-outline" blockTitle="Laoreet sit amet cursus"
+    blockSubtitle="Egestas" [rightHanded]="false"
+    backgroundId="other/bldc/calibration/analysis/IMG_20221003_200534.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>tincidunt</li>
+        <li>praesent</li>
+        <li>gravida</li>
+        <li>dictum</li>
+        <li>vel fringilla</li>
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <h1><strong>Egestas</strong> BLDC digital encoder calibration</h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <strong>Abstract:</strong> Arcu risus quis varius quam quisque. Penatibus et magnis dis parturient montes
+        nascetur ridiculus.
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <h1>Magna:</h1>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="logo-github" slot="start"></ion-icon>
+      <a href="https://github.com/kaepek/calibration" target="_blank">
+        <ion-label>tristique</ion-label>
+      </a>
+    </ion-item>
+
+    <ion-item>
+      <p>
+        Vel pharetra vel turpis nunc. Sollicitudin nibh sit amet commodo nulla facilisi. Turpis egestas pretium aenean
+        pharetra. Ut sem nulla pharetra diam sit amet nisl.
+      </p>
+    </ion-item>
+
+    <ion-item>
+      <h1><strong>Condimentum tincidunt</strong></h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <div class="float-left">
+          <h2><strong>Vestibulum</strong></h2>
+          <app-lazy-enlargeable-media width="700" style="margin-right:0;"
+            id="other/bldc/calibration/Schematic_JK-BLDC-Encoder-Calibrator-Tester4_2023-05-02.png">
+          </app-lazy-enlargeable-media>
+        </div>
+
+        <div class="float-left">
+          <h2><strong>PCB tincidunt</strong></h2>
+          <app-lazy-enlargeable-media width="700" style="margin-left:0;"
+            id="other/bldc/calibration/PCB_PCB_JK-BLDC-Encoder-Calibrator-Tester4_2023-05-02.png">
+          </app-lazy-enlargeable-media>
+        </div>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <div class="float-left">
+          <h2><strong>Nisl nisi scelerisque eu ultrices vitae auctor eu </strong></h2>
+          <app-lazy-enlargeable-media width="800" id="mixkit/mixkit-highway-in-the-middle-of-a-mountain-range-4633-medium.mp4">
+          </app-lazy-enlargeable-media>
+        </div>
+
+        <div class="float-left">
+          <h2><strong>Nulla facilisi cras fermentum odio eu </strong></h2>
+          <app-lazy-enlargeable-media width="600" id="other/bldc/calibration/calibration_encoder_wiring.png">
+          </app-lazy-enlargeable-media>
+        </div>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <h1><strong>Congue quisque egestas</strong></h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <p>
+          Congue quisque egestas diam in. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Nibh
+          nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Scelerisque viverra mauris in aliquam
+          sem fringilla. Suspendisse in est ante in nibh mauris. Hac habitasse platea dictumst vestibulum. Donec et odio
+          pellentesque diam volutpat commodo.
+        </p>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <app-scrollable-zoomable-lazy-multi-media-gallery>
+        <media-element id="other/bldc/calibration/sensor-mount/IMG_20220901_120244.jpg">
+        </media-element>
+        <media-element id="other/bldc/calibration/sensor-mount/IMG_20220831_182614.jpg">
+        </media-element>
+        <media-element id="other/bldc/calibration/sensor-mount/IMG_20220831_175838.jpg">
+        </media-element>
+        <media-element id="other/bldc/calibration/sensor-mount/IMG_20220831_151120.jpg">
+        </media-element>
+        <media-element id="other/bldc/calibration/sensor-mount/IMG_20220831_150853.jpg">
+        </media-element>
+        <media-element id="other/bldc/calibration/sensor-mount/IMG_20220831_150832.jpg">
+        </media-element>
+        <media-element id="other/bldc/calibration/sensor-mount/IMG_20220831_150729.jpg">
+        </media-element>
+        <media-element id="other/bldc/calibration/sensor-mount/IMG_20220831_150615.jpg">
+        </media-element>
+        <media-element id="other/bldc/calibration/sensor-mount/IMG_20220831_150527.jpg">
+        </media-element>
+        <media-element id="other/bldc/calibration/sensor-mount/IMG_20220831_150453.jpg">
+        </media-element>
+        <media-element id="other/bldc/calibration/sensor-mount/IMG_20220831_150434.jpg">
+        </media-element>
+        <media-element id="other/bldc/calibration/sensor-mount/IMG_20220831_150346.jpg">
+        </media-element>
+        <media-element id="other/bldc/calibration/sensor-mount/IMG_20220831_150250.jpg">
+        </media-element>
+      </app-scrollable-zoomable-lazy-multi-media-gallery>
+    </ion-item>
+
+    <ion-item>
+      <h1><strong>Habitasse</strong></h1>
+    </ion-item>
+
+    <ion-item>
+      <p>
+        Elementum tempus egestas sed sed risus. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi
+        tincidunt. Pulvinar etiam non quam lacus suspendisse faucibus. Consectetur a erat nam at lectus. Vivamus at
+        augue eget arcu dictum. Mauris ultrices eros in cursus turpis massa tincidunt dui ut. Posuere lorem ipsum dolor
+        sit. Nunc sed blandit libero volutpat sed cras ornare. Integer feugiat scelerisque varius morbi enim nunc
+        faucibus a pellentesque.
+      </p>
+    </ion-item>
+
+    <ion-item>
+
+      <app-scrollable-zoomable-lazy-multi-media-gallery>
+
+        <media-element id="other/bldc/calibration/analysis/IMG_20221003_200534.jpg">
+        </media-element>
+
+        <media-element id="other/bldc/calibration/analysis/IMG_20221003_200602.jpg">
+        </media-element>
+
+        <media-element id="other/bldc/calibration/analysis/raw_reconstruction_direct_comp2_ynitlldoqesyyvgyuwyg.png">
+        </media-element>
+
+        <media-element id="other/bldc/calibration/analysis/raw_reconstruction_ynitlldoqesyyvgyuwyg.png">
+        </media-element>
+
+        <media-element id="other/bldc/calibration/analysis/IMG_20220922_114250.jpg">
+        </media-element>
+
+        <media-element id="other/bldc/calibration/analysis/IMG_20220922_115227.jpg">
+        </media-element>
+
+        <media-element id="other/bldc/calibration/analysis/IMG_20220922_120551.jpg">
+        </media-element>
+
+        <media-element id="other/bldc/calibration/analysis/IMG_20220926_174619.jpg">
+        </media-element>
+
+      </app-scrollable-zoomable-lazy-multi-media-gallery>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="link-outline" slot="start"></ion-icon>
+      <a href="assets/other/bldc/calibration/analysis/combination-report-mwmeemlzfjwqvfobopvd.html" target="_blank">
+        <ion-label>Nibh praesent</ion-label>
+      </a>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Related Projects:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a class="intra-nav-link" appIntraNavLink [basePath]="pagePath" section="SBLDC">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Velit euismod in pellentesque
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Egestas
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+        <div>
+          <a class="intra-nav-link" appIntraNavLink [basePath]="pagePath" section="RD">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Neque convallis
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Egestas
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Team:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/teams/KAE" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Egestas
+                </ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+  <page-section [linkElementToNavigation]="pagePath" id="SBLDC" sideHeaderTitle="Projects"
+    sideHeaderSubtitle="Aliquet Nibh Praesent" iconName="hardware-chip-outline"
+    blockTitle="Velit euismod in pellentesque" blockSubtitle="Egestas" [rightHanded]="true"
+    backgroundId="other/bldc/smooth-sensored-bldc/IMG_20221212_192305.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>tincidunt</li>
+        <li>praesent</li>
+        <li>gravida</li>
+        <li>dictum</li>
+        <li>vel fringilla</li>
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <h1><strong>Egestas</strong> porttitor massa id neque aliquam vestibulum morbi blandit. Sed sed risus pretium quam
+        vulputate dignissim suspendisse in est.</h1>
+    </ion-item>
+
+    <ion-item>
+      <div><strong>Abstract:</strong> Mauris vitae ultricies leo integer malesuada nunc vel. Vitae purus faucibus ornare
+        suspendisse sed nisi.
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <h1>Magna:</h1>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="logo-github" slot="start"></ion-icon>
+      <a href="https://github.com/kaepek/spwm-motor-control" target="_blank">
+        <ion-label>ut-tortor-pretium </ion-label>
+      </a>
+    </ion-item>
+
+    <ion-item>
+      <h1>Quis eleifend quam:</h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <div class="float-left">
+          <app-lazy-enlargeable-media style="float:left; margin-right:15px;" width="600"
+            id="other/bldc/smooth-sensored-bldc/Schematic_SPWM-L6234_2023-11-13.svg"></app-lazy-enlargeable-media>
+
+          <div style="float: left; margin-right:15px;">
+            <p style="max-width: 300px;">
+              Gravida neque convallis a cras semper. Enim lobortis scelerisque fermentum dui faucibus. Cursus sit amet
+              dictum sit amet. Aliquam ut porttitor leo a diam sollicitudin. Odio euismod lacinia at quis risus sed
+              vulputate odio ut. Nulla porttitor massa id neque aliquam vestibulum morbi. Cursus mattis molestie a
+              iaculis. Pretium viverra suspendisse potenti nullam.
+            </p>
+          </div>
+
+          <div class="float-left">
+            <app-scrollable-zoomable-lazy-multi-media-gallery>
+
+              <media-element id="other/bldc/smooth-sensored-bldc/spwm-3d-pcb.png">
+              </media-element>
+
+              <media-element id="other/bldc/smooth-sensored-bldc/PCB_PCB_SPWM-L6234_2023-11-13.svg">
+              </media-element>
+
+            </app-scrollable-zoomable-lazy-multi-media-gallery>
+          </div>
+        </div>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <h1>Orci phasellus egestas tellus rutrum tellus:</h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <app-lazy-enlargeable-media width="600" class="float-left"
+          id="other/bldc/smooth-sensored-bldc/VID_20231018_113103.mp4"></app-lazy-enlargeable-media>
+        <app-lazy-enlargeable-media width="600" class="float-left"
+          id="other/bldc/smooth-sensored-bldc/VID_20231027_140804.mp4"></app-lazy-enlargeable-media>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <h1>Aliquet nec ullamcorper:</h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <app-lazy-enlargeable-media class="float-left" id="other/bldc/smooth-sensored-bldc/step-change-output.png"
+          width="1024"></app-lazy-enlargeable-media>
+      </div>
+
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="link-outline" slot="start"></ion-icon>
+      <a href="assets/other/bldc/smooth-sensored-bldc/retest-tarot-4006-esc-sinusoidal-step-change.detections.cw.csv.html"
+        target="_blank">
+        <ion-label>Nisl nisi scelerisque eu ultrices</ion-label>
+      </a>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <app-lazy-enlargeable-media class="float-left" id="other/bldc/smooth-sensored-bldc/step-change-regression.png"
+          width="1024"></app-lazy-enlargeable-media>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="link-outline" slot="start"></ion-icon>
+      <a href="assets/other/bldc/smooth-sensored-bldc/retest-tarot-4006-esc-sinusoidal-step-change.regression.cw.csv.html"
+        target="_blank">
+        <ion-label>Morbi enim nunc faucibus a pellentesque</ion-label>
+      </a>
+    </ion-item>
+
+    <ion-item>
+      <h1>A lacus vestibulum:</h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <app-lazy-enlargeable-media class="float-left" id="other/bldc/smooth-sensored-bldc/anti-cogging-output.png"
+          width="1024"></app-lazy-enlargeable-media>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="link-outline" slot="start"></ion-icon>
+      <a href="assets/other/bldc/smooth-sensored-bldc/tarot-4006-esc-sinusoidal-ac-2.json.csv.html" target="_blank">
+        <ion-label>Magna fringilla urna porttitor</ion-label>
+      </a>
+    </ion-item>
+
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Related projects:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a class="intra-nav-link" appIntraNavLink [basePath]="pagePath" section="RD">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Neque convallis
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Egestas
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+        <div>
+          <a class="intra-nav-link" appIntraNavLink [basePath]="pagePath" section="CAL">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Laoreet sit amet cursus
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Egestas
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+
+    </div>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Team:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/teams/KAE" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Egestas
+                </ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+
+  </page-section>
+
+  <page-section [linkElementToNavigation]="pagePath" id="RD" sideHeaderTitle="Projects"
+    sideHeaderSubtitle="Aliquet Nibh Praesent" iconName="options-outline" blockTitle="Neque convallis"
+    blockSubtitle="Egestas" [rightHanded]="false" backgroundId="unsplash/oleg-demakov-jVsFoS586aI-unsplash.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>tincidunt</li>
+        <li>praesent</li>
+        <li>gravida</li>
+        <li>dictum</li>
+        <li>vel fringilla</li>
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <h1><strong>Neque convallis</strong> - Leo vel fringilla est ullamcorper eget nulla facilisi etiam.</h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <strong>Abstract:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <h1>Magna:</h1>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="logo-github" slot="start"></ion-icon>
+      <a href="https://github.com/jk89/record-deck" target="_blank">
+        <ion-label>porttitor</ion-label>
+      </a>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <p>
+          Mauris in aliquam sem fringilla ut morbi tincidunt augue. Amet porttitor eget dolor morbi non arcu risus quis
+          varius. Morbi blandit cursus risus at. Cursus sit amet dictum sit amet justo donec. At quis risus sed
+          vulputate odio ut enim blandit volutpat. Ipsum dolor sit amet consectetur adipiscing elit duis tristique
+          sollicitudin. Commodo sed egestas egestas fringilla phasellus.
+        </p>
+
+        <p>
+          Non tellus orci ac auctor augue mauris. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat.
+          In pellentesque massa placerat duis ultricies lacus sed turpis. Urna nunc id cursus metus. Duis at consectetur
+          lorem donec massa. Velit laoreet id donec ultrices tincidunt. Porta nibh venenatis cras sed felis eget velit.
+        </p>
+
+        <p>
+          Non consectetur a erat nam at lectus urna. Eget nunc lobortis mattis aliquam faucibus purus in massa. Dolor
+          sit amet consectetur adipiscing elit duis tristique. Et malesuada fames ac turpis egestas maecenas. Lectus
+          nulla at volutpat diam ut venenatis tellus in. Leo in vitae turpis massa sed elementum. Enim ut sem viverra
+          aliquet. Velit ut tortor pretium viverra. Tellus id interdum velit laoreet id donec.
+        </p>
+
+        <p>
+          Dictum at tempor commodo ullamcorper a lacus. Et ultrices neque ornare aenean euismod elementum. Vel pharetra
+          vel turpis nunc eget lorem dolor. In nibh mauris cursus mattis molestie a. Ultrices sagittis orci a
+          scelerisque purus semper eget duis at. Integer enim neque volutpat ac tincidunt vitae semper quis.
+        </p>
+
+        <p>
+          Nec nam aliquam sem et tortor. Nulla pharetra diam sit amet nisl. Malesuada fames ac turpis egestas. Sed
+          vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Viverra ipsum nunc aliquet bibendum enim
+          facilisis gravida neque. Sit amet dictum sit amet.
+        </p>
+
+        <p>
+          Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Neque volutpat ac tincidunt vitae semper quis
+          lectus nulla. Lacus vel facilisis volutpat est. Aenean et tortor at risus. Risus sed vulputate odio ut enim
+          blandit volutpat maecenas volutpat. Orci phasellus egestas tellus rutrum tellus. Ut morbi tincidunt augue
+          interdum velit euismod in pellentesque.
+        </p>
+
+        <p>
+          Tincidunt eget nullam non nisi est sit. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Ac ut
+          consequat semper viverra nam libero justo. Nulla porttitor massa id neque. Quis blandit turpis cursus in hac
+          habitasse platea dictumst.
+        </p>
+      </div>
+
+    </ion-item>
+
+
+    <ion-item>
+      <div>
+        <h1><strong>Motor tincidunt</strong></h1>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <app-scrollable-zoomable-lazy-multi-media-gallery>
+        <media-element id="unsplash/paris-bilal-Qna3C7BTrnA-unsplash.jpg">
+        </media-element>
+        <media-element id="unsplash/mario-scheibl-5jPpYdBtfD4-unsplash.jpg">
+        </media-element>
+        <media-element id="unsplash/luke-miller-riV40lmd1yE-unsplash.jpg">
+        </media-element>
+      </app-scrollable-zoomable-lazy-multi-media-gallery>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <h1><strong>Mechanical tincidunt</strong></h1>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <app-scrollable-zoomable-lazy-multi-media-gallery>
+        <media-element id="unsplash/kiko-camaclang-lv8unel9SCI-unsplash.jpg">
+        </media-element>
+
+        <media-element id="unsplash/kal-visuals--Kom60lezrU-unsplash.jpg">
+        </media-element>
+
+        <media-element id="unsplash/josh-hild-eG0lv29oaq4-unsplash.jpg">
+        </media-element>
+
+        <media-element id="unsplash/jerry-kavan-AhMoWv0fQzc-unsplash.jpg">
+        </media-element>
+
+        <media-element id="unsplash/thomas-tourneux-6EaK1iYOYBA-unsplash.jpg">
+        </media-element>
+
+        <media-element id="unsplash/taiki-ishikawa-TjghSgE-yVg-unsplash.jpg">
+        </media-element>
+
+        <media-element id="unsplash/kira-laktionov-mrMUeF2bEYk-unsplash.jpg">
+        </media-element>
+
+        <media-element id="unsplash/luke-miller-riV40lmd1yE-unsplash.jpg">
+        </media-element>
+
+      </app-scrollable-zoomable-lazy-multi-media-gallery>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Related projects:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a class="intra-nav-link" appIntraNavLink [basePath]="pagePath" section="SBLDC">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Velit euismod in pellentesque
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Egestas
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+        <div>
+          <a class="intra-nav-link" appIntraNavLink [basePath]="pagePath" section="CAL">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Laoreet sit amet cursus
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Egestas
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Team:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/teams/KAE" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Egestas
+                </ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+  </page-section>
+</ion-content>

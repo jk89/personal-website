@@ -1,0 +1,128 @@
+<ion-header #header [translucent]="true" class="ion-no-border">
+  <ion-toolbar #toolbar>
+    <page-section-navigation-bar color="paletteschemecolor1" [basePath]="pagePath"
+      category="Topics"></page-section-navigation-bar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content slot="fixed" [fullscreen]="true" [appFadeHeaderOnScroll]="toolbar" [header]="header" scrollEvents="true">
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ pagePath }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <page-cover id="Home" [cheveron]="true" [pagePath]="pagePath" overrideBackgroundColor="var(--ion-color-step-950)"
+    backgroundImageId="page-covers/9f203c47-6b57-41bd-9d75-47a3a29782fe-trim.png">
+    <h1 currentColor>Your Name Here</h1>
+    <div>
+      <h2>
+        A website <ion-icon name="cloud-outline"></ion-icon> about me <ion-icon name="person-outline"> </ion-icon> and
+        stuff
+      </h2>
+    </div>
+  </page-cover>
+
+  <div id="Intro" [linkElementToNavigation]="pagePath">
+    <div class="page-banner-text">
+      <h1>Hi I'm <strong currentColor>Your Name Here</strong></h1>
+
+      <p>
+        Dictum sit amet justo donec <strong>enim</strong>, <strong>lorpas</strong> et <strong>lampo</strong> enim.
+        Ultrices mi tempus imperdiet nulla.
+        <app-elapsed-time day="13" month="Sep" year="2001" [show_months_since]="false" [show_days_since]="false"
+          [show_hours_since]="false" [show_minutes_since]="false" [show_seconds_since]="false"></app-elapsed-time>.
+      </p>
+
+      <p>
+        Suspendisse potenti nullam <strong>dignissim</strong> ut enim blandit <strong>volutpat</strong> amet massa
+        vitae
+        <app-elapsed-time day="27" month="Feb" year="2004" [show_days_since]="false" [show_hours_since]="false"
+          [show_minutes_since]="false" [show_seconds_since]="false"></app-elapsed-time> senectus et netus et malesuada
+        fames ac turpis egestas maecenas, <strong>viverra suspendisse</strong> urna molestie at elementum eu <strong>rutrum</strong>.
+      </p>
+
+      <ul>
+        <li>Location: <strong currentColor>City</strong></li>
+        <li>Interests: <strong currentColor>Interest 1</strong>, <strong currentColor>Interest 2</strong>,
+          <strong currentColor>Interest 3</strong>, <strong currentColor>Interest 4</strong>, <strong currentColor>Sed do
+            eiusmod</strong>
+        </li>
+        <li>Age: <strong currentColor><app-elapsed-time day="18" month="Dec" year="1980" [show_days_since]="false"
+              [show_hours_since]="false" [show_minutes_since]="false" [show_seconds_since]="false"></app-elapsed-time>
+            old</strong></li>
+        <li>Study: <strong currentColor>Some University</strong></li>
+        <li>Degree: <strong currentColor>Degree (Hons)</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="Social" [linkElementToNavigation]="pagePath" class="social">
+    <ul>
+      <li><a href="https://github.com/jk89" target="_blank"><ion-icon name="logo-github"
+            class="purple-hover"></ion-icon></a></li>
+      <li><a href="https://www.linkedin.com" target="_blank"><ion-icon name="logo-linkedin"
+            class="blue-hover"></ion-icon></a></li>
+      <li><a href="https://www.youtube.com/channel/UCFnqF1oGEuOlqHHKwPbcwKQ" target="_blank"><ion-icon class="red-hover"
+            name="logo-youtube"></ion-icon></a></li>
+      <li><a href="https://stackoverflow.com" target="_blank"><ion-icon class="orange-hover"
+            name="logo-stackoverflow"></ion-icon></a></li>
+      <li><a href="https://github.com/kaepek" target="_blank"><ion-icon name="logo-github"
+            class="purple-hover"></ion-icon></a></li>
+      <li><a href="https://www.youtube.com/channel/UC64vHxVSsymjeAjUas1Ylbg" target="_blank"><ion-icon class="red-hover"
+            name="logo-youtube"></ion-icon></a></li>
+      <li><a href="https://leetcode.com/" target="_blank"><ion-icon name="code-slash-outline"
+            class="green-hover"></ion-icon></a></li>
+    </ul>
+  </div>
+
+  <div id="Navigation" [linkElementToNavigation]="pagePath">
+    <div class="page-banner-text">
+      <ion-list>
+        <ion-row text-center>
+          <ion-col *ngFor="let p of appPages; let i = index">
+            <ion-button [disabled]="p.url === pagePath" [color]="p.url === pagePath ? 'dark' : 'light'" size="default"
+              routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon [color]="p.color" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+              <ion-row>
+                {{p.title}}
+              </ion-row>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-list>
+    </div>
+  </div>
+
+  <page-section [linkElementToNavigation]="pagePath" id="CV" sideHeaderTitle="Work Experience"
+    sideHeaderSubtitle="Curriculum Vitae" iconName="briefcase-outline" blockTitle="Curriculum Vitae"
+    blockSubtitle="Work Experience" [rightHanded]="false"
+    backgroundId="unsplash/josh-hild-eG0lv29oaq4-unsplash.jpg" 
+    [fixedDisplacement]="true">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <h1>Mela Corupus:</h1>
+        <h2><strong>2023:</strong></h2>
+        <p>Lorem Ipsum</p>
+        <a target="_blank" href="assets/other/cv/Resume.pdf"><ion-button>Download</ion-button></a>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <app-scrollable-zoomable-lazy-multi-media-gallery>
+        <media-element id="other/cv/Resume1.png">
+        </media-element>
+        <media-element id="other/cv/Resume2.png">
+        </media-element>
+      </app-scrollable-zoomable-lazy-multi-media-gallery>
+    </ion-item>
+
+  </page-section>
+</ion-content>

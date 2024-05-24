@@ -1,0 +1,83 @@
+@keyframes pulse {
+    from {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+ion-icon {
+    animation-duration: 3s;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+}
+
+.container {
+    margin: 0;
+    position: absolute;
+    top: 50%; // 50
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.cheveron {
+    font-size: 50px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    color: white;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.cover-page {
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    text-align: center;
+}
+
+.container {
+    h1 {
+        /* For Firefox */
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        /* For Chrome and IE */
+        word-wrap: break-word;
+        width: 100%;
+        background-color: var(--ion-background-color-translucent);
+        backdrop-filter: blur(16px);
+        font-size: 70px;
+        font-weight: 900;
+        padding: 10px;
+        font-family: "JetBrainsMono-Bold";
+    }
+
+    div {
+        width: 100%;
+        text-align: center;
+        display: inline;
+
+        h2 {
+            padding-top: 8px;
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-bottom: 6px;
+            background-color: var(--ion-background-color-translucent);
+            backdrop-filter: blur(16px);
+            display: inline-block;
+            font-weight: 400;
+            font-family: "JetBrainsMono-ExtraLightItalic";
+            width: fit-content;
+        }
+    }
+}

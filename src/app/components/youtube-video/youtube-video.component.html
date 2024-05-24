@@ -1,0 +1,20 @@
+<div [style]="thumbnailStyle">
+  <div *ngIf="(acceptedCookie | async) === false" [style]="thumbnailStyle" (click)="acceptCookie()"
+    class="border-color">
+    <ion-item>
+      <div class="icon-holder">
+        <ion-icon name="logo-youtube" slot="center"></ion-icon>
+      </div>
+      <div class="accept-notice">Accept Youtube Cookies</div>
+    </ion-item>
+  </div>
+  <div *ngIf="(acceptedCookie | async) === true" [style]="thumbnailStyle" class="border-color">
+    <div [style]="dimensionsStyle" class="loading">
+      <iframe #iframe_yt [width]="width" [height]="height" [src]="videoSrc | safe: 'resourceUrl'" [title]="title"
+        frameborder="0" class="frame-fade-out" style="visibility:hidden;" onload="this.style.visibility = 'visible';"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>

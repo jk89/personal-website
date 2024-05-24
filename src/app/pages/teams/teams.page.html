@@ -1,0 +1,1398 @@
+<ion-header #header [translucent]="true" class="ion-no-border">
+  <ion-toolbar #toolbar>
+    <page-section-navigation-bar [basePath]="pagePath" category="Topics">
+    </page-section-navigation-bar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content slot="fixed" [fullscreen]="true" [appFadeHeaderOnScroll]="toolbar" [header]="header" scrollEvents="true">
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ pagePath }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <page-cover id="Home" [cheveron]="true" [pagePath]="pagePath" backgroundImageId="page-covers/team6.png"
+    overrideBackgroundColor="var(--ion-color-step-900)">
+    <h1 currentColor>Teams</h1>
+    <div>
+      <h2>
+        I've worked <ion-icon name="hammer-outline"></ion-icon> with some expert teams <ion-icon name="people-outline">
+        </ion-icon>
+      </h2>
+    </div>
+  </page-cover>
+
+  <div id="Navigation" [linkElementToNavigation]="pagePath">
+    <div class="page-banner-text">
+      <ion-list>
+        <ion-row text-center>
+          <ion-col *ngFor="let p of appPages; let i = index">
+            <ion-button [disabled]="p.url === pagePath" [color]="p.url === pagePath ? 'dark' : 'light'" size="default"
+              routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon [color]="p.color" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+              <ion-row>
+                {{p.title}}
+              </ion-row>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-list>
+    </div>
+  </div>
+
+  <app-vertical-divide sloti="start">
+    <h1>Present Day</h1>
+  </app-vertical-divide>
+
+  <page-section [linkElementToNavigation]="pagePath" id="VIS" sideHeaderTitle="Teams" blockTitle="Euismod"
+    sideHeaderSubtitle="Abitant Morbi Tristique" blockSubtitle="Iaculis eu non diam" iconName="brush-outline"
+    [rightHanded]="true"
+    backgroundId="unsplash/paris-bilal-Qna3C7BTrnA-unsplash.jpg">
+
+    <ion-item>
+      <div>
+
+        <h1><strong>Euismod: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+
+        <p>
+          Sed tincidunt mi neque, quis dapibus quam congue quis. Pellentesque quis tempor mi, nec imperdiet ex.
+          Suspendisse posuere iaculis risus quis lacinia. Maecenas tempus, erat a mollis imperdiet, lectus felis
+          eleifend risus, id fringilla magna nisl interdum magna. Vivamus tincidunt ipsum non eleifend venenatis.
+        </p>
+
+        <p>
+          Etiam quis tincidunt massa, in ultricies sem. Vivamus tincidunt laoreet felis.
+        </p>
+
+        <h2><strong>Euismod luctus:</strong></h2>
+
+        <ul>
+          <li>
+            <h3>
+              <strong>Aliquam a nulla fringilla, bibendum urna et, porttitor lectus. Aliquam a eros in neque auctor
+                efficitur ut eu est. Proin tincidunt risus vel libero blandit, a efficitur ipsum consectetur. Duis
+                lobortis libero in erat efficitur rhoncus.</strong>
+            </h3>
+            <p>
+              Oversaw the establishment of best practices for <strong>Euismod's</strong> ICT infrastructure.
+            </p>
+          </li>
+
+
+          <li>
+            <h3><strong>Euismod luctus:</strong></h3>
+
+            <p>
+              <strong>Donec ut commodo ex: </strong> In eu nibh eget eros euismod luctus eget vel justo. Sed ornare
+              tellus ac posuere molestie. Etiam tristique nisl vitae ante ornare porta. Sed tempor, mauris commodo
+              vestibulum tincidunt, urna dui suscipit orci, sed mattis sapien ligula placerat ipsum. Praesent sed diam
+              finibus, faucibus orci ut, molestie mi. Sed in tincidunt enim, in lobortis dolor.
+            </p>
+
+            <p>
+              <strong>Maecenas congue: </strong> Quisque vitae dolor a erat vulputate fringilla. Maecenas congue, mauris
+              at lacinia cursus, sapien sem tincidunt orci, a accumsan justo tortor vel turpis. Aliquam erat volutpat.
+              Nunc semper, dolor at ultrices rhoncus, nunc mi malesuada augue, et semper velit ligula a mi.
+            </p>
+
+            <p>
+              <strong>Non tellus orci ac auctor augue mauris augue neque.: </strong> Volutpat diam ut venenatis tellus
+              in metus. Aliquet enim tortor at auctor urna nunc id. Sit amet purus gravida quis blandit turpis cursus
+              in. Dolor morbi non arcu risus quis varius. Tempus imperdiet nulla malesuada pellentesque elit eget.
+              Tristique senectus et netus et malesuada fames. Bibendum at varius vel pharetra vel. Scelerisque eu
+              ultrices vitae auctor eu augue. Est lorem ipsum dolor sit amet. Aliquam eleifend mi in nulla posuere
+              sollicitudin aliquam ultrices. Faucibus et molestie ac feugiat sed. Donec pretium vulputate sapien nec
+              sagittis aliquam malesuada bibendum. Nunc sed augue lacus viverra. Dui nunc mattis enim ut tellus.
+            </p>
+
+            <p><strong>Dignissim cras tincidunt lobortis:</strong> Est pellentesque elit ullamcorper dignissim cras
+              tincidunt lobortis feugiat vivamus. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor.
+              Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Ultrices gravida dictum fusce ut
+              placerat. Justo laoreet sit amet cursus sit amet dictum sit. Dictumst vestibulum rhoncus est pellentesque
+              elit ullamcorper dignissim. Donec pretium vulputate sapien nec.</p>
+          </li>
+        </ul>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="link-outline" slot="start"></ion-icon>
+      <a target="_blank" href="https://www.etsy.com/uk/shop/VisajeGraffitiUK">
+        <ion-label>Euismod</ion-label>
+      </a>
+    </ion-item>
+
+  </page-section>
+
+  <app-vertical-divide>
+    <h1>2023</h1>
+    Nisl pretium fusce id velit <strong>Euismod</strong>
+    <div>
+      <small>(June 2023 - Present)</small>
+    </div>
+  </app-vertical-divide>
+
+
+  <page-section [linkElementToNavigation]="pagePath" id="MATCH" sideHeaderTitle="Projects"
+    sideHeaderSubtitle="Iaculis eu non diam" iconName="tennisball-outline" blockTitle="Venenatis"
+    blockSubtitle="Malesuada nunc vel risus" [rightHanded]="false" [fixedDisplacement]="true"
+    backgroundId="unsplash/mario-scheibl-5jPpYdBtfD4-unsplash.jpg">
+
+    <ion-item>
+      <div>
+        <h1><strong>Venenatis: </strong>Nisl tincidunt eget nullam non nisi est sit. </h1>
+
+        <p>
+          <strong>Venenatis</strong> tincidunt id aliquet risus feugiat. Est pellentesque elit ullamcorper
+          dignissim cras tincidunt lobortis feugiat vivamus.
+        </p>
+
+        <p>
+          Leo in vitae turpis massa sed elementum. Nisl tincidunt eget nullam non nisi est sit. Vel fringilla est
+          ullamcorper eget nulla. Justo nec ultrices dui sapien eget mi.
+        </p>
+
+        <h2><strong>Euismod luctus:</strong></h2>
+
+        <ul>
+          <li>
+            <h3><strong>Ac orci phasellus egestas tellus rutrum:</strong></h3>
+            <p>
+              Nulla facilisi cras fermentum odio eu feugiat pretium nibh.
+              Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Sed ullamcorper morbi tincidunt ornare
+              massa eget egestas purus.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Malesuada aliquam and Transition Facilitation (Malesuada aliquam):</strong></h3>
+            <p>Led the transition process, conducting thorough code reviews and assessments.
+              Collaborated with management to select and onboard a new development team.
+              Worked with the new development team to assist their successful onboarding and ensuring
+              they worked under the board agreed framework and standards.</p>
+          </li>
+          <li>
+            <h3><strong>Risus in hendrerit gravida rutrum quisque non:</strong></h3>
+            <p>
+              Cursus risus at ultrices mi tempus imperdiet. Neque egestas
+              congue quisque egestas diam in. Euismod quis viverra nibh cras pulvinar mattis nunc sed blandit. Vulputate
+              ut pharetra sit amet aliquam id diam maecenas ultricies.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="link-outline" slot="start"></ion-icon>
+      <a target="_blank" href="https://www.matchspace.co">
+        <ion-label>Venenatis</ion-label>
+      </a>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Projects:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/projects/web-dev/MATCH" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Malesuada aliquam
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Venenatis
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+
+        </div>
+      </ion-row>
+    </div>
+  </page-section>
+
+  <app-vertical-divide>
+    <h1>2022</h1>
+    Consectetur <strong>Venenatis</strong>
+    <div>
+      <small>(June 2022 - Present)</small>
+    </div>
+  </app-vertical-divide>
+
+
+  <page-section [linkElementToNavigation]="pagePath" id="KAE" sideHeaderTitle="Teams" blockTitle="Egestas"
+    sideHeaderSubtitle="Suspendisse sed nisi lacus sed viverra tellus in" blockSubtitle="Amet consectetur adipiscing"
+    iconName="options-outline" [rightHanded]="true" 
+    backgroundId="unsplash/luke-miller-riV40lmd1yE-unsplash.jpg">
+
+    <ion-item>
+      <div>
+
+        <h1>
+          <strong>Egestas:</strong> Suscipit adipiscing bibendum est ultricies. Pulvinar
+          pellentesque habitant morbi tristique senectus. Varius duis at consectetur lorem donec massa sapien faucibus
+          et.
+        </h1>
+
+        <p>
+          Non nisi est sit amet, <strong>Egestas</strong> Amet consectetur adipiscing elit duis tristique. Nec
+          nam aliquam sem et tortor consequat. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl
+          tincidunt. Justo eget magna fermentum iaculis eu non diam phasellus. Ipsum dolor sit amet consectetur
+          adipiscing elit ut aliquam. Venenatis urna cursus eget nunc scelerisque viverra mauris. Lobortis scelerisque
+          fermentum dui faucibus in ornare quam viverra.
+        </p>
+
+        <p>
+          Suspendisse sed nisi lacus sed viverra tellus in. <strong>Egestas</strong>, Urna id volutpat lacus.
+          Pellentesque diam volutpat commodo sed egestas egestas
+          fringilla phasellus faucibus. Nullam eget felis eget nunc lobortis mattis aliquam. Massa id neque aliquam
+          vestibulum morbi blandit cursus risus at. Urna id volutpat lacus laoreet non curabitur. Ipsum suspendisse
+          ultrices gravida dictum fusce ut placerat. Aliquam ultrices sagittis orci a scelerisque purus semper eget
+          duis.
+        </p>
+
+        <h2><strong>Euismod luctus:</strong></h2>
+
+        <ul>
+          <li>
+            <h3><strong>Dolor sit amet: </strong></h3>
+            <p>Turpis egestas pretium aenean pharetra
+              magna ac placerat <strong>Egestas</strong>, rhoncus aenean vel elit scelerisque mauris pellentesque
+              pulvinar. Dolor sit amet
+              consectetur adipiscing. Vitae sapien pellentesque habitant morbi tristique senectus et netus.</p>
+          </li>
+
+          <li>
+            <p>
+              <strong>Nibh mauris cursus mattis molestie a iaculis: </strong> Velit laoreet id
+              donec ultrices tincidunt. Felis imperdiet proin fermentum leo vel orci porta. Rhoncus aenean vel elit
+              scelerisque mauris pellentesque pulvinar pellentesque habitant.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Sit amet luctus venenatis lectus magna: </strong></h3>
+            <p>
+              Tincidunt eget nullam non nisi est sit amet facilisis magna.
+              Magna fermentum iaculis eu non diam. Vitae nunc sed velit dignissim sodales ut eu sem integer.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Gravida quis blandit turpis cursus in hac habitasse platea dictumst: </strong></h3>
+            <p>
+              Neque convallis a cras semper auctor.
+              Consequat ac felis donec et odio pellentesque diam. Non arcu risus quis varius quam quisque. Ultricies
+              lacus sed turpis tincidunt.
+            </p>
+          </li>
+        </ul>
+
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-button href="assets/other/cv/Resume.pdf" target="_blank">Download slide
+        deck</ion-button>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="logo-github" slot="start"></ion-icon>
+      <a target="_blank" href="https://github.com/kaepek">
+        <ion-label>Egestas Github</ion-label>
+      </a>
+    </ion-item>
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Projects:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/projects/ee/RD" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Neque convallis
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Egestas
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+          <a routerLink="/projects/ee/SBLDC" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Velit euismod in pellentesque
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Egestas
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+          <a routerLink="/projects/ee/CAL" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Laoreet sit amet cursus
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Egestas
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+  </page-section>
+
+  <app-vertical-divide>
+    <h1>2022</h1>
+    Consequat ac felis <strong>Egestas</strong>
+    <div>
+      <small>(June 2022 - Present)</small>
+    </div>
+  </app-vertical-divide>
+
+  <page-section [linkElementToNavigation]="pagePath" id="ME" sideHeaderTitle="Teams" blockTitle="Blandit"
+    sideHeaderSubtitle="Ultricies mi quis hendrerit" blockSubtitle="Ultricies mi quis hendrerit"
+    iconName="accessibility-outline" [rightHanded]="false"
+    backgroundId="unsplash/stevosdisposable-WVP0v0KRMMU-unsplash.jpg">
+
+    <ion-item>
+      <h1><strong>Blandit projects: </strong> Velit laoreet id donec.</h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <p>
+          Libero id faucibus nisl tincidunt eget nullam, <span class="grey"> (June 2021 - Present)</span>, assa vitae
+          tortor
+          Odio facilisis mauris sit amet massa vitae tortor condimentum.
+          Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Laoreet non curabitur gravida arcu ac tortor
+          dignissim convallis aenean. Gravida rutrum quisque non tellus orci ac auctor. Velit laoreet id donec ultrices
+          tincidunt arcu non sodales neque. Et molestie ac feugiat sed lectus vestibulum. Integer quis auctor elit sed
+          vulputate mi sit amet. Massa massa ultricies mi quis hendrerit dolor.
+        </p>
+      </div>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Projects:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/projects/web-dev/CV" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Iverra ipsum nunc aliquet bibendum enim.
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Blandit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+
+          <a routerLink="/projects/ee/BD" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Nibh nisl condimentum id venenatis a
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Blandit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+
+          <a routerLink="/projects/ee/HBLDC" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Cras pulvinar mattis nunc sed
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Blandit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+
+          <a routerLink="/projects/3d/DRONE" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Duis convallis convallis tellus id interdum
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Blandit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+
+          <a routerLink="/projects/science/DV" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Faucibus nisl tincidunt
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Blandit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+
+          <a routerLink="/projects/science/Linear" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Sed do eiusmod
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Blandit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+
+          <a routerLink="/projects/3d/WebGPU" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Tincidunt id aliquet
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Blandit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+
+          <a routerLink="/projects/3d/BAG" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Senectus et netus
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Blandit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+
+          <a routerLink="/projects/3d/SCENE" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Tellus molestie nunc
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Blandit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+
+          <a routerLink="/projects/3d/BIKE" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Ipsum dolor
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Blandit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+  <app-vertical-divide>
+    <h1>2021</h1>
+    Ultricies lacus sed <strong>Turpis</strong>
+    <div>
+      <small>(June 2021)</small>
+    </div>
+  </app-vertical-divide>
+
+  <page-section [cover]="true" [linkElementToNavigation]="pagePath" id="Dignissim" sideHeaderTitle="Teams"
+    blockTitle="Dignissim" sideHeaderSubtitle="Tincidunt eget nullam non" blockSubtitle="Tincidunt eget nullam non"
+    iconName="prism-outline" [rightHanded]="true" backgroundId="unsplash/paris-bilal-Qna3C7BTrnA-unsplash.jpg">
+
+    <ion-item>
+      <div>
+        <h1>
+          <strong>Dignissim:</strong> neque ornare aenean euismod elementum nisi quis eleifend quam.
+        </h1>
+
+        <p>
+          Velit aliquet sagittis id consectetur purus ut faucibus. Interdum consectetur libero id faucibus nisl
+          tincidunt. <strong>Dignissim</strong> Lectus nulla at volutpat diam ut venenatis
+          tellus in. Morbi leo urna molestie at elementum eu facilisis sed odio. Sit amet commodo nulla facilisi. A diam
+          sollicitudin tempor id eu nisl nunc. Eget duis at tellus at urna condimentum mattis.
+        </p>
+
+        <p>
+          Ante metus dictum at tempor commodo ullamcorper a. In cursus turpis massa tincidunt dui ut ornare
+          <strong>Dignissim</strong> porttitor rhoncus dolor. Purus non enim praesent elementum facilisis. In fermentum
+          et sollicitudin ac orci phasellus egestas tellus rutrum. Sapien nec sagittis aliquam malesuada bibendum arcu
+          vitae elementum curabitur. Nunc faucibus a pellentesque sit.
+        </p>
+
+        <h2><strong>Euismod luctus:</strong></h2>
+
+        <ul>
+          <li>
+            <h3><strong> Adipiscing diam donec adipiscing tristique:</strong></h3>
+            <p>
+              Nibh venenatis cras sed felis eget velit aliquet sagittis <strong>Dignissim</strong>, consectetur
+              adipiscing elit pellentesque habitant morbi. Euismod elementum nisi quis eleifend. Ipsum consequat nisl
+              vel pretium.
+            </p>
+          </li>
+
+          <li>
+            <h3><strong>Scelerisque purus semper eget duis at tellus at:</strong></h3>
+            <p>
+              Diam maecenas ultricies mi eget mauris pharetra et ultrices
+              <strong>Dignissim</strong>, massa eget egestas purus viverra accumsan in nisl. Sit amet justo donec enim
+              diam vulputate ut pharetra.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Projects:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/projects/web-dev/Scelerisque" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Nibh tortor
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Scelerisque
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+          <a routerLink="/projects/web-dev/Dignissim" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Nibh tortor
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Nunc
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+  <app-vertical-divide>
+    <h1>2019</h1>
+    <p>Facilisi <strong>Dignissim</strong></p>
+  </app-vertical-divide>
+
+  <page-section [linkElementToNavigation]="pagePath" id="RUTRUM" sideHeaderTitle="Teams" iconName="cloud-outline"
+    sideHeaderSubtitle="Rutrum" blockTitle="Rutrum" blockSubtitle="Viverra Justo" [rightHanded]="false"
+    backgroundId="unsplash/oleg-demakov-jVsFoS586aI-unsplash.jpg" [fixedDisplacement]="true">
+
+    <ion-item>
+      <div>
+        <h1>
+          <strong>Rutrum: In egestas erat imperdiet sed euismod nisi</strong> - mattis vulputate enim nulla aliquet
+          porttitor lacus. Nisl rhoncus mattis rhoncus urna neque viverra justo.
+        </h1>
+        <p>
+          Rutrum, eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Diam maecenas ultricies mi eget
+          mauris pharetra et ultrices. Montes nascetur ridiculus mus mauris vitae ultricies. Nunc lobortis mattis
+          aliquam faucibus purus in massa tempor.
+        </p>
+        <h2><strong>Euismod luctus:</strong></h2>
+        <ul>
+          <li>
+            <h3><strong>Proin sagittis nisl rhoncus mattis:</strong></h3>
+            <p>
+              Condimentum id venenatis a condimentum. Tellus molestie nunc non blandit massa enim nec. Nibh tortor id
+              aliquet lectus proin. Enim facilisis gravida neque convallis a cras semper auctor.
+              Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nunc faucibus a
+              pellentesque sit.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="cloud" slot="start"></ion-icon>
+      <a target="_blank" href="https://google.com">
+        <ion-label>Rutrum</ion-label>
+      </a>
+    </ion-item>
+
+  </page-section>
+
+  <app-vertical-divide>
+    <h1>2016</h1>
+    <p>Femtom <strong>Rutrum</strong></p>
+  </app-vertical-divide>
+
+  <page-section [linkElementToNavigation]="pagePath" id="RHONCUS" sideHeaderTitle="Teams" iconName="business-outline"
+    sideHeaderSubtitle="Rhoncus" blockTitle="Rhoncus" blockSubtitle="Neque & Viverra Justo" [rightHanded]="true"
+    backgroundId="unsplash/taiki-ishikawa-TjghSgE-yVg-unsplash.jpg" [fixedDisplacement]="true">
+
+    <ion-item>
+      <div>
+        <h1>
+          <strong>Rhoncus:</strong> Scelerisque eleifend donec pretium vulputate sapien nec sagittis.
+        </h1>
+        <p>
+          Elementum facilisis leo vel fringilla est ullamcorper eget. Vel pharetra vel turpis nunc eget lorem. Cursus
+          mattis molestie a iaculis at erat. Ut porttitor leo a diam. Justo donec enim diam vulputate ut pharetra sit
+          amet. Id neque aliquam vestibulum morbi. Sed velit dignissim sodales ut eu sem. Cras pulvinar mattis nunc sed
+          blandit. Id ornare arcu odio ut sem.
+        </p>
+        <h2><strong>Euismod luctus:</strong></h2>
+        <ul>
+          <li>
+            <h3><strong>VJ - Viverra Justo:</strong></h3>
+            <p>
+              Volutpat blandit aliquam etiam erat velit scelerisque in. Pulvinar etiam non quam lacus suspendisse
+              faucibus interdum. Purus ut faucibus pulvinar elementum. Fringilla est ullamcorper eget nulla facilisi
+              etiam dignissim.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Aliquet risus feugiat in ante:</strong></h3>
+            <p>
+              Lectus arcu bibendum at varius vel pharetra vel turpis. Sit amet est placerat in egestas. Quis blandit
+              turpis cursus in hac habitasse. Aliquet risus feugiat in ante. Dui sapien eget mi proin sed libero enim
+              sed. Nibh venenatis cras sed felis eget. Donec massa sapien faucibus et molestie ac feugiat sed lectus.
+              Leo a diam sollicitudin tempor. Nunc mattis enim ut tellus elementum sagittis vitae et.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Quis imperdiet mass:</strong></h3>
+            <p>
+              Cras semper auctor neque vitae tempus quam pellentesque nec nam. Aliquam ultrices sagittis orci a.
+              Interdum velit euismod in pellentesque. Pretium aenean pharetra magna ac placerat vestibulum lectus
+              mauris. <span class="grey">Purus non enim praesent elementum facilisis leo</span>
+              diam maecenas sed enim.
+            </p>
+          </li>
+          <li>
+            <h3><strong>In vitae turpis massa:</strong></h3>
+            <p>Euismod elementum nisi quis eleifend quam. Congue nisi vitae suscipit tellus mauris a diam maecenas sed
+              <strong>ABC</strong> et <strong>FAD</strong>.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <quote-with-author author="Bibendum Tristique"
+        quote="Vivamus arcu felis bibendum ut tristique. Ornare suspendisse sed nisi lacus sed viverra tellus. Laoreet sit amet cursus sit amet dictum sit amet justo. Sem fringilla ut morbi tincidunt augue. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Laoreet id donec ultrices tincidunt arcu. Turpis egestas pretium aenean pharetra magna ac. Nibh ipsum consequat nisl vel pretium."></quote-with-author>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-icon name="cloud" slot="start"></ion-icon>
+      <a target="_blank" href="https://google.com">
+        <ion-label>Rhoncus.com</ion-label>
+      </a>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Projects:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/projects/web-dev/AML" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Suspendisse
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Rhoncus
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+
+          <a routerLink="/projects/web-dev/GDM" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Et pharetra pharetra.
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Rhoncus
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+  <app-vertical-divide>
+    <h1>2015</h1>
+    <p>Pharetra <strong>Rhoncus</strong></p>
+  </app-vertical-divide>
+
+  <page-section [linkElementToNavigation]="pagePath" id="Ullamcorper" sideHeaderTitle="Teams" blockTitle="Ullamcorpe"
+    sideHeaderSubtitle="Purus Ullamcorpe" blockSubtitle="Purus Ullamcorpe" iconName="briefcase-outline"
+    [rightHanded]="false"
+    backgroundId="unsplash/taiki-ishikawa-Q9JHncNMY-0-unsplash.jpg">
+
+    <ion-item>
+      <div>
+        <h1><strong>Quantum Ullamcorper:</strong> Purus Consulting.</h1>
+        <p>
+          Laoreet sit amet cursus sit amet dictum sit amet justo. Sem fringilla ut morbi tincidunt augue.
+
+          Amet <strong>Turpis Egestas</strong> et
+          <strong>Nibh ipsum consequat nisl vel pretium.</strong>
+
+          <span class="grey"> (2014 - Jan 2017 · 3 yrs 1 mo).</span>
+
+          Ornare aenean euismod elementum.
+        </p>
+      </div>
+
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <h2><strong>Euismod luctus:</strong></h2>
+        <ul>
+          <li>
+            <h3><strong>Purus</strong></h3>
+          </li>
+        </ul>
+      </div>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Projects:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/projects/web-dev/DMSA" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  DMSA lamda deido
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Ullamcorper
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+  <app-vertical-divide>
+    Started <strong>Purus Ullamcorper</strong>
+    <div>
+      <small>(August 2014)</small>
+    </div>
+  </app-vertical-divide>
+
+  <page-section [linkElementToNavigation]="pagePath" id="LaoreetSit" sideHeaderTitle="Teams"
+    sideHeaderSubtitle="LaoreetSit" blockTitle="LaoreetSit" blockSubtitle="Ornare Aenean" iconName="cube-outline"
+    [rightHanded]="true" [cover]="true" backgroundId="unsplash/thomas-tourneux-6EaK1iYOYBA-unsplash.jpg">
+
+    <ul class="skills" currentBackgroundColor childSelector="li">
+      <li>Et pharetra pharetra massa massa ultricies mi quis (ADC, DAS, etc..)</li>
+      <li>Turpis egestas pretium aenean</li>
+    </ul>
+
+    <ion-item>
+      <h1><strong>LaoreetSit: </strong> Lorem dolor sed viverra ipsum nunc aliquet. Sit amet porttitor eget dolor morbi
+        non arcu.</h1>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <p>
+          Cursus vitae congue mauris rhoncus aenean. Ornare aenean euismod elementum nisi quis eleifend. A diam
+          maecenas sed enim ut sem viverra aliquet.
+        </p>
+
+        <ion-item>
+          <ion-icon name="logo-python" slot="start"></ion-icon>
+          <a target="_blank" href="https://bitbucket.org">
+            <ion-label>Lampa 2014</ion-label>
+          </a>
+        </ion-item>
+
+        <p>
+          Cursus vitae congue mauris rhoncus aenean. Ornare aenean euismod elementum nisi quis eleifend. A diam maecenas
+          sed enim ut sem viverra aliquet. Aliquet risus feugiat in ante metus dictum at. Vulputate ut pharetra sit amet
+          aliquam id diam. Tincidunt arcu non sodales neque sodales. <strong>Curabitur</strong> Curabitur Turpis
+          egestas pretium aenean pharetra magna ac. Nibh ipsum consequat nisl vel pretium.
+        </p>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <h2><strong>Euismod luctus:</strong></h2>
+        <ul>
+          <li>
+            <h3><strong>Ornare Aenean (OA):</strong></h3>
+            <p>
+              Vivamus at augue eget arcu dictum varius. Porttitor eget dolor morbi non arcu risus. Ullamcorper sit amet
+              risus nullam eget felis. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero.
+            </p>
+          </li>
+          <li>
+            <h3><strong>Vulputate odio:</strong></h3>
+            <p>
+              Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Sem et tortor consequat id
+              porta nibh. Nibh praesent tristique magna sit amet. Massa tincidunt nunc pulvinar sapien et ligula
+              ullamcorper malesuada proin.
+            </p>
+          </li>
+        </ul>
+
+      </div>
+
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="cloud" slot="start"></ion-icon>
+      <a target="_blank" href="http://LaoreetSit/">
+        <ion-label>LaoreetSit</ion-label>
+      </a>
+    </ion-item>
+
+    <div class="card-section">
+
+      <ion-row>
+        <ion-col>
+          <h1>Projects:</h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <div>
+          <a routerLink="/projects/science/HOTEL" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Nunc Congue
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Congue
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+
+          <a routerLink="/projects/science/KISS" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Egestas Integer
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Integer
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+
+          <a routerLink="/projects/web-dev/EC" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Morbi enim
+                </ion-card-title>
+                <ion-card-subtitle>
+                  LaoreetSit
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+
+  </page-section>
+
+  <app-vertical-divide>
+    <h1>2014</h1>
+    Consectetur <strong>LaoreetSit</strong>
+    <div>
+      <small>(Oct 2013 - Jul 2014)</small>
+    </div>
+  </app-vertical-divide>
+
+  <page-section [linkElementToNavigation]="pagePath" id="Volutpat" sideHeaderTitle="Teams"
+    sideHeaderSubtitle="Facilisis Volutpat" blockTitle="Facilisis Volutpat" blockSubtitle="Pellentesque / Congue"
+    iconName="school-outline" [rightHanded]="false"
+    backgroundId="unsplash/marek-szturc-IfZVE7HsXp8-unsplash.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>Nonsectetur puru</li>
+        <li>Nunc id cursus</li>
+        <li>Consectetur Lorem Donec</li>
+        <li>Aliquam malesuada</li>
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <h1>
+          <strong>Facilisis Volutpatversity: Porta non pulvinar neque laoreet suspendisse interdum
+            consectetur.</strong>
+        </h1>
+        <h2>
+          Erat velit scelerisque in dictum. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Nibh
+          cras pulvinar mattis nunc sed blandit libero. Scelerisque mauris pellentesque pulvinar pellentesque habitant
+          morbi tristique. Porttitor massa id neque aliquam.
+        </h2>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <p>
+        Ullamcorper a lacus vestibulum sed arcu non odio euismod. Nunc id cursus metus aliquam eleifend mi. At risus
+        viverra adipiscing at. Vel orci porta non pulvinar neque laoreet suspendisse interdum.
+      </p>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <h2>Aarcu vitae:</h2>
+        <ul>
+          <li>
+            <h2>Scelerisque purus semper eget duis at tellus at:</h2>
+            <p>
+              Scelerisque purus semper eget duis at tellus at. Urna et pharetra pharetra massa massa ultricies mi quis
+              hendrerit. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Est ullamcorper eget nulla facilisi
+              etiam dignissim diam. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies.
+            </p>
+          </li>
+
+          <li>
+            <h2>Sit amet just:</h2>
+            <p>
+              Sit amet justo donec enim diam vulputate. Feugiat in ante metus dictum at tempor commodo ullamcorper a.
+            </p>
+          </li>
+
+          <li>
+            <h2>Dui ut ornare lectus sit amet est placerat:</h2>
+            <p>
+              Faucibus vitae aliquet nec ullamcorper sit amet risus. Leo integer malesuada nunc vel. Ante metus dictum
+              at tempor commodo ullamcorper a lacus vestibulum. Elementum integer enim neque volutpat.
+            </p>
+          </li>
+
+          <li>
+            <h2>Orci a scelerisque purus semper eget duis at tellus at. Non sodales neque sodales ut etiam sit:</h2>
+            <p>
+              Faucibus vitae aliquet nec ullamcorper sit amet risus. Leo integer malesuada nunc vel. Ante metus dictum
+              at tempor commodo ullamcorper a lacus vestibulum. Elementum integer enim neque volutpat. Viverra nibh cras
+              pulvinar mattis nunc sed blandit. Mauris a diam maecenas sed enim ut. Erat pellentesque adipiscing commodo
+              elit at imperdiet. Feugiat in fermentum posuere urna nec tincidunt praesent.
+            </p>
+          </li>
+
+          <li>
+            <h2>Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Et odio pellentesque diam volutpat. Non
+              enim praesent elementum facilisis leo:</h2>
+            <p>
+              Tempor orci dapibus ultrices in iaculis nunc. Vestibulum rhoncus est pellentesque elit ullamcorper
+              dignissim cras tincidunt. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Tincidunt id
+              aliquet risus feugiat in ante metus. Velit egestas dui id ornare arcu odio ut.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <h2>Faucibus vitae:</h2>
+        <p>
+          Erat velit scelerisque in dictum. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Nibh
+          cras pulvinar mattis nunc sed blandit libero. Scelerisque mauris pellentesque pulvinar pellentesque habitant
+          morbi tristique. Porttitor massa id neque aliquam. Porta non pulvinar neque laoreet suspendisse interdum
+          consectetur. Mauris pharetra et ultrices neque ornare aenean euismod. Ullamcorper a lacus vestibulum sed arcu
+          non odio euismod. Nunc id cursus metus aliquam eleifend mi. At risus viverra adipiscing at. Vel orci porta non
+          pulvinar neque laoreet suspendisse interdum. Tristique et egestas quis ipsum suspendisse ultrices.
+        </p>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <h2>Erat pellentesque:</h2>
+        <p>
+          Scelerisque purus semper eget duis at tellus at. Urna et pharetra pharetra massa massa ultricies mi quis
+          hendrerit. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Est ullamcorper eget nulla facilisi
+          etiam dignissim diam. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies.
+        </p>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <h2><strong>Euismod luctus:</strong></h2>
+        <ul>
+          <li>
+            <h3><strong>Pellentesque Student</strong></h3>
+          </li>
+          <li>
+            <h3><strong>Paid Congue</strong></h3>
+          </li>
+        </ul>
+      </div>
+    </ion-item>
+
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Projects:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/projects/science/VelOrci" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Vel orci porta non pulvinar
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Masters VelOrci
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+          <a routerLink="/projects/science/Consectetur" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Consectetur
+                </ion-card-title>
+                <ion-card-subtitle>
+                  El Comente
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+  <app-vertical-divide>
+    <h1>2010</h1>
+    Consectetur <strong>Facilisis Volutpatversity</strong>
+    <div>
+      <small>(September 2010 - May 2014)</small>
+    </div>
+  </app-vertical-divide>
+
+  <page-section [linkElementToNavigation]="pagePath" id="HEM" sideHeaderTitle="Teams"
+    sideHeaderSubtitle="Tempor Commodo Ullamc" blockTitle="Odio Facilisis" blockSubtitle="Condimentum Ullamcorpe"
+    iconName="newspaper-outline" [rightHanded]="true"
+    backgroundId="unsplash/luke-miller-riV40lmd1yE-unsplash.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>Feliado</li>
+        <li>Yamplas</li>
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <h1><strong>Tempor Commodo Ullamc: </strong> Amet massa vitae tortor condimentum lacinia quis. Dignissim enim
+          sit amet venenatis.</h1>
+
+        <p>
+          Odio facilisis mauris sit amet. Tellus in metus vulputate eu scelerisque. Pellentesque adipiscing commodo elit
+          at imperdiet dui. Dignissim cras tincidunt lobortis feugiat. Imperdiet massa tincidunt nunc pulvinar sapien et
+          ligula. Iaculis nunc sed augue lacus viverra. Congue quisque egestas diam in arcu cursus. Nunc eget lorem
+          dolor sed viverra ipsum nunc. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Condimentum id venenatis
+          a condimentum vitae. Nunc sed id semper risus in hendrerit gravida.
+        </p>
+      </div>
+
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <h2><strong>Euismod luctus:</strong></h2>
+        <ul>
+          <li>
+            <h3><strong>Purus Ullamcorpe:</strong></h3>
+            <p>Arcu dictum varius duis at consectetur lorem donec massa sapien. Non curabitur gravida arcu ac tortor.
+              Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. Sapien et ligula ullamcorper malesuada
+              proin libero. Libero enim sed faucibus turpis in eu mi.</p>
+          </li>
+        </ul>
+      </div>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Projects:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/projects/web-dev/HEM" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Condimentum Ullamcorpe
+                </ion-card-title>
+                <ion-card-subtitle>
+                  El Lampo
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+  <app-vertical-divide>
+    <h1>2010</h1>
+    Consectetur <strong>Odio Facilisis</strong>
+    <div>
+      <small>(Jun 2010 - Jul 2010)</small>
+    </div>
+  </app-vertical-divide>
+
+  <page-section [linkElementToNavigation]="pagePath" id="Vestibulum" sideHeaderTitle="Teams"
+    sideHeaderSubtitle="Aliquam Nulla Facilisi" blockTitle="Aliquam Nulla Facilisi"
+    blockSubtitle="Condimentum Ullamcorpe" iconName="musical-note-outline" [rightHanded]="false" [cover]="true"
+    backgroundId="unsplash/kira-laktionov-mrMUeF2bEYk-unsplash.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>Ociis natoque penatibus et magnis</li>
+        <li>Libero enim sed</li>
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <h1><strong>Aliquam Nulla Facilisi: </strong> Arcu risus quis varius quam quisque id.</h1>
+        <p>
+          Aliquam Nulla Facilisi Enim lobortis scelerisque fermentum dui faucibus in ornare quam. Dui vivamus arcu
+          felis bibendum ut tristique et.
+        </p>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <p>At Aliquam Nulla Facilisi, Interdum posuere lorem ipsum dolor sit. Sit amet massa vitae tortor condimentum.
+          Aliquet enim tortor at auctor urna. Id venenatis a condimentum vitae. Eros donec ac odio tempor orci dapibus
+          ultrices in iaculis. Est ultricies integer quis auctor elit sed vulputate mi. Egestas tellus rutrum tellus
+          pellentesque eu tincidunt tortor aliquam. Hendrerit gravida rutrum quisque non tellus. Facilisi etiam
+          dignissim diam quis enim lobortis scelerisque fermentum dui. Quam adipiscing vitae proin sagittis nisl rhoncus
+          mattis rhoncus.</p>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <h2><strong>Euismod luctus:</strong></h2>
+        <ul>
+          <li>
+            <h3><strong>Morbi tempus iaculis urna id:</strong></h3>
+            <p>
+              Et ultrices neque ornare aenean euismod elementum. Posuere lorem ipsum dolor sit amet. Cursus in hac
+              habitasse platea. Felis bibendum ut tristique et. Nascetur ridiculus mus mauris vitae ultricies. Ornare
+              arcu dui vivamus arcu felis. Natoque penatibus et magnis dis parturient montes nascetur. Ullamcorper eget
+              nulla facilisi etiam dignissim diam quis. Fusce id velit ut tortor pretium viverra suspendisse potenti.
+              Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Tellus mauris a diam maecenas.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Projects:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/projects/web-dev/Vestibulum" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Hac habitasse platea dictumst
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Vestibulum
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+  <app-vertical-divide>
+    <h1>2008</h1>
+    Consectetur <strong>Vestibulum</strong>
+    <div>
+      <small>(Nov 2008 - Dec 2008)</small>
+    </div>
+  </app-vertical-divide>
+
+  <page-section [linkElementToNavigation]="pagePath" id="Viverra" sideHeaderTitle="Teams" sideHeaderSubtitle="Viverra"
+    blockTitle="Viverra" blockSubtitle="Risus Nullam" iconName="disc-outline" [rightHanded]="true"
+    displacementFixed="true" [cover]="true"
+    backgroundId="unsplash/kiko-camaclang-lv8unel9SCI-unsplash.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>Et ultrices neque 2.0</li>
+        <li>Tortor pretium</li>
+      </ul>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <h1><strong>Viverra: </strong> Hac habitasse platea dictumst vestibulum rhoncus est. Lacus suspendisse faucibus
+          interdum posuere lorem ipsum.</h1>
+        <p>
+          Semper eget duis at tellus at urna condimentum mattis pellentesque. Turpis egestas integer eget aliquet.
+          Ultrices in iaculis nunc sed augue lacus viverra.
+        </p>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <p>At Viverra, Turpis in eu mi bibendum neque egestas congue. Porttitor eget dolor morbi non arcu. Tempor orci
+          eu lobortis elementum nibh tellus molestie nunc non. Quam id leo in vitae. Id ornare arcu odio ut sem nulla
+          pharetra diam sit. Vel orci porta non pulvinar neque laoreet suspendisse interdum. Mattis rhoncus urna neque
+          viverra justo nec. Et egestas quis ipsum suspendisse. Fermentum odio eu feugiat pretium nibh ipsum consequat.
+          Pharetra magna ac placerat vestibulum lectus mauris.</p>
+      </div>
+    </ion-item>
+
+    <ion-item>
+      <div>
+        <h2><strong>Euismod luctus:</strong></h2>
+        <ul>
+          <li>
+            <h3><strong>Junior Risus Nullam:</strong></h3>
+            <p>
+              Suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse. Neque vitae tempus quam pellentesque nec nam aliquam sem et.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </ion-item>
+
+    <div class="card-section">
+      <ion-row>
+        <ion-col>
+          <h1>Projects:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <div>
+          <a routerLink="/projects/web-dev/Viverra" routerDirection="root">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>
+                  Ut enim blandit volutpat
+                </ion-card-title>
+                <ion-card-subtitle>
+                  Eldas of Viverra
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </a>
+        </div>
+      </ion-row>
+    </div>
+
+  </page-section>
+
+  <app-vertical-divide sloti="end">
+    <h1>2008</h1>
+    Consectetur <strong>Viverra</strong>
+    <div>
+      <small>(Jun 2008 - Jul 2008)</small>
+    </div>
+  </app-vertical-divide>
+
+
+</ion-content>

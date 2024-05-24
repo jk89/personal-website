@@ -1,0 +1,9 @@
+{
+    "/home": "paletteschemecolor1",
+    "/teams": "paletteschemecolor2",
+    "/topics": "paletteschemecolor3",
+    "/projects/science": "paletteschemecolor4",
+    "/projects/ee": "paletteschemecolor5",
+    "/projects/3d": "paletteschemecolor6",
+    "/projects/web-dev": "paletteschemecolor7"
+}

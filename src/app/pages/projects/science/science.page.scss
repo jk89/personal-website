@@ -1,0 +1,21 @@
+.reviews {
+    list-style: none;
+}
+
+
+
+@media (min-width: 0px) and (max-width: 910px) { // collapsed
+    .margin-right {
+        > p {
+           margin-right: 200px;
+        }
+       
+        /*> ion-item {
+           min-width:180px;
+        }*/
+       }
+}
+
+@media (min-width: 910px) {
+
+}

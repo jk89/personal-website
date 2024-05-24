@@ -1,0 +1,8 @@
+<div class="cover-page" [ngStyle]="getBackgroundStyle()" [id]="id" [linkElementToNavigation]="pagePath">
+  <div class="container">
+    <ng-content></ng-content>
+  </div>
+  <div *ngIf="cheveron === true" class="cheveron">
+    <ion-icon name="chevron-down-outline"></ion-icon>
+  </div>
+</div>

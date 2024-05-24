@@ -1,0 +1,59 @@
+<ng-template #content><ng-content></ng-content></ng-template>
+<!-- rightHanded = true -->
+<div class="page-section" *ngIf="rightHanded == true;">
+  <div class="content2">
+    <ion-card class="right">
+      <div class="ion-card-header-container-general ios-fixed-pos-fix" [style]="background()" >
+        <ng-container *ngTemplateOutlet="headerTemplate" class="header-template"></ng-container>
+        <ion-card-header style="position: absolute; left:0; top:0; width: 100%;">
+          <ion-card-title>
+            <ion-icon [name]="iconName"></ion-icon>
+            {{blockTitle}}
+          </ion-card-title>
+          <ion-card-subtitle currentColor>{{blockSubtitle}}</ion-card-subtitle>
+        </ion-card-header>
+      </div>
+      <ion-card-content>
+        <ng-container *ngTemplateOutlet="content"></ng-container>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div class="header">
+    <div class="rotatedcc">
+      <h1>{{sideHeaderTitle}}</h1>
+      <h2 currentColor>
+        <span>{{sideHeaderSubtitle}}</span>
+        <ion-icon class="rotate90" [name]="iconName"></ion-icon>
+      </h2>
+    </div>
+  </div>
+</div>
+<!-- rightHanded = false -->
+<div class="page-section" *ngIf="rightHanded == false">
+  <div class="header">
+    <div class="rotated">
+      <h1>{{sideHeaderTitle}}</h1>
+      <h2 currentColor>
+        <ion-icon class="rotate90" [name]="iconName"></ion-icon>
+        <span>{{sideHeaderSubtitle}}</span>
+      </h2>
+    </div>
+  </div>
+  <div class="content2">
+    <ion-card class="left">
+      <div class="ion-card-header-container-general ios-fixed-pos-fix" [style]="background()">
+        <ng-container *ngTemplateOutlet="headerTemplate" class="header-template"></ng-container>
+        <ion-card-header style="position: absolute; left:0; top:0; width: 100%;">
+          <ion-card-title>
+            <ion-icon [name]="iconName"></ion-icon>
+            {{blockTitle}}
+          </ion-card-title>
+          <ion-card-subtitle currentColor>{{blockSubtitle}}</ion-card-subtitle>
+        </ion-card-header>
+      </div>
+      <ion-card-content>
+        <ng-container *ngTemplateOutlet="content"></ng-container>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</div>

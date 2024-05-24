@@ -1,0 +1,130 @@
+<ion-header #header [translucent]="true" class="ion-no-border">
+  <ion-toolbar #toolbar>
+    <page-section-navigation-bar [basePath]="pagePath" category="Topics">
+    </page-section-navigation-bar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content slot="fixed" [fullscreen]="true" [appFadeHeaderOnScroll]="toolbar" [header]="header" scrollEvents="true">
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ pagePath }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <page-cover id="Home" [cheveron]="true" [pagePath]="pagePath" backgroundImageId="page-covers/library.png">
+    <h1 currentColor>Topics</h1>
+    <div>
+      <h2>
+        I study <ion-icon name="school-outline"></ion-icon> a variety of subjects <ion-icon
+          name="book-outline"></ion-icon>
+      </h2>
+    </div>
+  </page-cover>
+
+  <div id="Navigation" [linkElementToNavigation]="pagePath">
+    <div class="page-banner-text">
+      <ion-list>
+        <ion-row text-center>
+          <ion-col *ngFor="let p of appPages; let i = index">
+            <ion-button [disabled]="p.url === pagePath" [color]="p.url === pagePath ? 'dark' : 'light'" size="default"
+              routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon [color]="p.color" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+              <ion-row>
+                {{p.title}}
+              </ion-row>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-list>
+    </div>
+  </div>
+
+  <page-section [linkElementToNavigation]="pagePath" id="WDEV" sideHeaderTitle="Topics"
+    sideHeaderSubtitle="Dictumst Vestibulum Rhoncus" iconName="cloud-outline" blockTitle="Dictumst Vestibulum Rhoncus"
+    blockSubtitle="Dictumst Vestibulum Rhoncus" [rightHanded]="false" backgroundId="page-covers/code.png" [fixedDisplacement]="true">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>Vestibulum</li>
+        <li>Rhoncus</li>
+      </ul>
+    </ion-item>
+
+  </page-section>
+
+  <page-section [linkElementToNavigation]="pagePath" id="ML" sideHeaderTitle="Topics"
+    sideHeaderSubtitle="Facilisi etiam" iconName="eye-outline" blockTitle="Facilisi etiam"
+    blockSubtitle="Deno arti pulus" [rightHanded]="true" backgroundId="card-header-banners/cv.png">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>loreum</li>
+        <li>ipsum</li>
+        <li>santateros</li>
+      </ul>
+    </ion-item>
+
+  </page-section>
+
+  <page-section [linkElementToNavigation]="pagePath" id="BD" sideHeaderTitle="Topics"
+    sideHeaderSubtitle="Aliquet Nibh Praesent" iconName="hardware-chip-outline" blockTitle="Aliquet Nibh Praesent"
+    blockSubtitle="Aliquet Nibh Praesent" [rightHanded]="false" backgroundId="card-header-banners/circuit.jpg">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>tincidunt</li>
+        <li>praesent</li>
+        <li>gravida</li>
+        <li>dictum</li>
+        <li>vel fringilla</li>
+      </ul>
+    </ion-item>
+
+  </page-section>
+
+  <page-section [linkElementToNavigation]="pagePath" id="HE" sideHeaderTitle="Topics"
+  sideHeaderSubtitle="Bibendum Est Ultricies" iconName="cog-outline" blockTitle="Bibendum Est Ultricies"
+  blockSubtitle="Bibendum Est Ultricies" [rightHanded]="true" backgroundId="card-header-banners/cad-cup.png">
+
+  <ion-item>
+    <ul class="skills" currentBackgroundColor childSelector="li">
+      <li>Varius quam quisque</li>
+      <li>Adipiscing tristique</li>
+    </ul>
+  </ion-item>
+
+</page-section>
+
+  <page-section [linkElementToNavigation]="pagePath" id="Sci" sideHeaderTitle="Topics" sideHeaderSubtitle="Nisi"
+    iconName="flask-outline" blockTitle="Nisi / Scelerisque" blockSubtitle="VelOrci, research and Sed do eiusmod notes"
+    [rightHanded]="false" backgroundId="card-header-banners/math.jpg" [fixedDisplacement]="true">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>del slampo</li>
+        <li>nocta libra</li>
+        <li>deminon ampa</li>
+        <li>consectetur lorem donec</li>
+        <li>feredadori</li>
+      </ul>
+    </ion-item>
+
+  </page-section>
+
+  <page-section [linkElementToNavigation]="pagePath" id="CAD" sideHeaderTitle="Topics"
+    sideHeaderSubtitle="Ipsum consequal tincidunt" iconName="cube-outline" blockTitle="Ipsum consequal tincidunt"
+    blockSubtitle="El Rapo tincidunt" [rightHanded]="true" backgroundId="card-header-banners/cad-cup.png">
+
+    <ion-item>
+      <ul class="skills" currentBackgroundColor childSelector="li">
+        <li>Varius quam quisque</li>
+        <li>Adipiscing tristique</li>
+      </ul>
+    </ion-item>
+
+  </page-section>
+
+
+</ion-content>

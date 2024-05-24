@@ -1,0 +1,12 @@
+<div>
+  <canvas width="800" height="800"
+    style="background-color: black; background-image: url(assets/{{backgroundImageLink}}); background-size: cover;"
+    #webGPU>
+  </canvas>
+  <div
+    style="width: 800px; height: 800px; background-color: black; background-image: url(assets/{{backgroundImageLink}}); background-size: cover;"
+    class="disable-webgpu-disabled-notice"  #webGPUBadPeformanceReplacement>
+  </div>
+  <div #webGPUEnabled>Notice: WebGPU not enabled on your browser.</div>
+  <div class="disable-webgpu-disabled-notice" #webGPUBadPeformance>Notice: WebGPU is enabled on your browser, but was disabled due to bad performance.</div>
+</div>
