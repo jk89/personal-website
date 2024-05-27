@@ -35,6 +35,3 @@ scripts/package-lock.json
 
 src/assets/**/_*
 src/assets/_*
-
-src/assets/**/*.mp4
-src/assets/*.mp4
