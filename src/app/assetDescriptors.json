@@ -1,7 +1,7 @@
 {
     "animations/spinner-palette.svg": {
         "type": "Image",
-        "color": "#a49fb2",
+        "color": "#a7a1b5",
         "height": 200,
         "width": 200,
         "aspectRatio": 1,
@@ -37,7 +37,7 @@
     },
     "card-header-banners/crystal.png": {
         "type": "Image",
-        "color": "#0a71ea",
+        "color": "#0a71e9",
         "height": 1024,
         "width": 1280,
         "aspectRatio": 1.25,
@@ -55,7 +55,7 @@
     },
     "card-header-banners/game.png": {
         "type": "Image",
-        "color": "#386c63",
+        "color": "#376c62",
         "height": 595,
         "width": 997,
         "aspectRatio": 1.6756302521008404,
@@ -82,7 +82,7 @@
     },
     "card-header-banners/scene.png": {
         "type": "Image",
-        "color": "#848484",
+        "color": "#858585",
         "height": 1314,
         "width": 2541,
         "aspectRatio": 1.9337899543378996,
@@ -91,7 +91,7 @@
     },
     "card-header-banners/webgpu-banner.png": {
         "type": "Image",
-        "color": "#bec0be",
+        "color": "#bfc0bf",
         "height": 1428,
         "width": 2278,
         "aspectRatio": 1.5952380952380953,
@@ -100,7 +100,7 @@
     },
     "card-header-banners/website.png": {
         "type": "Image",
-        "color": "#212322",
+        "color": "#212423",
         "height": 1800,
         "width": 3200,
         "aspectRatio": 1.7777777777777777,
@@ -118,7 +118,7 @@
     },
     "icon/accessibility-blue.png": {
         "type": "Image",
-        "color": "#5497fc",
+        "color": "#5599fc",
         "height": 512,
         "width": 512,
         "aspectRatio": 1,
@@ -127,7 +127,7 @@
     },
     "icon/autodesk-grey.png": {
         "type": "Image",
-        "color": "#7f7f7f",
+        "color": "#808080",
         "height": 512,
         "width": 512,
         "aspectRatio": 1,
@@ -195,7 +195,7 @@
     },
     "other/bike/Screenshot-2023-11-14-152701.png": {
         "type": "Image",
-        "color": "#474748",
+        "color": "#484848",
         "height": 1300,
         "width": 1958,
         "aspectRatio": 1.5061538461538462,
@@ -231,7 +231,7 @@
     },
     "other/bldc/calibration/PCB_PCB_JK-BLDC-Encoder-Calibrator-Tester4_2023-05-02.png": {
         "type": "Image",
-        "color": "#49303b",
+        "color": "#4a303b",
         "height": 532,
         "width": 921,
         "aspectRatio": 1.731203007518797,
@@ -294,7 +294,7 @@
     },
     "other/bldc/calibration/analysis/IMG_20221003_200602.jpg": {
         "type": "Image",
-        "color": "#f1f3f5",
+        "color": "#f1f3f4",
         "height": 2162,
         "width": 1080,
         "aspectRatio": 0.49953746530989823,
@@ -303,7 +303,7 @@
     },
     "other/bldc/calibration/analysis/raw_reconstruction_direct_comp2_ynitlldoqesyyvgyuwyg.png": {
         "type": "Image",
-        "color": "#ead9d2",
+        "color": "#eadad3",
         "height": 458,
         "width": 4697,
         "aspectRatio": 10.255458515283843,
@@ -321,7 +321,7 @@
     },
     "other/bldc/calibration/calibration_encoder_wiring.png": {
         "type": "Image",
-        "color": "#b9b8b7",
+        "color": "#bab8b7",
         "height": 1872,
         "width": 1404,
         "aspectRatio": 0.75,
@@ -447,7 +447,7 @@
     },
     "other/bldc/high-power-sensorless-bldc/20210227_134657.mp4": {
         "type": "Video",
-        "color": "#968a89",
+        "color": "#958a89",
         "height": 1080,
         "width": 1920,
         "aspectRatio": 1.7777777777777777,
@@ -700,7 +700,7 @@
     },
     "other/bldc/high-power-sensorless-bldc/IMG_20210920_165432.jpg": {
         "type": "Image",
-        "color": "#958b80",
+        "color": "#968b80",
         "height": 1476,
         "width": 3280,
         "aspectRatio": 2.2222222222222223,
@@ -728,7 +728,7 @@
     },
     "other/bldc/high-power-sensorless-bldc/VID_20210920_153635.mp4": {
         "type": "Video",
-        "color": "#979185",
+        "color": "#979186",
         "height": 1080,
         "width": 1920,
         "aspectRatio": 1.7777777777777777,
@@ -747,7 +747,7 @@
     },
     "other/bldc/smooth-sensored-bldc/PCB_PCB_SPWM-L6234_2023-11-13.svg": {
         "type": "Image",
-        "color": "#662e4b",
+        "color": "#672e4b",
         "height": 750,
         "width": 245,
         "aspectRatio": 0.32666666666666666,
@@ -756,7 +756,7 @@
     },
     "other/bldc/smooth-sensored-bldc/Schematic_SPWM-L6234_2023-11-13.svg": {
         "type": "Image",
-        "color": "#f7f5f9",
+        "color": "#f7f6f9",
         "height": 2069,
         "width": 2923,
         "aspectRatio": 1.4127597873368778,
@@ -794,7 +794,7 @@
     },
     "other/bldc/smooth-sensored-bldc/spwm-3d-pcb.png": {
         "type": "Image",
-        "color": "#676766",
+        "color": "#686767",
         "height": 1248,
         "width": 490,
         "aspectRatio": 0.3926282051282051,
@@ -812,7 +812,7 @@
     },
     "other/bldc/smooth-sensored-bldc/step-change-regression.png": {
         "type": "Image",
-        "color": "#fcfcfc",
+        "color": "#fdfcfd",
         "height": 722,
         "width": 2343,
         "aspectRatio": 3.2451523545706373,
@@ -902,7 +902,7 @@
     },
     "other/cv/Resume2.png": {
         "type": "Image",
-        "color": "#f9f9f9",
+        "color": "#faf9f9",
         "height": 1241,
         "width": 881,
         "aspectRatio": 0.7099113618049959,
@@ -911,7 +911,7 @@
     },
     "other/drone/20210227_134657.mp4": {
         "type": "Video",
-        "color": "#968a89",
+        "color": "#958a89",
         "height": 1080,
         "width": 1920,
         "aspectRatio": 1.7777777777777777,
@@ -1003,7 +1003,7 @@
     },
     "other/research-placement/110815160857.png": {
         "type": "Image",
-        "color": "#474fba",
+        "color": "#474fb9",
         "height": 1024,
         "width": 1280,
         "aspectRatio": 1.25,
@@ -1039,7 +1039,7 @@
     },
     "other/research-placement/110819124857.png": {
         "type": "Image",
-        "color": "#0a71ea",
+        "color": "#0a71e9",
         "height": 1024,
         "width": 1280,
         "aspectRatio": 1.25,
@@ -1075,7 +1075,7 @@
     },
     "other/research-placement/crystals.avi": {
         "type": "Video",
-        "color": "#b7bdbb",
+        "color": "#b7bcba",
         "height": 1024,
         "width": 1280,
         "aspectRatio": 1.25,
@@ -1094,7 +1094,7 @@
     },
     "other/scene/9f203c47-6b57-41bd-9d75-47a3a29782fe-trim.png": {
         "type": "Image",
-        "color": "#a9a9a9",
+        "color": "#aaaaa9",
         "height": 2367,
         "width": 3300,
         "aspectRatio": 1.394169835234474,
@@ -1103,7 +1103,7 @@
     },
     "other/scene/Screenshot-2023-11-14-152915.png": {
         "type": "Image",
-        "color": "#848484",
+        "color": "#858585",
         "height": 1314,
         "width": 2541,
         "aspectRatio": 1.9337899543378996,
@@ -1112,7 +1112,7 @@
     },
     "other/thesis/monte-simulation-software.png": {
         "type": "Image",
-        "color": "#d2d0d3",
+        "color": "#d2d1d3",
         "height": 1080,
         "width": 1920,
         "aspectRatio": 1.7777777777777777,
@@ -1121,7 +1121,7 @@
     },
     "other/thesis/penrose-vertex-population-data.png": {
         "type": "Image",
-        "color": "#eceded",
+        "color": "#ebeded",
         "height": 634,
         "width": 1316,
         "aspectRatio": 2.0757097791798107,
@@ -1166,7 +1166,7 @@
     },
     "page-covers/9f203c47-6b57-41bd-9d75-47a3a29782fe-trim.png": {
         "type": "Image",
-        "color": "#a9a9a9",
+        "color": "#aaaaa9",
         "height": 2367,
         "width": 3300,
         "aspectRatio": 1.394169835234474,
@@ -1184,7 +1184,7 @@
     },
     "page-covers/code.png": {
         "type": "Image",
-        "color": "#32353a",
+        "color": "#33363b",
         "height": 1600,
         "width": 2560,
         "aspectRatio": 1.6,
@@ -1202,7 +1202,7 @@
     },
     "page-covers/team6.png": {
         "type": "Image",
-        "color": "#b59f86",
+        "color": "#b7a087",
         "height": 1080,
         "width": 1920,
         "aspectRatio": 1.7777777777777777,
@@ -1238,7 +1238,7 @@
     },
     "unsplash/kal-visuals--Kom60lezrU-unsplash.jpg": {
         "type": "Image",
-        "color": "#737871",
+        "color": "#727870",
         "height": 4608,
         "width": 3072,
         "aspectRatio": 0.6666666666666666,
@@ -1344,9 +1344,9 @@
         "webPPath": "unsplash/_thomas-tourneux-6EaK1iYOYBA-unsplash.jpg.webp",
         "extension": ".jpg"
     },
-    "mixkit/_mixkit-macaw-parrot-feeding-on-a-branch-4669-medium.mp4.mov": {
+    "mixkit/_mixkit-rain-falling-on-the-water-of-a-lake-seen-up-18312-medium.mp4.mov": {
         "type": "Video",
-        "color": "#6c6b51",
+        "color": "#000000",
         "height": 720,
         "width": 1280,
         "aspectRatio": 1.7777777777777777,
@@ -1360,9 +1360,9 @@
         "aspectRatio": 0.5625,
         "extension": ".mov"
     },
-    "mixkit/_mixkit-rain-falling-on-the-water-of-a-lake-seen-up-18312-medium.mp4.mov": {
+    "mixkit/_mixkit-macaw-parrot-feeding-on-a-branch-4669-medium.mp4.mov": {
         "type": "Video",
-        "color": "#000000",
+        "color": "#6c6b51",
         "height": 720,
         "width": 1280,
         "aspectRatio": 1.7777777777777777,
@@ -1394,7 +1394,7 @@
     },
     "other/bldc/high-power-sensorless-bldc/_20210227_134657.mp4.mov": {
         "type": "Video",
-        "color": "#968a89",
+        "color": "#958a89",
         "height": 1080,
         "width": 1920,
         "aspectRatio": 1.7777777777777777,
@@ -1402,7 +1402,7 @@
     },
     "other/drone/_20210227_134657.mp4.mov": {
         "type": "Video",
-        "color": "#968a89",
+        "color": "#958a89",
         "height": 1080,
         "width": 1920,
         "aspectRatio": 1.7777777777777777,
@@ -1418,7 +1418,7 @@
     },
     "other/research-placement/_crystals.avi.mov": {
         "type": "Video",
-        "color": "#b7bdbb",
+        "color": "#b7bcba",
         "height": 1024,
         "width": 1280,
         "aspectRatio": 1.25,
@@ -1426,11 +1426,19 @@
     },
     "other/bldc/high-power-sensorless-bldc/_VID_20210920_153635.mp4.mov": {
         "type": "Video",
-        "color": "#979185",
+        "color": "#979186",
         "height": 1080,
         "width": 1920,
         "aspectRatio": 1.7777777777777777,
         "extension": ".mov"
+    },
+    "mixkit/_mixkit-macaw-parrot-feeding-on-a-branch-4669-medium.mp4.webm": {
+        "type": "Video",
+        "color": "#6c6b51",
+        "height": 720,
+        "width": 1280,
+        "aspectRatio": 1.7777777777777777,
+        "extension": ".webm"
     },
     "other/bldc/smooth-sensored-bldc/_VID_20231027_140804.mp4.mov": {
         "type": "Video",
@@ -1448,25 +1456,9 @@
         "aspectRatio": 1.7777777777777777,
         "extension": ".webm"
     },
-    "mixkit/_mixkit-macaw-parrot-feeding-on-a-branch-4669-medium.mp4.webm": {
-        "type": "Video",
-        "color": "#6c6b51",
-        "height": 720,
-        "width": 1280,
-        "aspectRatio": 1.7777777777777777,
-        "extension": ".webm"
-    },
     "mixkit/_mixkit-rain-falling-on-the-water-of-a-lake-seen-up-18312-medium.mp4.webm": {
         "type": "Video",
         "color": "#000000",
-        "height": 720,
-        "width": 1280,
-        "aspectRatio": 1.7777777777777777,
-        "extension": ".webm"
-    },
-    "mixkit/_mixkit-highway-in-the-middle-of-a-mountain-range-4633-medium.mp4.webm": {
-        "type": "Video",
-        "color": "#60655f",
         "height": 720,
         "width": 1280,
         "aspectRatio": 1.7777777777777777,
@@ -1478,6 +1470,14 @@
         "height": 1280,
         "width": 720,
         "aspectRatio": 0.5625,
+        "extension": ".webm"
+    },
+    "mixkit/_mixkit-highway-in-the-middle-of-a-mountain-range-4633-medium.mp4.webm": {
+        "type": "Video",
+        "color": "#60655f",
+        "height": 720,
+        "width": 1280,
+        "aspectRatio": 1.7777777777777777,
         "extension": ".webm"
     },
     "other/drone/_thrust-modulation.mp4.mov": {
@@ -1496,17 +1496,17 @@
         "aspectRatio": 1.7777777777777777,
         "extension": ".webm"
     },
-    "other/bldc/high-power-sensorless-bldc/_20210227_134657.mp4.webm": {
+    "other/drone/_20210227_134657.mp4.webm": {
         "type": "Video",
-        "color": "#968a89",
+        "color": "#958a89",
         "height": 1080,
         "width": 1920,
         "aspectRatio": 1.7777777777777777,
         "extension": ".webm"
     },
-    "other/drone/_20210227_134657.mp4.webm": {
+    "other/bldc/high-power-sensorless-bldc/_20210227_134657.mp4.webm": {
         "type": "Video",
-        "color": "#968a89",
+        "color": "#958a89",
         "height": 1080,
         "width": 1920,
         "aspectRatio": 1.7777777777777777,
@@ -1522,7 +1522,7 @@
     },
     "other/bldc/high-power-sensorless-bldc/_VID_20210920_153635.mp4.webm": {
         "type": "Video",
-        "color": "#979185",
+        "color": "#979186",
         "height": 1080,
         "width": 1920,
         "aspectRatio": 1.7777777777777777,
@@ -1530,7 +1530,7 @@
     },
     "other/research-placement/_crystals.avi.webm": {
         "type": "Video",
-        "color": "#b7bdbb",
+        "color": "#b7bcba",
         "height": 1024,
         "width": 1280,
         "aspectRatio": 1.25,

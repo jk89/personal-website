@@ -4,7 +4,11 @@ A tailorable CV website.
 
 # Installation
 
-`npm install`
+`npm install && cd scripts && npm install`
+
+# Asset webformatting (must run each time assets change or atleast on the first install)
+
+`npm run reset-assets && npm run assets`
 
 # Testing (live reload)
 
